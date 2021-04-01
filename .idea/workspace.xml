@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_18_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/the-game/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/the-game/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
       <workItem from="1617090189746" duration="50000" />
       <workItem from="1617259835930" duration="13000" />
       <workItem from="1617259865425" duration="3000" />
-      <workItem from="1617285539016" duration="1603000" />
+      <workItem from="1617285539016" duration="2303000" />
     </task>
     <servers />
   </component>
