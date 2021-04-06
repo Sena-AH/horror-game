@@ -1,0 +1,17 @@
+group1/horrorgame/demo/controllers/gameController.class
+group1/horrorgame/demo/DAO/itemDAO.class
+group1/horrorgame/demo/DemoApplication.class
+group1/horrorgame/demo/api/itemController.class
+group1/horrorgame/demo/models/DTO/villainDTO.class
+group1/horrorgame/demo/models/DTO/playerDTO.class
+group1/horrorgame/demo/models/villain.class
+group1/horrorgame/demo/models/DTO/itemDTO.class
+group1/horrorgame/demo/DAO/villainDAO.class
+group1/horrorgame/demo/api/playerController.class
+group1/horrorgame/demo/services/playerService.class
+group1/horrorgame/demo/services/itemService.class
+group1/horrorgame/demo/services/villainService.class
+group1/horrorgame/demo/models/player.class
+group1/horrorgame/demo/DAO/playerDAO.class
+group1/horrorgame/demo/models/item.class
+group1/horrorgame/demo/api/villainController.class
