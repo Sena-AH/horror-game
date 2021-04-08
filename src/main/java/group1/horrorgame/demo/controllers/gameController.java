@@ -5,14 +5,14 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class gameController {
-
-    @Autowired
-    ItemService itemService;
-
-    @Autowired
-    PlayerService playerService;
-
-    @Autowired
-    VillainService villainService;
+//
+//    @Autowired
+//    ItemService itemService;
+//
+//    @Autowired
+//    PlayerService playerService;
+//
+//    @Autowired
+//    VillainService villainService;
 
 }
