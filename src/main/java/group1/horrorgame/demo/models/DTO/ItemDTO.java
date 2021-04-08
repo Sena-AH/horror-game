@@ -4,7 +4,7 @@ package group1.horrorgame.demo.models.DTO;
 import javax.persistence.*;
 
 @Entity
-//@Table(name = "item")
+@Table(name = "item")
 public class ItemDTO {
 
     @Id
