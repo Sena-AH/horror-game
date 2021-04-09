@@ -1,17 +1,28 @@
 package group1.horrorgame.demo.models;
 
-public class item {
+public class Item {
+
+    private Integer id;
     private String itemName;
-    private int attackPoints;
+    private Integer attackPoints;
     private String specialAbility;
 
-    public item(String itemName, int attackPoints, String specialAbility) {
+    public Item(Integer id, String itemName, Integer attackPoints, String specialAbility) {
+        this.id = id;
         this.itemName = itemName;
         this.attackPoints = attackPoints;
         this.specialAbility = specialAbility;
     }
 
-    public item() {
+    public Item() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getItemName() {
@@ -22,7 +33,7 @@ public class item {
         this.itemName = itemName;
     }
 
-    public int getAttackPoints() {
+    public Integer getAttackPoints() {
         return attackPoints;
     }
 
@@ -38,3 +49,6 @@ public class item {
         this.specialAbility = specialAbility;
     }
 }
+
+
+//

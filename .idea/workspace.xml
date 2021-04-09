@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="">
-<<<<<<< Updated upstream
+    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/horror-game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/horror-game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
->>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qALjDFYGQtWyuEbaWXNoM1C6XD" />
@@ -41,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -61,9 +60,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="RecentsManager">
@@ -93,6 +93,7 @@
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="horror-game" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="group1.horrorgame.demo.DemoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,6 +105,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.DemoApplication (1)" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -121,7 +126,48 @@
       <workItem from="1617285539016" duration="4424000" />
       <workItem from="1617292693232" duration="183000" />
       <workItem from="1617715861548" duration="2753000" />
+      <workItem from="1617731063439" duration="276000" />
+      <workItem from="1617731535568" duration="1238000" />
+      <workItem from="1617891682567" duration="3367000" />
+      <workItem from="1617895088967" duration="2428000" />
     </task>
+    <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
+      <created>1617892644327</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1617892644327</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Corrected all incorrect file names and continue work on Item classes from client to DB">
+      <created>1617893551878</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1617893551878</updated>
+    </task>
+    <task id="LOCAL−00003" summary="Updated application.properties with hibernate format and dialect etc.">
+      <created>1617893735304</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1617893735304</updated>
+    </task>
+    <task id="LOCAL−00004" summary="+ ItemDAO ready for initial testing">
+      <created>1617894086973</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1617894086973</updated>
+    </task>
+    <task id="LOCAL−00005" summary="+ ItemService ready for initial testing&#10;+ gameController, autowire ItemService&#10;+ ItemController, started working on it&#10;+ ItemDTO ready for initial testing">
+      <created>1617896940891</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1617896940891</updated>
+    </task>
+    <task id="LOCAL−00006" summary="merged item-branch into main">
+      <created>1617904292820</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1617904292820</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,5 +184,14 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc." />
+    <MESSAGE value="Corrected all incorrect file names and continue work on Item classes from client to DB" />
+    <MESSAGE value="Updated application.properties with hibernate format and dialect etc." />
+    <MESSAGE value="+ ItemDAO ready for initial testing" />
+    <MESSAGE value="+ ItemService ready for initial testing&#10;+ gameController, autowire ItemService&#10;+ ItemController, started working on it&#10;+ ItemDTO ready for initial testing" />
+    <MESSAGE value="merged item-branch into main" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged item-branch into main" />
   </component>
 </project>
