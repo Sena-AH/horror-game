@@ -1,6 +1,13 @@
-package group1.horrorgame.demo.models;
+package group1.horrorgame.demo.models.DTO;
+import javax.persistence.*;
 
-public class player {
+@Entity
+@Table(name = "players")
+public class PlayerDTO {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String name;
     private double health;
     private String level;
@@ -9,7 +16,8 @@ public class player {
     private int pacifistScore;
     private int totalScore;
 
-    public player(String name, double health, String level, int fighterScore, int liarScore, int pacifistScore, int totalScore) {
+    public PlayerDTO(int id, String name, double health, String level, int fighterScore, int liarScore, int pacifistScore, int totalScore) {
+        this.id = id;
         this.name = name;
         this.health = health;
         this.level = level;
@@ -18,8 +26,16 @@ public class player {
         this.pacifistScore = pacifistScore;
         this.totalScore = totalScore;
     }
+    public PlayerDTO(){
 
-    public player() {
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
     }
 
     public String getName() {
