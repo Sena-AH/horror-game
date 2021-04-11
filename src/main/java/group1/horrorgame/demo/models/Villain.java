@@ -1,13 +1,13 @@
 package group1.horrorgame.demo.models;
 
-public class villain {
+public class Villain {
     private String villainName;
-    private int health;
+    private double health;
     private String specialAttack;
     private String difficulty;
     private String weakness;
 
-    public villain(String villainName, int health, String specialAttack, String difficulty, String weakness) {
+    public Villain(String villainName, double health, String specialAttack, String difficulty, String weakness) {
         this.villainName = villainName;
         this.health = health;
         this.specialAttack = specialAttack;
@@ -15,7 +15,7 @@ public class villain {
         this.weakness = weakness;
     }
 
-    public villain() {
+    public Villain() {
     }
 
     public String getVillainName() {
@@ -26,11 +26,11 @@ public class villain {
         this.villainName = villainName;
     }
 
-    public int getHealth() {
+    public double getHealth() {
         return health;
     }
 
-    public void setHealth(int health) {
+    public void setHealth(double health) {
         this.health = health;
     }
 
