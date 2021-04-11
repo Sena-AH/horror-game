@@ -1,0 +1,9 @@
+.arrowDown{
+    transform: rotate(270deg);
+}
+.arrowRight{
+    transform: rotate(180deg);
+}
+button{
+    background: rgba(0,0,0,0.5);
+}
