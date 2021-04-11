@@ -9,13 +9,14 @@ import javax.persistence.*;
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
 
+        private int id;
         private String villainName;
         private double health;
         private String specialAttack;
         private String difficulty;
         private String weakness;
 
-        public VillainDTO( String villainName,double health, String specialAttack, String difficulty, String weakness) {
+        public VillainDTO(int id, String villainName,double health, String specialAttack, String difficulty, String weakness) {
             this.villainName = villainName;
             this.health = health;
             this.specialAttack = specialAttack;
@@ -23,6 +24,13 @@ import javax.persistence.*;
             this.weakness = weakness;
         }
         public VillainDTO() {
+        }
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
         }
 
         public String getVillainName() {

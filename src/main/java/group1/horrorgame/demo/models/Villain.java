@@ -8,7 +8,7 @@ public class Villain {
     private String difficulty;
     private String weakness;
 
-    public Villain(String villainName, double health, String specialAttack, String difficulty, String weakness) {
+    public Villain(int id,String villainName, double health, String specialAttack, String difficulty, String weakness) {
         this.villainName = villainName;
         this.health = health;
         this.specialAttack = specialAttack;
@@ -17,6 +17,12 @@ public class Villain {
     }
 
     public Villain() {
+    }
+    public int getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id = id;
     }
 
     public String getVillainName() {
