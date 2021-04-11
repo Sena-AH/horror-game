@@ -58,7 +58,7 @@ public VillainService(VillainDAO villainDAO) {
         villainDAO.deleteVillian(id);
     }
 
-    public void deleteAllPlayers(){
+    public void deleteAllVillains(){
         villainDAO.deleteAllVillains();
     }
 
