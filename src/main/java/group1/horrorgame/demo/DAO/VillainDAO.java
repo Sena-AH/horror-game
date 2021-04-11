@@ -2,10 +2,11 @@ package group1.horrorgame.demo.DAO;
 
 
 import group1.horrorgame.demo.models.DTO.VillainDTO;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-@Repoistory
+@Repository
 public class VillainDAO {
     private final VillainRepository repository;
 

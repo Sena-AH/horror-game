@@ -18,6 +18,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
+          <factory-entry name="entityManagerFactory" />
           <factory-entry name="horror-game" />
         </datasource-mapping>
         <naming-strategy-map />
@@ -58,12 +59,9 @@
     <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:3.0.11" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.4.6" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.4.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.3.5" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.5" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:42.2.19" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.checkerframework:checker-qual:3.5.0" level="project" />
@@ -130,5 +128,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.3.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.7.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.4.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.5" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
   </component>
 </module>

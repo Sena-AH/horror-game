@@ -8,6 +8,7 @@ import javax.persistence.*;
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
+
         private String villainName;
         private double health;
         private String specialAttack;

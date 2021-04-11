@@ -1,6 +1,7 @@
 package group1.horrorgame.demo.models;
 
 public class Villain {
+    private int id;
     private String villainName;
     private double health;
     private String specialAttack;
