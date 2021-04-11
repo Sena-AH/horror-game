@@ -1,7 +1,6 @@
 package group1.horrorgame.demo.controllers;
 
 import group1.horrorgame.demo.services.ItemService;
-import group1.horrorgame.demo.services.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,9 +10,6 @@ public class gameController {
 //
     @Autowired
     ItemService itemService;
-
-    @Autowired
-    PlayerService playerService;
 
     @RequestMapping("/index")
     public String start()   {
@@ -25,11 +21,11 @@ public class gameController {
         return "fight-1";
     }
 
-    @RequestMapping("/player")
-    public String playerView(){
-        return "player";
-    }
 
+//
+//    @Autowired
+//    PlayerService playerService;
+//
 //    @Autowired
 //    VillainService villainService;
 
