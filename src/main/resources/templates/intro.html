@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http//:www.w3.org/1999/xhtml">
 <head>
+    <link rel="stylesheet" type="text/css" href="/intro.css">
     <meta charset="UTF-8">
-    <title>Menu</title>
+    <title>Intro</title>
 </head>
 <body>
-<div id="introText">
-    <p id="IntroPart1">In a little town outside Connecticut lives the couple Ed and Lorrain Warren
-        famous for their investigations of supernatural activitys and work with cases where paranormal activitys has ouccured.</p>
+
+<div class="container">
+<img th:src="@{/images/introBase.jpg}"/>
+<p id="introPart1">In a little town outside Connecticut lives the couple Ed and Lorrain Warren
+    famous for their investigations of supernatural activitys and work with cases where paranormal activitys has ouccured.</p>
+
+    <p id="introPart2">Now the couple got a new mission.
+
+        A family suspects that their home is haunted by evil spirits and they are in desperate need for aid ...</p>
+
+    <p id="introPart3">This time Ed and Lorrain needs your help to defeat whatever
+
+        lurking in the poor  familys home.</p>
+
+    <p id="introPart4">You´ll have to search for the answers in the spirit world and no one knows what you will find there...
+        but one thing is certain.
+        You have to hurry up before it is to late!</p>
 </div>
-<img id="intro" th:src="@{/images/introBase.jpg}"/>
 </body>
 </html>
