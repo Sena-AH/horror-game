@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/api/villainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/api/villainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/services/VillainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/services/VillainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menuAndIntro.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/menuAndIntroImg/Menu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/group1/horrorgame/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/group1/horrorgame/demo/DemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/baseScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/baseScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/BaseScreen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/BaseScreen.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/player.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/player.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/player.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/player.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +24,7 @@
         <option value="Class" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -98,13 +96,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
