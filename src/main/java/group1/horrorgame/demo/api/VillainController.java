@@ -1,11 +1,7 @@
 package group1.horrorgame.demo.api;
 
-import group1.horrorgame.demo.models.Player;
 import group1.horrorgame.demo.models.Villain;
-import group1.horrorgame.demo.services.PlayerService;
 import group1.horrorgame.demo.services.VillainService;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
