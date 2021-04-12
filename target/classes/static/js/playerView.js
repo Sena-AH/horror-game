@@ -11,6 +11,7 @@ function left(){
     let imageSet = document.getElementById("baseImage").src;
     console.log(imageSet);
     if(imageSet.includes("doorScreen.jpg")){
+        location.href = "index";
         document.getElementById("arrLeft").addEventListener("click", function(){
             document.getElementById("baseImage").src="images/jigsawScreen.jpg";
             document.getElementById("arrDown").remove();
@@ -18,7 +19,6 @@ function left(){
             document.getElementById("arrRight").remove();
         })
     }
-    console.log("left");
 }
 function right(){
     let imageSet = document.getElementById("baseImage").src;

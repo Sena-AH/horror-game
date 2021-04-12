@@ -11,12 +11,7 @@ function left(){
     let imageSet = document.getElementById("baseImage").src;
     console.log(imageSet);
     if(imageSet.includes("doorScreen.jpg")){
-        document.getElementById("arrLeft").addEventListener("click", function(){
-            document.getElementById("baseImage").src="images/jigsawScreen.jpg";
-            document.getElementById("arrDown").remove();
-            document.getElementById("arrLeft").remove();
-            document.getElementById("arrRight").remove();
-        })
+        location.href = "jigsaw";
     }
 }
 function right(){
