@@ -5,13 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_42.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fight-1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/samara.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fight-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/samara.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fight-1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fight-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/demo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/DAO/itemDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/DAO/playerDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/DAO/villainDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/api/itemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/api/playerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/api/villainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/controllers/gameController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/models/DTO/itemDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/models/DTO/playerDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/models/DTO/villainDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/models/item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/models/player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/models/villain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/repository/itemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/repository/playerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/repository/villainRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/services/itemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/services/playerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/java/group1/horrorgame/demo/services/villainService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/resources/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/src/test/java/group1/horrorgame/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/horror-game/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/horror-game/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +66,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -46,7 +87,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1qALjDFYGQtWyuEbaWXNoM1C6XD" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -98,17 +139,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="horror-game" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="group1.horrorgame.demo.DemoApplication" />
@@ -149,6 +179,7 @@
       <workItem from="1617731535568" duration="1238000" />
       <workItem from="1617891682567" duration="3367000" />
       <workItem from="1617895088967" duration="2428000" />
+      <workItem from="1618335631347" duration="303000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>
