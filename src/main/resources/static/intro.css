@@ -5,11 +5,9 @@
 position:relative;
     text-align: center;
 }
-#introPart1,#introPart2,#introPart3,#introPart4{
+#introPart1,#introPart2,#introPart3,#introPart4,#gameStart,#doorIntro{
     position: absolute;
     top:60%;
     left:2%;
 }
 
-/*I Js Sätt all text förutom den första som document.getElementById("introPart2).style-display="none".
- Sätt sedan den text du vill visa som "block" ist för "none" när den ska visas.*/
