@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/IntroBase3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/samara.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/samara.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -78,10 +79,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nikel\OneDrive\Skrivbord\horror-game\src\main\resources\static\images" />
+      <recent name="C:\Users\nikel\OneDrive\Skrivbord\horror-game\src\main\resources\static\images\samaraBase" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/images" />
-      <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -92,15 +94,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
