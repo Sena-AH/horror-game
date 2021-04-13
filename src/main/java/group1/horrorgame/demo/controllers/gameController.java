@@ -20,9 +20,9 @@ public class gameController {
         return "index";
     }
 
-    @RequestMapping("/fight-1")
+    @RequestMapping("/samara")
     public String startFight1() {
-        return "fight-1";
+        return "samara";
     }
 
     @RequestMapping("/player")
