@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/StartPart1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/doorIntro.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/StartPart2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/gameStart.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/intro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/intro.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,19 +92,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="horror-game" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="group1.horrorgame.demo.DemoApplication" />
@@ -149,6 +132,7 @@
       <workItem from="1617731535568" duration="1238000" />
       <workItem from="1617891682567" duration="3367000" />
       <workItem from="1617895088967" duration="2428000" />
+      <workItem from="1618383897273" duration="196000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>
