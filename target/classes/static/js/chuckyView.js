@@ -1,4 +1,4 @@
-/*
+
 $(function () {
     let $villain = $('#villain');
 
@@ -29,6 +29,3 @@ $(function () {
         }
     });
 });
-
-*/
- 
