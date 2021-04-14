@@ -8,31 +8,32 @@
 <body>
 
 <div class="container">
-<img id="IntroBase" th:src="@{/images/introBase.jpg}"/>
-    <img id="IntroBase2" th:src="@{/images/introBase2.jpg}"/>
+<img id="introBaseImg" th:src="@{/images/introBase.jpg}"/>
+    <img id="introBase2Img" th:src="@{/images/introBase2.jpg}"/>
     <img id="gameStartImg" th:src="@{/images/gameStart.jpg}"/>
     <img id="doorIntroImg" th:src="@{/images/doorIntro.jpg}"/>
 
-<p id="introPart1">In a little town outside Connecticut lives the couple Ed and Lorrain Warren
+<p id="introText1">In a little town outside Connecticut lives the couple Ed and Lorrain Warren
     famous for their investigations of supernatural activitys and work with cases where paranormal activitys has ouccured.</p>
 
-    <p id="introPart2">Now the couple got a new mission.
+    <p id="introText2">Now the couple got a new mission.
 
         A family suspects that their home is haunted by evil spirits and they are in desperate need for aid ...</p>
 
-    <p id="introPart3">This time Ed and Lorrain needs your help to defeat whatever
+    <p id="introText3">This time Ed and Lorrain needs your help to defeat whatever
 
-        lurking in the poor  familys home.</p>
+        lurking in the poor familys home.</p>
 
-    <p id="introPart4">You´ll have to search for the answers in the spirit world and no one knows what you will find there...
+    <p id="introText4">You´ll have to search for the answers in the spirit world and no one knows what you will find there...
         but one thing is certain.
         You have to hurry up before it is to late!</p>
 
-    <p id="gameStart">Choose which way you want to go by clicking on one of the arrows.</p>
+    <p id="gameStartText">Choose which way you want to go by clicking on one of the arrows.</p>
 
-    <p id="doorIntro">Choose which door you want to enter by clicking on one of them.</p>
+    <p id="doorIntroText">Choose which door you want to enter by clicking on one of them.</p>
 
 </div>
+<script th:src="@{webjars/jquery/3.1.1/jquery.js}"></script>
 <script th:src="@{/js/introView.js}"></script>
 </body>
 </html>
