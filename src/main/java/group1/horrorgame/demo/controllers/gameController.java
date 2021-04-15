@@ -21,7 +21,7 @@ public class gameController {
     }
 
     @RequestMapping("/samara")
-    public String startFight1() {
+    public String samaraStart() {
         return "samara";
     }
 
