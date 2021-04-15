@@ -21,5 +21,6 @@ function right(){
         document.getElementById("baseImage").src="images/doorScreen.jpg";
         document.getElementById("arrLeft").style.transform = "rotate(90deg)";
         document.getElementById("arrRight").style.transform = "rotate(90deg)";
+        location.href = "chucky";
     }
 }

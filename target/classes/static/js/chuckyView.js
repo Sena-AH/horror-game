@@ -1,4 +1,4 @@
-
+/*
 $(function () {
     let $villain = $('#villain');
 
@@ -29,3 +29,7 @@ $(function () {
         }
     });
 });
+
+*/
+
+$('.btnbackground').onclick.append('<img src=th:src="@{/images/Chuckydoorspeach.png}">');
