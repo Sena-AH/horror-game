@@ -35,6 +35,11 @@ public class gameController {
         return "jigsaw";
     }
 
+    @RequestMapping("/chucky")
+    public String chuckyFight(){
+        return "chucky";
+    }
+
 //
 //    @Autowired
 //    PlayerService playerService;
