@@ -73,7 +73,8 @@ function showText(){
   /*  if(onclick) {*/
         /*Till sist. Klickar du på den sista bilden så hänvisas du till en ny sida.*/
 
-
+    let menuSound = new sound("/mp3/menuSound.mp3");
+    menuSound.play();
 }
 
 function sound(src){
