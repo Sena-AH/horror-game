@@ -3,7 +3,7 @@ document.getElementById("resumeButton").addEventListener("click", resumeButton);
 document.getElementById("startButton").addEventListener("click", startButton);
 document.getElementById("exitButton").addEventListener("click", exitButton);
 
-$('.indexMainDiv').append('<img class="menuBackground" src="images/mainImg.jpg">',playSound());
+playSound();
 
 function startButton(){
         location.href = "intro";
@@ -14,7 +14,7 @@ function resumeButton() {
 }
 
 function exitButton() {
-    location.href = "player";
+ exit();
 }
 function playSound(){
 
