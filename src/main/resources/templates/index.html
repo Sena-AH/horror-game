@@ -1,19 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http//:www.thymeleaf.org">
 <head>
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <script type="text/javascript" src="/menuSound.css">
     <meta charset="UTF-8">
     <title>horror-game</title>
 </head>
 <body>
-<img th:src="@{/images/Menu.jpg}"/>
+<div class="indexMainDiv">
 <span>
-<button id="startButton" className="startButton"><img th:src="@{/images/startBtn}" width="50x50"></button>
-<button id="exitButton" className="exitButton"><img th:src="@{/images/exitBtn}" width="70x70"></button>
-<button id="resumeButton" className="resumeButton"><img th:src="@{/images/resumeBtn}" width="70x70"></button>
-        <!--<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2F736x%2F05%2F75%2Fc4%2F0575c46fec4eb0005a66d79a255e2dcf.jpg&f=1&nofb=1">-->
-<script th:src="@{/js/introView.js}"></script>
-    </span>
-    </body>
+    <button id="startButton" class="startButton"><img th:src="@{/images/startBtn}" width="50x50"></button>
+    <button id="exitButton" class="exitButton"><img th:src="@{/images/exitBtn}" width="70x70"></button>
+    <button id="resumeButton" class="resumeButton"><img th:src="@{/images/resumeBtn}" width="70x70"></button>
+</span>
+</div>
+<script th:src="@{webjars/jquery/3.1.1/jquery.js}"></script>
+<script th:src="@{/js/menuView.js}"></script>
+</body>
 </html>
+

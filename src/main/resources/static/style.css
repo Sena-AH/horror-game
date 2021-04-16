@@ -1,6 +1,9 @@
 h1{
     color: green;
 }
+.indexMainDiv{
+    position: relative;
+}
 .span{
 
 margin-bottom: auto;
@@ -9,5 +12,11 @@ border: none;
 cursor: pointer;
 display:block;
     padding:5px;
+}
+
+.menuBackground{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
 }
 

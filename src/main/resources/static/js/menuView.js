@@ -3,6 +3,7 @@ document.getElementById("resumeButton").addEventListener("click", resumeButton);
 document.getElementById("startButton").addEventListener("click", startButton);
 document.getElementById("exitButton").addEventListener("click", exitButton);
 
+$('.indexMainDiv').append('<img class="menuBackground" src="images/mainImg.jpg">',playSound());
 
 function startButton(){
         location.href = "intro";
@@ -15,6 +16,12 @@ function resumeButton() {
 function exitButton() {
     location.href = "player";
 }
+function playSound(){
+
+    let menuSound = new sound("/mp3/menuSound.mp3");
+    menuSound.play();
+}
+
 function sound(src) {
     this.sound = document.createElement("audio");
     this.sound.src = src;
@@ -29,6 +36,4 @@ function sound(src) {
         this.sound.pause();
     }
 
-    let menuSound = new sound("/mp3/menuSound.mp3");
-    menuSound.play();
 }
