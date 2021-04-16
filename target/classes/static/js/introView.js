@@ -7,25 +7,32 @@ $('#doorIntroImg').hide();
 $('#gameStartText').hide();
 $('#gameStartImg').hide();
 
-document.getElementById("nextButton").addEventListener("click", clickNext);
+/*document.getElementById("introPart2").style.display="none";
+document.getElementById("introPart3").style.display="none";
+document.getElementById("introPart4").style.display="none";
+document.getElementById("doorIntro").style.display="none";
+document.getElementById("gameStart").style.display="none";
+document.getElementById("gameStartImg").style.display="none";
+document.getElementById("doorIntroImg").style.display="none";
+document.getElementById("IntroBase2").style.display="none";*/
+showText();
 
 
 
-    function clickNext(){
+function showText(){
 
     let baseImg1 = document.getElementById("introBaseImg").src;
     let baseImg2 = document.getElementById("introBase2Img").src;
     let baseImg3 = document.getElementById("gameStartImg").src;
-    let baseImg4 = document.getElementById("doorIntroImg").src;
-    let locationHref = location.href = "player";
-
+    /*if(onclick*/
 
     $('introText1').hide();
     $('introText2').show();
 
 
-
-    if(baseImg1.includes("introText2")) {
+   /* document.getElementById("introText2").style.display="block";
+    document.getElementById("introText1").style.display="none";
+*/    if(baseImg1.includes("introText2")) {
         $('introText2').hide();
         $('introText3').show();
 
@@ -38,7 +45,10 @@ document.getElementById("nextButton").addEventListener("click", clickNext);
         $(baseImg2).show();
         $('introText4').show();
 
-
+        /*document.getElementById("IntroBase2Img").style.display="block";
+        document.getElementById("introText4").style.display="block";
+        document.getElementById("IntroBaseImg").style.display="none";
+        document.getElementById("introText3").style.display="none";*/
     }
     if(baseImg2.includes("introText4")) {
         $(baseImg2).hide();
@@ -46,22 +56,22 @@ document.getElementById("nextButton").addEventListener("click", clickNext);
         $(baseImg3).show();
         $('gameStartText').show();
 
-
+        /*document.getElementById("gameStartImg").style.display="block";
+        document.getElementById("gameStartText").style.display="block";
+        document.getElementById("introText4").style.display="none";*/
     }
 
     if(baseImg3.includes("gameStartText")) {
-        location.href = "player";
-
+        $(baseImg3).hide();
+        $('gameStartText').hide();
+        $('doorIntroImg').show();
+        $('doorIntroText').show();
+        /*document.getElementById("doorIntroImg").style.display="block";
+        document.getElementById("doorIntroText").style.display="block";
+        document.getElementById("gameStartImg").style.display="none";*/
     }
-    if(locationHref.includes ("BaseScreen.jpg")){
-            $(baseImg4).show();
-            $('doorIntroText').show();
-        }
-    if(baseImg4.includes('doorIntroText')) {
-            $(baseImg4).hide();
-            $('doorIntroText').hide();
-        }
-
+  /*  if(onclick) {*/
+        /*Till sist. Klickar du på den sista bilden så hänvisas du till en ny sida.*/
 
 
 }

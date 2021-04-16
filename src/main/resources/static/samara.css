@@ -1,26 +1,114 @@
-.text-box, .decision-box    {
-    color: white;
-    font-family: Castellar;
-    font-size: 0.9em;
-    line-height: 0.4em;
-    font-weight: 450;
+/*.text-box, .decision-box    {*/
+/*    color: white;*/
+/*    font-family: Castellar;*/
+/*    font-size: 0.9em;*/
+/*    line-height: 0.4em;*/
+/*    font-weight: 450;*/
+/*}*/
+
+#fightSamara    {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: 2% auto auto auto;
 }
 
 .samaraBase {
-    display: block;
-    width: 950px;
-    height: 700px;
-    margin: 10px auto auto auto;
+
+    position: relative;
+
+    height: 450px;
+    margin: 2% auto auto auto;
 }
 
-.text-box   {
-    position: absolute;
-    margin-left: 500px;
-    margin-top: 525px;
+#winnerFrame    {
+    height: 460px;
 }
 
-.decision-box   {
-    position: absolute;
-    margin-left: 510px;
-    margin-top: 570px;
+#endFrame   {
+    height: 460px;
 }
+
+#continueButton {
+    position: absolute;
+    top: 427px;
+    left: 730px;
+}
+
+.lifeAndScore   {
+    position: absolute;
+    top: 375px;
+    left: 25px;
+    width: 8%;
+    min-height: 12%;
+}
+
+#samaraLife1, #samaraLife2, #samaraLife3    {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#samaraLife {
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 180px;
+}
+
+#greeting   {
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    top: 350px;
+    left: 205px;
+}
+
+#fightButton   {
+    position: absolute;
+    top: 425px;
+    left: 250px;
+    height: 20px;
+    width: 55px;
+}
+
+button  {
+    cursor: pointer;
+}
+
+#escapeButton   {
+    position: absolute;
+    top: 425px;
+    left: 350px;
+    height: 20px;
+    width: 70px;
+}
+
+.redHeart   {
+    width: 20px;
+    height: 20px;
+}
+
+#heart1 {
+    position: absolute;
+    top: 391px;
+    left: 82px;
+}
+
+#samaraWell {
+    width: 810px;
+}
+
+#heart2 {
+    position: absolute;
+    top: 391px;
+    left: 102px;
+}
+
+#heart3 {
+    position: absolute;
+    top: 391px;
+    left: 122px;
+}
+
