@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/introView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/introView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/IntroBase.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/IntroBase2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/intro.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
