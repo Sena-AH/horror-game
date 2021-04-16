@@ -51,7 +51,7 @@ document.getElementById("nextButton").addEventListener("click", clickNext);
 
     if(baseImg3.includes("gameStartText")) {
         location.href = "player";
-        
+
     }
     if(locationHref.includes ("BaseScreen.jpg")){
             $(baseImg4).show();
