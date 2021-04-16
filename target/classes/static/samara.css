@@ -6,12 +6,6 @@
 /*    font-weight: 450;*/
 /*}*/
 
-.container {
-    position: relative;
-    width: 950px;
-    height: 700px;
-    margin: 10px auto auto auto;
-}
 
 .samaraBase {
     position: relative;
@@ -20,11 +14,6 @@
     margin: 10px auto auto auto;
 }
 
-.fightButton   {
-    position: absolute;
-    margin-left: 800px;
-    margin-top: 700px;
-}
 
 /*.text-box   {*/
 /*    position: absolute;*/
