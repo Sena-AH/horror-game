@@ -5,9 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/jigsawBaseScreen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/jigsawGameScreen1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/jigsawScreenAnswer1Screen2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/nextBtn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/playerChoiceScreen1Answer1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/playerChoiceScreen1Answer2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/IntroBase2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/doorIntro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/gameStart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/jigsawBaseScreen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/jigsawGameScreen1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/jigsawIntroChat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/jigsawScreenAnswer1Screen2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/nextBtn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/playerChoiceScreen1Answer1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/images/playerChoiceScreen1Answer2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/introView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/samara.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/samara.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/jigsawScreen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jigsawScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/jigsawScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jigsawView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jigsawView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jigsaw.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jigsaw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/jigsawScreen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/jigsawScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/jigsawScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jigsawView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/jigsawView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/jigsaw.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/jigsaw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/menuAndIntro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/menuAndIntroImg/Menu.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +109,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\nikel\OneDrive\Skrivbord\horror-game\src\main\resources\static\images" />
-      <recent name="C:\Users\nikel\OneDrive\Skrivbord\horror-game\src\main\resources\static\images\samaraBase" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/mp3" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
+      <recent name="C:\Users\nikel\OneDrive\Skrivbord\horror-game\src\main\resources\static\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -95,15 +124,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,6 +176,11 @@
       <workItem from="1617891682567" duration="3367000" />
       <workItem from="1617895088967" duration="2428000" />
       <workItem from="1618383897273" duration="2602000" />
+      <workItem from="1618424788562" duration="80000" />
+      <workItem from="1618424893768" duration="91000" />
+      <workItem from="1618425078615" duration="314000" />
+      <workItem from="1618515557756" duration="348000" />
+      <workItem from="1618558310472" duration="4861000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>

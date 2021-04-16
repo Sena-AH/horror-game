@@ -1,0 +1,26 @@
+.text-box, .decision-box    {
+    color: white;
+    font-family: Castellar;
+    font-size: 0.9em;
+    line-height: 0.4em;
+    font-weight: 450;
+}
+
+.samaraBase {
+    display: block;
+    width: 950px;
+    height: 700px;
+    margin: 10px auto auto auto;
+}
+
+.text-box   {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 525px;
+}
+
+.decision-box   {
+    position: absolute;
+    margin-left: 510px;
+    margin-top: 570px;
+}
