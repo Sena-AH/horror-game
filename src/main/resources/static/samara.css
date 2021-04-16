@@ -8,6 +8,7 @@
 
 
 .samaraBase {
+    display: block;
     position: relative;
     width: 550px;
     height: 400px;
