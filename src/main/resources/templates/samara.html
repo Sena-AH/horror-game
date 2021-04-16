@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Samara</title>
 
     <link rel="stylesheet" type="text/css" href="/samara.css">
+
+    <script th:src="@{webjars/jquery/3.1.1/jquery.js}"></script>
+    <script th:src="@{/js/samara.js}"></script>
 </head>
 <body>
 
-    <div class="text-box" id="text-box">
-        <p>A wild Samara appeared<br></p>
-        <p>You can't escape me! We will fight till' the end</p>
-    </div>
 
-    <div class="decision-box" id="decision-box">
-        <p>Make your next move:</p>
-    </div>
+    <img id="samaraBase" class= "samaraBase" th:src="@{/images/start_samara.jpg}">
 
-    <img id="samaraBase" class="samaraBase" th:src="@{/images/samaraBase.jpg}">
 
-    <script th:src="@{webjars/jquery/3.1.1/jquery.js}"></script>
 
 </body>
 </html>

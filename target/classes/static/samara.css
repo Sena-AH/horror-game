@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .text-box, .decision-box    {
     color: white;
     font-family: Castellar;
@@ -5,6 +6,15 @@
     line-height: 0.4em;
     font-weight: 450;
 }
+=======
+/*.text-box, .decision-box    {*/
+/*    color: white;*/
+/*    font-family: Castellar;*/
+/*    font-size: 0.9em;*/
+/*    line-height: 0.4em;*/
+/*    font-weight: 450;*/
+/*}*/
+>>>>>>> main
 
 .samaraBase {
     display: block;
@@ -13,6 +23,7 @@
     margin: 10px auto auto auto;
 }
 
+<<<<<<< HEAD
 .text-box   {
     position: absolute;
     margin-left: 500px;
@@ -24,3 +35,17 @@
     margin-left: 510px;
     margin-top: 570px;
 }
+=======
+/*.text-box   {*/
+/*    position: absolute;*/
+/*    margin-left: 500px;*/
+/*    margin-top: 525px;*/
+/*}*/
+
+
+/*.decision-box   {*/
+/*    position: absolute;*/
+/*    margin-left: 510px;*/
+/*    margin-top: 570px;*/
+/*}*/
+>>>>>>> main
