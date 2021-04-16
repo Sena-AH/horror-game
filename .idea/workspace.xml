@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
+    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="+ new images and adjustments in fight-scene">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/fight_1_samara.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/samara.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/samara.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/samara.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/samara.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/fight_1_samara.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/samara.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/samara.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/samara.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/samara.html" afterDir="false" />
     </list>
@@ -104,19 +100,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="horror-game" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="group1.horrorgame.demo.DemoApplication" />
@@ -158,6 +141,7 @@
       <workItem from="1617891682567" duration="3367000" />
       <workItem from="1617895088967" duration="2428000" />
       <workItem from="1618383897273" duration="2602000" />
+      <workItem from="1618561347823" duration="876000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>
@@ -195,7 +179,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1617904292820</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="+ new images and adjustments in fight-scene">
+      <created>1618556754299</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1618556754299</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +210,7 @@
     <MESSAGE value="+ ItemDAO ready for initial testing" />
     <MESSAGE value="+ ItemService ready for initial testing&#10;+ gameController, autowire ItemService&#10;+ ItemController, started working on it&#10;+ ItemDTO ready for initial testing" />
     <MESSAGE value="merged item-branch into main" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged item-branch into main" />
+    <MESSAGE value="+ new images and adjustments in fight-scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ new images and adjustments in fight-scene" />
   </component>
 </project>

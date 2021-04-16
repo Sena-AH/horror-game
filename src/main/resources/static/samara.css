@@ -6,12 +6,14 @@
 /*    font-weight: 450;*/
 /*}*/
 
-body {
-    display: block;
-    width: 950px;
-    height: 700px;
+
+.samaraBase {
+    position: relative;
+    width: 550px;
+    height: 400px;
     margin: 10px auto auto auto;
 }
+
 
 /*.text-box   {*/
 /*    position: absolute;*/
