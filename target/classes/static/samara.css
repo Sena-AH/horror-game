@@ -6,25 +6,109 @@
 /*    font-weight: 450;*/
 /*}*/
 
-
-.samaraBase {
-    display: block;
+#fightSamara    {
     position: relative;
-    width: 550px;
-    height: 400px;
-    margin: 10px auto auto auto;
+    width: 50%;
+    height: 50%;
+    margin: 2% auto auto auto;
 }
 
+.samaraBase {
 
-/*.text-box   {*/
-/*    position: absolute;*/
-/*    margin-left: 500px;*/
-/*    margin-top: 525px;*/
-/*}*/
+    position: relative;
 
+    height: 450px;
+    margin: 2% auto auto auto;
+}
 
-/*.decision-box   {*/
-/*    position: absolute;*/
-/*    margin-left: 510px;*/
-/*    margin-top: 570px;*/
-/*}*/
+#winnerFrame    {
+    height: 460px;
+}
+
+#endFrame   {
+    height: 460px;
+}
+
+#continueButton {
+    position: absolute;
+    top: 460px;
+    left: 730px;
+}
+
+.lifeAndScore   {
+    position: absolute;
+    top: 375px;
+    left: 25px;
+    width: 8%;
+    min-height: 12%;
+}
+
+#samaraLife1, #samaraLife2, #samaraLife3    {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#samaraLife {
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 180px;
+}
+
+#greeting   {
+    font-size: 1em;
+    color: white;
+    position: absolute;
+    top: 350px;
+    left: 205px;
+}
+
+#fightButton   {
+    position: absolute;
+    top: 425px;
+    left: 250px;
+    height: 20px;
+    width: 55px;
+}
+
+button  {
+    cursor: pointer;
+}
+
+#escapeButton   {
+    position: absolute;
+    top: 425px;
+    left: 350px;
+    height: 20px;
+    width: 70px;
+}
+
+.redHeart   {
+    width: 20px;
+    height: 20px;
+}
+
+#heart1 {
+    position: absolute;
+    top: 391px;
+    left: 82px;
+}
+
+#samaraWell {
+    width: 810px;
+}
+
+#heart2 {
+    position: absolute;
+    top: 391px;
+    left: 102px;
+}
+
+#heart3 {
+    position: absolute;
+    top: 391px;
+    left: 122px;
+}
+
