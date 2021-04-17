@@ -13,9 +13,7 @@ startJigsaw();
 
 function startJigsaw(){
     $('.mainDiv').append('<h3 class="jigsawGreeting">Hello there "name", I want to play a game</h3>');
-    // $('.mainDiv').prepend('<button id= "screen1Answer1Btn" class="screen1Answer1" onclick="screenOneAnswerOne()"><img src="images/playerChoiceScreen1Answer1.jpg"></button>');
     $('.mainDiv').prepend('<button id= "screen1Answer1Btn" class="screen1Answer1" onclick="screenOneAnswerOne()"></button>');
-
     $('.mainDiv').prepend('<button id= "screen1Answer2Btn" class="screen1Answer2" onclick="screenOneAnswerTwo()"></button>');
 }
 
