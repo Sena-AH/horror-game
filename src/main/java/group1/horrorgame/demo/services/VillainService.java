@@ -54,9 +54,9 @@ public VillainService(VillainDAO villainDAO) {
         }
         return null;
     }
-    public void deleteVillian(Integer id){
-        villainDAO.deleteVillian(id);
-    }
+    public void deleteVillain(Integer id){
+        villainDAO.deleteVillain(id);
+    }z
 
     public void deleteAllVillains(){
         villainDAO.deleteAllVillains();
@@ -73,5 +73,7 @@ public VillainService(VillainDAO villainDAO) {
                 villainDTO.getHealth(), villainDTO.getSpecialAttack(), villainDTO.getDifficulty(),
                 villainDTO.getWeakness());
     }
+
+
 }
 

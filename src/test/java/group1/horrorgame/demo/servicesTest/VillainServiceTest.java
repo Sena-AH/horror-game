@@ -55,4 +55,40 @@ class VillainServiceTest {
         Assertions.assertThat(actualVillain.getVillainName()).isEqualTo(newVillain.getVillainName());
     }
 
+
+    @Test
+    void addVillain_ShouldAddVillainAndReturnCorrectName() {
+        VillainDTO villainDTOFromDatabase = new VillainDTO(1, "Chucky", 10, "Knife skills", "7", "Annabelle");
+        Villain newVillain = new Villain(null, "Chucky", 10, "Knife skills", "7", "Annabelle");
+
+        Mockito.when(villainDAO.addVillain(ArgumentMatchers.any(VillainDTO.class))).thenReturn(villainDTOFromDatabase);
+        Villain createdVillain = villainService.addVillain(newVillain);
+
+        Assertions.assertThat(newVillain.getVillainName()).isEqualTo(createdVillain.getVillainName());
+    }
+
+    @Test
+    void getVillainById_ShouldFindVillainById() {
+        VillainDTO villainDTOFromDatabase = new VillainDTO(1, "Chucky", 10, "Knife skills", "7", "Annabelle");
+        Villain expectedVillain = new Villain(1, "Chucky", 10, "Knife skills", "7", "Annabelle");
+
+        Mockito.when(villainDAO.findVillainByID(1)).thenReturn(Optional.of(villainDTOFromDatabase));
+        Villain actualVillain = villainService.getVillainById(1);
+
+        Assertions.assertThat(actualVillain.getId()).isEqualTo(expectedVillain.getId());
+    }
+
+    @Test
+    void deleteVillain_ShouldInvokeDeleteVillain() {
+        villainService.deleteVillain(1);
+        Mockito.verify(villainDAO,Mockito.times(1)).deleteVillain(1);
+    }
+
+    @Test
+    void deleteVillain_ShouldNotInvokeAddVillain() {
+        villainService.deleteVillain(1);
+        Mockito.verify(villainDAO, Mockito.times(0)).addVillain(new VillainDTO(null, null, null,null,null,null));
+    }
+
+
 }
