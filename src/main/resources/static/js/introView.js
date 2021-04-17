@@ -1,4 +1,5 @@
 $('#introBase2Img').hide();
+$('#introText1').show();
 $('#introText2').hide();
 $('#introText3').hide();
 $('#introText4').hide();
@@ -10,29 +11,22 @@ $('#gameStartImg').hide();
 document.getElementById("nextButton").addEventListener("click", clickNext);
 
 
+    function clickNext() {
 
-    function clickNext(){
-
-    let baseImg1 = document.getElementById("introBaseImg").src;
-    let baseImg2 = document.getElementById("introBase2Img").src;
-    let baseImg3 = document.getElementById("gameStartImg").src;
-    let baseImg4 = document.getElementById("doorIntroImg").src;
-    let locationHref = location.href = "player";
-
-
-    $('introText1').hide();
-    $('introText2').show();
+        let baseImg1 = document.getElementById("introBaseImg").src;
+        let baseImg2 = document.getElementById("introBase2Img").src;
+        let baseImg3 = document.getElementById("gameStartImg").src;
+        let baseImg4 = document.getElementById("doorIntroImg").src;
+        let locationHref = location.href = "player";
 
 
+        if (baseImg1.includes('introBase.jpg')) {
+            $('introText1').hide();
+            $('introText2').show();
 
-    if(baseImg1.includes("introText2")) {
-        $('introText2').hide();
-        $('introText3').show();
-
-       /* document.getElementById("introText3").style.display="block";
-        document.getElementById("introText2").style.display="none";*/
+        }
     }
-    if(baseImg1.includes("introText3")) {
+    /*if(baseImg1.includes("introText3")) {
         $('introBaseImg').hide();
         $('introText3').hide();
         $(baseImg2).show();
@@ -62,8 +56,6 @@ document.getElementById("nextButton").addEventListener("click", clickNext);
             $('doorIntroText').hide();
         }
 
-
-
 }
 
 function sound(src){
@@ -79,4 +71,4 @@ function sound(src){
     this.stop = function(){
         this.sound.pause();
     }
-}
+}*/
