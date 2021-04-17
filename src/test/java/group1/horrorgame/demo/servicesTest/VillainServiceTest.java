@@ -9,6 +9,7 @@ import group1.horrorgame.demo.services.PlayerService;
 import group1.horrorgame.demo.services.VillainService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentMatchers;
@@ -28,6 +29,14 @@ class VillainServiceTest {
     @BeforeAll
     public static void initAll() {
         villainDAO = Mockito.mock(VillainDAO.class);
+    }
+
+    @BeforeEach
+    public void init() {
+        villainService = new VillainService(villainDAO);
+        allVillains = new ArrayList<>();
+        allVillains.add(new VillainDTO(1, "Chucky", 10, "Knife skills", "7", "Annabelle"));
+        allVillains.add(new VillainDTO(2, "Jigsaw", 10, "Torture games", "5", "His tricycle"));
     }
 
     @Test
