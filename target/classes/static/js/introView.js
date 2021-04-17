@@ -8,7 +8,7 @@ $('#doorIntroImg').hide();
 $('#gameStartText').hide();
 $('#gameStartImg').hide();
 
-document.getElementById("nextButton").addEventListener("click", "introText2");
+document.getElementById("nextButton").addEventListener("click", clickNext);
 
 
     function clickNext() {

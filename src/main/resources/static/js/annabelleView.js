@@ -1,23 +1,32 @@
 
+document.getElementById("fightBtn").addEventListener("click", fightButton);
+document.getElementById("escapeBtn").addEventListener("click", escapeButton);
+document.getElementById("nextBtn").addEventListener("click", showScene2);
+$('.nextBtn').hide();
 
-$('.annabelleDiv').append('<img class="annabelleDoor" src="images/annabelleFight/annabelleDoor.jpg">');
-$('.annabelleDiv').append('<img class="annabelleDoor" src="images/annabelleFight/annabelleDoor.jpg">');
-$('.annabelleDiv').append('<p class="talkBubble1">"Annabelles evil laughter is echoing in the room"</p>');
-$('.annabelleDiv').prepend('<button class="fightButton" src="images/fight_button.jpg " onclick=fightButton()></button>');
-
+/*showAnnabelle();
+function showAnnabelle() {
+    $('.annabelleDiv').append('<img class="annabelleDoor" src="images/annabelleFight/annabelleDoor.jpg">');
+    $('.annabelleDiv').append('<p class="talkBubble1">"Annabelles evil laughter is echoing in the room"</p>');
+    $('.annabelleDiv').prepend('<button class="fightButton" onclick=fightButton()></button>');
+    $('.annabelleDiv').prepend('<button class="escapeButton" onclick=escapeButton()></button>');
+}*/
 
 function fightButton() {
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene1" src="images/annabelleFight/annabelleScene1.jpg">');
     $('.annabelleDiv').append('<p class="talkBubble2">I will defeat you "name"!</p>');
-    $('.annabelleDiv').prepend('<button class="nextButton" onclick="showScene2()"></button>');
-    $('.annabelleDiv').prepend('<button class="escapeButton" onclick="escapeButton()"><img src="images/nextBtn.jpg"></button>');
+    $('.nextBtn').show();
+
+    /*$('.annabelleDiv').prepend('<button class="nextBtn" onclick="showScene2()"></button>');*/
+
 }
 function showScene2() {
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene2" src="images/annabelleFight/annabelleScene2.jpg">');
-    $('.annabelleDiv').prepend('<button class="nextButton" onclick="showScene3()"></button>');
-    $('.annabelleDiv').prepend('<button class="escapeBtn" onclick="escapeButton()"><img src="images/nextBtn.jpg"></button>');
+    $('.nextBtn').show();
+    /*$('.annabelleDiv').prepend('<button class="nextBtn" onclick="showScene3()"></button>');*/
+
 
 }
 function escapeButton() {

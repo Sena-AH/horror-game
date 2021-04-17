@@ -40,9 +40,9 @@ function nextChatBubble(){
 function nextGameScreen(){
     $('.mainDiv').empty();
     $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawGameScreen3.jpg">')
-    $('.mainDiv').append('<button class="jigsawGameClueNumberOne"></button>')
-    $('.mainDiv').append('<button class="jigsawGameClueNumberTwo"></button>')
-    $('.mainDiv').append('<button class="jigsawGameClueNumberThree"></button>')
+    $('.mainDiv').append('<button class="jigsawGameClueNumberOne" onclick=></button>')
+    $('.mainDiv').append('<button class="jigsawGameClueNumberTwo" onclick=></button>')
+    $('.mainDiv').append('<button class="jigsawGameClueNumberThree" onclick=></button>')
 }
 
 function screenOneAnswerTwo(){
