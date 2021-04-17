@@ -35,6 +35,11 @@ public class gameController {
         return "jigsaw";
     }
 
+
+    @RequestMapping("/intro")
+    public String gameIntro(){
+        return "intro";
+    }
 //
 //    @Autowired
 //    PlayerService playerService;

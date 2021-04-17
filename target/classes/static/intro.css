@@ -5,9 +5,23 @@
 position:relative;
     text-align: center;
 }
-#introPart1,#introPart2,#introPart3,#introPart4,#gameStart,#doorIntro{
+p{
     position: absolute;
-    top:60%;
-    left:2%;
+    top:74%;
+    left:5%;
+    width:62%
 }
+.nextButton{
+    margin-bottom: auto;
+    top: 85%;
+    left: 80%;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background: rgba(0,0,0,0.0)
+}
+#introBaseImg,#introBase2Img,#doorIntroImg,#gameStartImg{
 
+    width: 100%;
+    min-height: 100%;
+}
