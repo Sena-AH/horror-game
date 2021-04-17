@@ -32,4 +32,21 @@ $(function () {
 
 */
 
-$('.btnbackground').onclick.append('<img src=th:src="@{/images/Chuckydoorspeach.png}">');
+/*
+$('.btnbackground').onclick.append('<img src=th:src="@{/images/Chuckydoorspeach.png}">');*/
+
+/*$('.btnbackground').on("click", function(){
+    $(this).css({'background' : '@{/images/Chuckydoorspeach.png}');
+});*/
+
+/*$('.doorclick').click(function() {
+    let imageUrl =
+        '/static/images/Chuckydoorspeach.png';
+    $('.chuckymain').css("background-image", 'url(' + imageUrl + ')');
+});*/
+
+$('.doorclick').on({
+    'click': function(){
+        $('#change-image').attr('src','/images/chuckydoor.png');
+    }
+});

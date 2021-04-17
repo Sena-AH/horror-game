@@ -1,0 +1,18 @@
+.chuckymain {
+    background: url('images/chuckydoor.png');
+    max-width: 1000px;
+    min-width: 1000px;
+    min-height: 750px;
+    background-repeat: no-repeat;
+}
+
+.doorclick{
+    background-color: transparent;
+    text-decoration-color: transparent;
+    border: transparent 1px solid;
+    min-height: 390px;
+    min-width: 180px;
+    margin-top: 240px;
+    margin-left: 405px;
+
+}
