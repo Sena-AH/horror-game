@@ -13,30 +13,28 @@
     top:78%;
     left:35%;
 }
-.talkBubble2,.talkBubble3{
+.talkBubble2,p .talkBubble3{
     position:absolute;
     top:60%;
     left:70%;
 }
-.nextButton,.fightButton,.escapeButton{
+.nextBtn,.fightBtn,.escapeBtn{
+    position: absolute;
     margin-bottom: auto;
     border: none;
     cursor: pointer;
     background: rgba(0,0,0,0.0);
-    width: 55px;
+    color:transparent;
 }
 .nextBtn{
-    position: absolute;
     top: 85%;
     left: 80%;
 }
-.fightButton{
-    position: absolute;
+button .fightButton{
     top: 85%;
     left: 37%;
 }
 .escapeButton{
-    position: absolute;
     top: 85%;
     left: 52%;
 }

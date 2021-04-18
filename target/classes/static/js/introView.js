@@ -11,7 +11,7 @@ $('#gameStartImg').hide();
 document.getElementById("nextButt").addEventListener("click", clickNext);
 
 
-    $(function clickNext() {
+    function clickNext() {
 
         let baseImg1 = document.getElementById("introBaseImg").src;
         let baseImg2 = document.getElementById("introBase2Img").src;

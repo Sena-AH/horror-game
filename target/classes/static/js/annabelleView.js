@@ -3,11 +3,11 @@ document.getElementById("fightBtn").addEventListener("click", fightButton);
 document.getElementById("escapeBtn").addEventListener("click", escapeButton);
 document.getElementById("nextBtn").addEventListener("click", showScene2);
 $('.nextBtn').hide();
-
-/*showAnnabelle();
+/*
+showAnnabelle();
 function showAnnabelle() {
-    $('.annabelleDiv').append('<img class="annabelleDoor" src="images/annabelleFight/annabelleDoor.jpg">');
-    $('.annabelleDiv').append('<p class="talkBubble1">"Annabelles evil laughter is echoing in the room"</p>');
+   document.getElementById('annabelleDiv').innerHTML+='<img class="annabelleDoor" src="images/annabelleFight/annabelleDoor.jpg">';*/
+   /* $('.annabelleDiv').append('<p class="talkBubble1">"Annabelles evil laughter is echoing in the room"</p>');
     $('.annabelleDiv').prepend('<button class="fightButton" onclick=fightButton()></button>');
     $('.annabelleDiv').prepend('<button class="escapeButton" onclick=escapeButton()></button>');
 }*/
@@ -35,3 +35,4 @@ function escapeButton() {
 function showScene3() {
 
 }
+
