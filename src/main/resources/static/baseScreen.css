@@ -1,4 +1,4 @@
-.baseSizing{
+.baseDiv{
    position: relative;
 }
 .baseBackground{
@@ -30,3 +30,37 @@ button{
     cursor: pointer;
     background: rgba(0,0,0,0.0);
 }
+
+.enterLeftRoomButton{
+    background: url("/images/arrowDown");
+    background-size: 100%;
+    height: 8.7%;
+    width: 5%;
+    border: 0;
+    position: absolute;
+    transform: rotate(90deg);
+    cursor: pointer;
+    top: 55%;
+    left: 32%;
+    /*background: rgba(0,0,0,0.0);*/
+}
+
+.enterRightRoomButton{
+    background: url("/images/arrowDown");
+    background-size: 100%;
+    height: 8.7%;
+    width: 5%;
+    border: 0;
+    position: absolute;
+    transform: rotate(90deg);
+    cursor: pointer;
+    top: 55%;
+    left: 65%;
+}
+
+.doorScreenImage{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+

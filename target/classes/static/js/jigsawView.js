@@ -28,7 +28,27 @@ function enterRoomBtn(){
     mohaha.play();
     $('.mainDiv').empty();
     $('.mainDiv').append('<img class="jigsawGameScreenOne" src="images/jigsawGameScreen1.jpg">');
-    $('.mainDiv').append('<img class="nextButton" src="images/nextBtn.jpg" width="100x100">');
+    $('.mainDiv').append('<button class="nextButton" onclick=nextChatBubble()></button>');
+}
+
+function nextChatBubble(){
+    $('.mainDiv').empty();
+    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawGameScreen2.jpg">');
+    $('.mainDiv').append('<button class="nextButton" onclick=nextGameScreen()></button>');
+}
+
+function nextGameScreen(){
+    $('.mainDiv').empty();
+    setTimeout(gameOver, 60000);
+    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawGameScreen3.jpg">')
+    $('.mainDiv').append('<button class="jigsawGameClueNumberOne" onclick=></button>')
+    $('.mainDiv').append('<button class="jigsawGameClueNumberTwo" onclick=></button>')
+    $('.mainDiv').append('<button class="jigsawGameClueNumberThree" onclick=></button>')
+}
+
+function gameOver(){
+    $('.mainDiv').empty();
+    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/gameOverScreen.jpg">');
 }
 
 function screenOneAnswerTwo(){

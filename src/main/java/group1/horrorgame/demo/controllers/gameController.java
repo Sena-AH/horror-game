@@ -35,6 +35,20 @@ public class gameController {
         return "jigsaw";
     }
 
+    @RequestMapping("/intro")
+    public String gameIntro(){
+        return "intro";
+    }
+
+    @RequestMapping("/annabelle")
+    public String annabelleFight(){
+        return "annabelle";
+    }
+
+    @RequestMapping("/chucky")
+    public String chuckyFight(){
+        return "chucky";
+    }
 //
 //    @Autowired
 //    PlayerService playerService;

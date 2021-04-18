@@ -1,54 +1,60 @@
-$('#introBase2Img').hide();
+/*$('#introBase2Img').hide();
+$('#introText1').show();
 $('#introText2').hide();
 $('#introText3').hide();
 $('#introText4').hide();
 $('#doorIntroText').hide();
 $('#doorIntroImg').hide();
 $('#gameStartText').hide();
-$('#gameStartImg').hide();
+$('#gameStartImg').hide();*/
+document.getElementById("nextButt").addEventListener("click", clickNext);
+document.getElementById("nextButt2").addEventListener("click", scene2);
+/*document.getElementById("nextButt2").addEventListener("click", scene2);*/
+$('.nextButt2').hide();
 
-/*document.getElementById("introPart2").style.display="none";
-document.getElementById("introPart3").style.display="none";
-document.getElementById("introPart4").style.display="none";
-document.getElementById("doorIntro").style.display="none";
-document.getElementById("gameStart").style.display="none";
-document.getElementById("gameStartImg").style.display="none";
-document.getElementById("doorIntroImg").style.display="none";
-document.getElementById("IntroBase2").style.display="none";*/
-showText();
+function clickNext() {
+    $('.annabelleDiv').empty();
+    $('.annabelleDiv').append('<img id="introBaseImg" src="images/introImg/introBase.jpg">');
+    $('.annabelleDiv').append('<p id="introText2">Now the couple got a new mission.\n' +
+        '\n' +
+        '        A family suspects that their home is haunted by evil spirits and they are in desperate need for aid ...</p>');
+    $('.nextButt2').show();
+
+    /* $('.annabelleDiv').append('<button class="nextButt" onclick="scene1()"></button>');*/
+    /*$('.annabelleDiv').prepend('<button class="nextBtn" onclick="showScene3()"></button>');*/
+}
+function scene2(){
+    $('.annabelleDiv').empty();
+    $('.annabelleDiv').append('<img id="introBaseImg" src="images/introImg/introBase.jpg">');
+    $('.annabelleDiv').append('<p id="introText3"> This time Ed and Lorrain needs your help to defeat whatever\n' +
+        '\n' +
+        '        lurking in the poor familys home.</p>');
+    $('.nextButt2').hide();
+
+}
+    /*function clickNext() {
+
+        let baseImg1 = document.getElementById("introBaseImg").src;
+        let baseImg2 = document.getElementById("introBase2Img").src;
+        let baseImg3 = document.getElementById("gameStartImg").src;
+        let baseImg4 = document.getElementById("doorIntroImg").src;
+        let locationHref = location.href = "player";
 
 
+        if (baseImg1.includes('introBase.jpg')) {
+            document.getElementById("introText1");
+            $('introText1').hide();
 
-function showText(){
+        }
+        }*/
 
-    let baseImg1 = document.getElementById("introBaseImg").src;
-    let baseImg2 = document.getElementById("introBase2Img").src;
-    let baseImg3 = document.getElementById("gameStartImg").src;
-    /*if(onclick*/
-
-    $('introText1').hide();
-    $('introText2').show();
-
-
-   /* document.getElementById("introText2").style.display="block";
-    document.getElementById("introText1").style.display="none";
-*/    if(baseImg1.includes("introText2")) {
-        $('introText2').hide();
-        $('introText3').show();
-
-       /* document.getElementById("introText3").style.display="block";
-        document.getElementById("introText2").style.display="none";*/
-    }
-    if(baseImg1.includes("introText3")) {
+    /*if(baseImg1.includes("introText3")) {
         $('introBaseImg').hide();
         $('introText3').hide();
         $(baseImg2).show();
         $('introText4').show();
 
-        /*document.getElementById("IntroBase2Img").style.display="block";
-        document.getElementById("introText4").style.display="block";
-        document.getElementById("IntroBaseImg").style.display="none";
-        document.getElementById("introText3").style.display="none";*/
+
     }
     if(baseImg2.includes("introText4")) {
         $(baseImg2).hide();
@@ -56,25 +62,22 @@ function showText(){
         $(baseImg3).show();
         $('gameStartText').show();
 
-        /*document.getElementById("gameStartImg").style.display="block";
-        document.getElementById("gameStartText").style.display="block";
-        document.getElementById("introText4").style.display="none";*/
+
     }
 
     if(baseImg3.includes("gameStartText")) {
-        $(baseImg3).hide();
-        $('gameStartText').hide();
-        $('doorIntroImg').show();
-        $('doorIntroText').show();
-        /*document.getElementById("doorIntroImg").style.display="block";
-        document.getElementById("doorIntroText").style.display="block";
-        document.getElementById("gameStartImg").style.display="none";*/
-    }
-  /*  if(onclick) {*/
-        /*Till sist. Klickar du på den sista bilden så hänvisas du till en ny sida.*/
+        location.href = "player";
 
-    let menuSound = new sound("/mp3/menuSound.mp3");
-    menuSound.play();
+    }
+    if(locationHref.includes ("BaseScreen.jpg")){
+            $(baseImg4).show();
+            $('doorIntroText').show();
+        }
+    if(baseImg4.includes('doorIntroText')) {
+            $(baseImg4).hide();
+            $('doorIntroText').hide();
+        }
+
 }
 
 function sound(src){
@@ -90,4 +93,4 @@ function sound(src){
     this.stop = function(){
         this.sound.pause();
     }
-}
+}*/
