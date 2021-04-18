@@ -50,17 +50,32 @@ $('.btnbackground').onclick.append('<img src=th:src="@{/images/Chuckydoorspeach.
         $('#change-image').attr('src','/images/chuckydoor.png');
     }
 );*/
+document.getElementById("change-image").addEventListener("click", changeImage);
 
-document.getElementById("change-image").addEventListener("click", function (){
+function changeImage(){
+    $('.chuckymain').empty();
+    $('.chuckymain').append('<img class="chuckypic1"src="/images/Chuckydoorspeach.png">');
+    $('.chuckymain').append('<button id="fightButton" onclick=fightButtonPress()>fight</button>');
+    $('.chuckymain').append('<button id="escapeButton">escape</button>');
+}
+
+function fightButtonPress(){
+    console.log("hey");
+    $('.chuckypic1').remove();
+    // $('.chuckymain').empty();
+    $('.chuckymain').append('<img src="/images/chuckyfirstfight.jpg">');
+}
+
+/*document.getElementById("change-image").addEventListener("click", function (){
     $('.chuckymain').empty();
     $('.chuckymain').append('<img src="/images/Chuckydoorspeach.png">');
     $('.chuckymain').append('<button id="fightButton" onclick=fightScene()>fight</button>');
     $('.chuckymain').append('<button id="escapeButton">escape</button>');
-});
+});*/
 
-function fightScene(){
-    $('.chuckymain').empty();
-    $('.chuckymain').append('<img src="/images/chuckyfirstfight.jpg">');
-
-}
+// function fightScene(){
+//     $('.chuckymain').empty();
+//     $('.chuckymain').append('<img src="/images/chuckyfirstfight.jpg">');
+//
+// }
 
