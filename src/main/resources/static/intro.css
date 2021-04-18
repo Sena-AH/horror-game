@@ -5,13 +5,14 @@
 position:relative;
     text-align: center;
 }
-p{
+.container p{
     position: absolute;
     top:74%;
     left:10%;
     width:62%
 }
-.nextButt{
+#nextButt,#nextButt2{
+
     margin-bottom: auto;
     top: 85%;
     left: 80%;
