@@ -5,33 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/annabelle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/annabelle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/doorImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/introImg/doorImage.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/gameStart.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/introImg/gameStart.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/introBase.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/introImg/introBase.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/introBase2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/introImg/introBase2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/intro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/annabelle..html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/annabelle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/annabelle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/annabelle.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/annabelle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/annabelle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/IntroBase.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/IntroBase2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/doorIntro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/gameStart.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/intro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/introView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/introView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/jigsawView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/jigsawView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/playerView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/playerView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/annabelle..html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-group1.horrorgame.demo.DemoApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/group1.horrorgame.demo.DemoApplicationTests.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,17 +100,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="horror-game" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="group1.horrorgame.demo.DemoApplication" />

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http//:www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="/annabelle.css">
+
     <meta charset="UTF-8">
     <title>Annabelle Fight</title>
 </head>
 <body>
 <div class="annabelleDiv">
-    <img class="fightButton"src="images/fight_button.jpg " width="100x100">
-    <img class="escapeButton"src="images/escape_button.jpg " width="100x100">
-    <img class="nextBtn"src="images/nextBtn.jpg " width="100x100">
+    <img class="annabelleDoor" th:src="@{/images/annabelleFight/annabelleDoor.jpg}">
+    <button class="fightBtn" id="fightBtn"><img th:src="@{/images/fight_button.jpg}" width="100x100"></button>
+    <button class="escapeBtn" id="escapeBtn"><img th:src="@{/images/escape_button.jpg}" width="100x100"></button>
+    <img class="nextBtn" id="nextBtn" th:src="@{/images/nextBtn.jpg}" width="100x100">
 </div>
 <script th:src="@{webjars/jquery/3.1.1/jquery.js}"></script>
 <script th:src="@{/js/annabelleView.js}"></script>
