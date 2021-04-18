@@ -1,15 +1,32 @@
 
-$.ajax({
-    type: 'GET',
-    url: 'api/items',
-    success: function(items){
-        console.log('success', items);
-    },
-    error: function(){
-        alert('Couldnt find any items');
-    }
-})
 
+
+$(function () {
+
+
+    function addItem(item) {
+        $('body').append(
+            '<p>' + item.itemName + '<br>' + item.attackPoints + item.specialAbility + '</p>'
+        );
+    };
+
+
+    $.ajax({
+        type: 'GET',
+        url: 'api/items',
+        success: function(items){
+            console.log('success', items);
+            $.each(items, function (i, item) {
+                addItem(item);
+            });
+        },
+        error: function(){
+            alert('Couldnt find any items');
+        }
+    });
+
+
+});
 /*
 $(function () {
     let $villain = $('#villain');
@@ -76,6 +93,12 @@ function fightButtonPress(){
     $('.chuckymain').remove();
     $('body').append('<div class="chuckymain2"></div>');
     $('.chuckymain2').append('<img src="/images/chuckyitembox.jpg">');
+    $('.chuckymain2').append('<img src="/images/priest.jpg">');
+}
+
+function getItemImages(){
+
+
 }
 
 /*document.getElementById("change-image").addEventListener("click", function (){
