@@ -79,27 +79,22 @@ $('.btnbackground').onclick.append('<img src=th:src="@{/images/Chuckydoorspeach.
         $('#change-image').attr('src','/images/chuckydoor.png');
     }
 );*/
-document.getElementById("change-image").addEventListener("click", changeImage);
 
+document.getElementById("doorClickButton").addEventListener("click", changeImage);
 function changeImage(){
     $('.chuckymain').empty();
-    $('.chuckymain').append('<img class="chuckypic1"src="/images/Chuckydoorspeach.png">');
-    $('.chuckymain').append('<button id="fightButtonChucky" onclick=fightButtonPress()>fight</button>');
-    $('.chuckymain').append('<button id="escapeButtonChucky">escape</button>');
+    $('.chuckymain').append('<img class="chuckypic1"src="images/chuckydoorspeach.png">');
+    $('.chuckymain').append('<button class="fightBtn" id="fightButton" onclick="fightButtonPress()">fight</button>')
+    $('.chuckymain').append('<button class="escapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');
 }
-
 function fightButtonPress(){
-   /* $('.chuckypic1').remove();*/
-    $('.chuckymain').remove();
-    $('body').append('<div class="chuckymain2"></div>');
-    $('.chuckymain2').append('<img src="/images/chuckyitembox.jpg">');
-    $('.chuckymain2').append('<img src="/images/priest.jpg">');
+    $('.chuckymain').empty();
+    $('.chuckymain').append('<img src="/images/chuckyfirstfight.jpg">');
+}
+function escapeButtonPress(){
+    location.href = 'player';
 }
 
-function getItemImages(){
-
-
-}
 
 /*document.getElementById("change-image").addEventListener("click", function (){
     $('.chuckymain').empty();

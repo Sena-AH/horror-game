@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Chucky</title>
-
     <link rel="stylesheet" type="text/css" href="/chucky.css">
 </head>
 <body>
-
-<div class="chuckymain" id="change-image">
-   <!--<button class="btnbackground"><img id="baseImage" class="ChuckyBaseBackground" th:src="@{/images/chuckydoor.png}"></button>-->
+<div class="chuckymain" >
+    <!--<button class="btnbackground"><img id="baseImage" class="ChuckyBaseBackground" th:src="@{/images/chuckydoor.png}"></button>-->
     <img th:src="@{/images/chuckydoor.png}">
-    <button class="doorclick" >door</button>
+    <button class="doorclick" id="doorClickButton" >door</button>
 </div>
-
 
 <script th:src="@{webjars/jquery/3.1.1/jquery.js}"></script>
 <script th:src="@{/js/chuckyView.js}"></script>
