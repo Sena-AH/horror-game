@@ -1,4 +1,4 @@
-$('#introBase2Img').hide();
+/*$('#introBase2Img').hide();
 $('#introText1').show();
 $('#introText2').hide();
 $('#introText3').hide();
@@ -6,12 +6,33 @@ $('#introText4').hide();
 $('#doorIntroText').hide();
 $('#doorIntroImg').hide();
 $('#gameStartText').hide();
-$('#gameStartImg').hide();
+$('#gameStartImg').hide();*/
+document.getElementById("nextButt").addEventListener("click", clickNext);
+document.getElementById("nextButt2").addEventListener("click", scene2);
+/*document.getElementById("nextButt2").addEventListener("click", scene2);*/
+$('.nextButt2').hide();
 
-document.getElementById("nextButton").addEventListener("click", "introText2");
+function clickNext() {
+    $('.annabelleDiv').empty();
+    $('.annabelleDiv').append('<img id="introBaseImg" src="images/introImg/introBase.jpg">');
+    $('.annabelleDiv').append('<p id="introText2">Now the couple got a new mission.\n' +
+        '\n' +
+        '        A family suspects that their home is haunted by evil spirits and they are in desperate need for aid ...</p>');
+    $('.nextButt2').show();
 
+    /* $('.annabelleDiv').append('<button class="nextButt" onclick="scene1()"></button>');*/
+    /*$('.annabelleDiv').prepend('<button class="nextBtn" onclick="showScene3()"></button>');*/
+}
+function scene2(){
+    $('.annabelleDiv').empty();
+    $('.annabelleDiv').append('<img id="introBaseImg" src="images/introImg/introBase.jpg">');
+    $('.annabelleDiv').append('<p id="introText3"> This time Ed and Lorrain needs your help to defeat whatever\n' +
+        '\n' +
+        '        lurking in the poor familys home.</p>');
+    $('.nextButt2').hide();
 
-    function clickNext() {
+}
+    /*function clickNext() {
 
         let baseImg1 = document.getElementById("introBaseImg").src;
         let baseImg2 = document.getElementById("introBase2Img").src;
@@ -21,11 +42,12 @@ document.getElementById("nextButton").addEventListener("click", "introText2");
 
 
         if (baseImg1.includes('introBase.jpg')) {
+            document.getElementById("introText1");
             $('introText1').hide();
-            $('introText2').show();
 
         }
-    }
+        }*/
+
     /*if(baseImg1.includes("introText3")) {
         $('introBaseImg').hide();
         $('introText3').hide();
