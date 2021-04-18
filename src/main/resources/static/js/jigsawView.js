@@ -39,11 +39,38 @@ function nextChatBubble(){
 
 function nextGameScreen(){
     $('.mainDiv').empty();
-    setTimeout(gameOver, 60000);
+    setTimeout(gameOver, 30000);
     $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawGameScreen3.jpg">')
-    $('.mainDiv').append('<button class="jigsawGameClueNumberOne" onclick=></button>')
-    $('.mainDiv').append('<button class="jigsawGameClueNumberTwo" onclick=></button>')
-    $('.mainDiv').append('<button class="jigsawGameClueNumberThree" onclick=></button>')
+    $('.mainDiv').append('<button class="jigsawGameClueNumberOne" onclick=clueOne()></button>')
+    $('.mainDiv').append('<button class="jigsawGameClueNumberTwo" onclick=clueTwo()></button>')
+    $('.mainDiv').append('<button class="jigsawGameClueNumberThree" onclick=clueThree()></button>')
+    $('.mainDiv').append('<button class="enterKeycodeButton" onclick=enterKeycode()></button>')
+}
+
+function enterKeycode(){
+    $('.enterKeycodeButton').remove();
+    $('.mainDiv').append('<button class="keyCodeSubmit" onclick=keycodeGenerator()></button>')
+}
+
+function keycodeGenerator(){
+    $('.mainDiv').append();
+}
+
+function clueOne(){
+    $('.clueOne').remove();
+    $('.mainDiv').append('<button class="clueOne"></button>')
+}
+
+function clueTwo(){
+    $('.clueTwo').remove();
+    $('.mainDiv').append('<button class="clueTwo"></button>')
+
+}
+
+function clueThree(){
+    $('.clueThree').remove();
+    $('.mainDiv').append('<button class="clueThree"></button>')
+
 }
 
 function gameOver(){
