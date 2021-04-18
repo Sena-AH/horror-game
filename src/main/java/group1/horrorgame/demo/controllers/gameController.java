@@ -44,6 +44,11 @@ public class gameController {
     public String annabelleFight(){
         return "annabelle";
     }
+
+    @RequestMapping("/chucky")
+    public String chuckyFight(){
+        return "chucky";
+    }
 //
 //    @Autowired
 //    PlayerService playerService;
