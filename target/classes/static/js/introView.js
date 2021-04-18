@@ -30,7 +30,7 @@ function scene2(){
         '\n' +
         '        lurking in the poor familys home.</p>');
     $('.nextButt2').hide();
-    
+
 }
     /*function clickNext() {
 
