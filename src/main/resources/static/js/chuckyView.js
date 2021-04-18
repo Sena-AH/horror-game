@@ -55,8 +55,8 @@ document.getElementById("change-image").addEventListener("click", changeImage);
 function changeImage(){
     $('.chuckymain').empty();
     $('.chuckymain').append('<img class="chuckypic1"src="/images/Chuckydoorspeach.png">');
-    $('.chuckymain').append('<button id="fightButton" onclick=fightButtonPress()>fight</button>');
-    $('.chuckymain').append('<button id="escapeButton">escape</button>');
+    $('.chuckymain').append('<button id="fightButtonChucky" onclick=fightButtonPress()>fight</button>');
+    $('.chuckymain').append('<button id="escapeButtonChucky">escape</button>');
 }
 
 function fightButtonPress(){
