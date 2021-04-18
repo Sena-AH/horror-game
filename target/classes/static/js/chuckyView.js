@@ -1,3 +1,15 @@
+
+$.ajax({
+    type: 'GET',
+    url: 'api/items',
+    success: function(items){
+        console.log('success', items);
+    },
+    error: function(){
+        alert('Couldnt find any items');
+    }
+})
+
 /*
 $(function () {
     let $villain = $('#villain');
@@ -55,15 +67,15 @@ document.getElementById("change-image").addEventListener("click", changeImage);
 function changeImage(){
     $('.chuckymain').empty();
     $('.chuckymain').append('<img class="chuckypic1"src="/images/Chuckydoorspeach.png">');
-    $('.chuckymain').append('<button id="fightButton" onclick=fightButtonPress()>fight</button>');
-    $('.chuckymain').append('<button id="escapeButton">escape</button>');
+    $('.chuckymain').append('<button id="fightButtonChucky" onclick=fightButtonPress()>fight</button>');
+    $('.chuckymain').append('<button id="escapeButtonChucky">escape</button>');
 }
 
 function fightButtonPress(){
-    console.log("hey");
    /* $('.chuckypic1').remove();*/
-    $('.chuckymain').empty();
-    $('.chuckymain').append('<img src="/images/chuckyfirstfight.jpg">');
+    $('.chuckymain').remove();
+    $('body').append('<div class="chuckymain2"></div>');
+    $('.chuckymain2').append('<img src="/images/chuckyitembox.jpg">');
 }
 
 /*document.getElementById("change-image").addEventListener("click", function (){
