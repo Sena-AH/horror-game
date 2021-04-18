@@ -5,8 +5,9 @@
 position:relative;
     text-align: center;
 }
-#introPart1{
+#introPart1,#introPart2,#introPart3,#introPart4,#gameStart,#doorIntro{
     position: absolute;
     top:60%;
     left:2%;
 }
+

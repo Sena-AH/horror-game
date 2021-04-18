@@ -45,8 +45,22 @@ $('.btnbackground').onclick.append('<img src=th:src="@{/images/Chuckydoorspeach.
     $('.chuckymain').css("background-image", 'url(' + imageUrl + ')');
 });*/
 
-$('.doorclick').on({
-    'click': function(){
+/*$('.doorclick').on(
+    'click', function(){
         $('#change-image').attr('src','/images/chuckydoor.png');
     }
+);*/
+
+document.getElementById("change-image").addEventListener("click", function (){
+    $('.chuckymain').empty();
+    $('.chuckymain').append('<img src="/images/Chuckydoorspeach.png">');
+    $('.chuckymain').append('<button id="fightButton" onclick=fightScene()>fight</button>');
+    $('.chuckymain').append('<button id="escapeButton">escape</button>');
 });
+
+function fightScene(){
+    $('.chuckymain').empty();
+    $('.chuckymain').append('<img src="/images/chuckyfirstfight.jpg">');
+
+}
+
