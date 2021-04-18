@@ -5,33 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/controllers/gameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/annabelle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/annabelle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/doorImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/introImg/doorImage.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/gameStart.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/introImg/gameStart.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/introBase.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/introImg/introBase.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/introBase2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/introImg/introBase2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene5.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/annabelle..html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/annabelle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/introView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/introView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/annabelle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/annabelle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/intro.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/annabelle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/annabelle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/IntroBase.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/IntroBase2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/doorIntro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/gameStart.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/annabelleView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/annabelleView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/introView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/introView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jigsawView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/jigsawView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/playerView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/playerView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/annabelle..html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/annabelle.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/annabelle.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,11 +92,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/images/introImg" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/mp3" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -119,13 +107,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,6 +167,7 @@
       <workItem from="1618515557756" duration="348000" />
       <workItem from="1618558310472" duration="4861000" />
       <workItem from="1618595029057" duration="467000" />
+      <workItem from="1618733343165" duration="6277000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>

@@ -8,7 +8,7 @@ $('#doorIntroImg').hide();
 $('#gameStartText').hide();
 $('#gameStartImg').hide();
 
-document.getElementById("nextButton").addEventListener("click", clickNext);
+document.getElementById("nextButt").addEventListener("click", clickNext);
 
 
     function clickNext() {
@@ -21,11 +21,12 @@ document.getElementById("nextButton").addEventListener("click", clickNext);
 
 
         if (baseImg1.includes('introBase.jpg')) {
+            document.getElementById("introText1");
             $('introText1').hide();
-            $('introText2').show();
 
         }
-    }
+        }
+
     /*if(baseImg1.includes("introText3")) {
         $('introBaseImg').hide();
         $('introText3').hide();

@@ -1,4 +1,4 @@
-.annabelleDiv{
+#annabelleDiv{
     font-family: Castellar;
     color:white;
     position:relative;
@@ -22,7 +22,8 @@
     margin-bottom: auto;
     border: none;
     cursor: pointer;
-    background: rgba(0,0,0,0.0)
+    background: rgba(0,0,0,0.0);
+    width: 55px;
 }
 .nextBtn{
     position: absolute;

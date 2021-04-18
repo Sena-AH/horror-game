@@ -8,10 +8,10 @@ $('#doorIntroImg').hide();
 $('#gameStartText').hide();
 $('#gameStartImg').hide();
 
-document.getElementById("nextButton").addEventListener("click", clickNext);
+document.getElementById("nextButt").addEventListener("click", clickNext);
 
 
-    function clickNext() {
+    $(function clickNext() {
 
         let baseImg1 = document.getElementById("introBaseImg").src;
         let baseImg2 = document.getElementById("introBase2Img").src;
@@ -21,11 +21,12 @@ document.getElementById("nextButton").addEventListener("click", clickNext);
 
 
         if (baseImg1.includes('introBase.jpg')) {
+            document.getElementById("introText1");
             $('introText1').hide();
-            $('introText2').show();
 
         }
-    }
+        }
+
     /*if(baseImg1.includes("introText3")) {
         $('introBaseImg').hide();
         $('introText3').hide();
