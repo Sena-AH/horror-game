@@ -4,12 +4,68 @@ $.ajax({
     url: 'api/items',
     success: function(items){
         console.log('success', items);
+        $.each(items, function (i, item) {
+            addItem(item);
+            });
     },
     error: function(){
         alert('Couldnt find any items');
     }
 })
 
+$(function () {
+    let $items =
+        $('#items');
+
+    let $item_name =
+        $('#item_name');
+
+    let $id =
+        $('#id');
+
+    let $attack_points =
+        $('#attack_points');
+
+    let $special_ability =
+        $('#special_ability');
+
+
+    function addItem(item) {
+        $items.append(
+            '<tr>' +
+            '<td><span class="item_name">' +
+            item.item_name + '</span><input class="edit item_name"></td>'
+            +
+            '<td><span class="id">' +
+            item.id + '</span><input class="edit id"></td>'
+            +
+
+
+            '<td><button class="btn remove" data-id='
+            + animal.id +
+            '>Ta bort</button></td>' +
+
+
+            '<td><button class="btn editAnimal noEdit" data-id="'
+            + animal.id +
+            '">Ändra</button>' +
+
+
+            '<button class="btn saveEdit edit" data-id="'
+            + animal.id +
+            '">Spara</button>' +
+
+
+            '<button class="btn cancelEdit edit">Avbryt</button></td>'
+            +
+
+
+            '</tr>'
+        );
+
+
+    }
+}
 /*
 $(function () {
     let $villain = $('#villain');
