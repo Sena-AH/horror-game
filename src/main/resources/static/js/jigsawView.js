@@ -39,10 +39,16 @@ function nextChatBubble(){
 
 function nextGameScreen(){
     $('.mainDiv').empty();
+    setTimeout(gameOver, 60000);
     $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawGameScreen3.jpg">')
     $('.mainDiv').append('<button class="jigsawGameClueNumberOne" onclick=></button>')
     $('.mainDiv').append('<button class="jigsawGameClueNumberTwo" onclick=></button>')
     $('.mainDiv').append('<button class="jigsawGameClueNumberThree" onclick=></button>')
+}
+
+function gameOver(){
+    $('.mainDiv').empty();
+    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/gameOverScreen.jpg">');
 }
 
 function screenOneAnswerTwo(){
