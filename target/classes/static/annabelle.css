@@ -1,4 +1,4 @@
-#annabelleDiv{
+.annabelleDiv {
     font-family: Castellar;
     color:white;
     position:relative;
@@ -10,8 +10,8 @@
 }
 .talkBubble1{
     position:absolute;
-    top:78%;
-    left:35%;
+    top:11%;
+    left:73%;
 }
 .talkBubble2,.talkBubble3{
     position:absolute;
@@ -28,11 +28,11 @@
 }
 .nextBtn{
     background: url("/images/nextBtn.jpg");
-    top: 85%;
-    left: 80%;
+    top: 94%;
+    left: 77%;
     background-size: 100%;
-    width: 6%;
-    height: 4.7%;
+    width: 9%;
+    height: 8.7%;
     border: 0;
     position: absolute;
     cursor: pointer;

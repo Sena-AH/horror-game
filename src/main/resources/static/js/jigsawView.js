@@ -19,7 +19,7 @@ function startJigsaw(){
 
 function screenOneAnswerOne(){
     $('.mainDiv').empty();
-    $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawScreenAnswer1Screen2.jpg">');
+    $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawScreenAnswer1Screen2.jpg">');
     $('.mainDiv').append('<button class="enterRoomButton" onclick="enterRoomBtn()"></button>');
 }
 
@@ -27,20 +27,20 @@ function enterRoomBtn(){
     let mohaha = new sound("/mp3/jigsawEvilLaugh.mp3");
     mohaha.play();
     $('.mainDiv').empty();
-    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="images/jigsawGameScreen1.jpg">');
+    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="images/jigsawFight/jigsawGameScreen1.jpg">');
     $('.mainDiv').append('<button class="nextButton" onclick=nextChatBubble()></button>');
 }
 
 function nextChatBubble(){
     $('.mainDiv').empty();
-    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawGameScreen2.jpg">');
+    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawFight/jigsawGameScreen2.jpg">');
     $('.mainDiv').append('<button class="nextButton" onclick=nextGameScreen()></button>');
 }
 
 function nextGameScreen(){
     $('.mainDiv').empty();
     setTimeout(gameOver, 30000);
-    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawGameScreen3.jpg">')
+    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawFight/jigsawGameScreen3.jpg">')
     $('.mainDiv').append('<button class="jigsawGameClueNumberOne" onclick=clueOne()></button>')
     $('.mainDiv').append('<button class="jigsawGameClueNumberTwo" onclick=clueTwo()></button>')
     $('.mainDiv').append('<button class="jigsawGameClueNumberThree" onclick=clueThree()></button>')
@@ -75,7 +75,7 @@ function clueThree(){
 
 function gameOver(){
     $('.mainDiv').empty();
-    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/gameOverScreen.jpg">');
+    $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawFight/gameOverScreen.jpg">');
 }
 
 function screenOneAnswerTwo(){
