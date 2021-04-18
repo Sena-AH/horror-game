@@ -1,5 +1,5 @@
 .chuckymain {
-    background: url('images/chuckydoor.png');
+  /*  background: url('images/chuckydoor.png');*/
     max-width: 1000px;
     min-width: 1000px;
     min-height: 750px;
@@ -24,7 +24,7 @@
     border: black 1px solid;
     min-height: 100px;
     min-width: 100px;
-    /*margin-top: 350px;*/
+    margin-top: 350px;
     margin-left: 300px;
 
 }

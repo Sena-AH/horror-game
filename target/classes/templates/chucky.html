@@ -10,12 +10,12 @@
 
 <div class="chuckymain" id="change-image">
    <!--<button class="btnbackground"><img id="baseImage" class="ChuckyBaseBackground" th:src="@{/images/chuckydoor.png}"></button>-->
-   <!-- <img src="/images/chuckydoor.png" >-->
+    <img th:src="@{/images/chuckydoor.png}">
     <button class="doorclick" >door</button>
 </div>
 
 
-<script th:src="@{/js/chuckyView.js}"></script>
 <script th:src="@{webjars/jquery/3.1.1/jquery.js}"></script>
+<script th:src="@{/js/chuckyView.js}"></script>
 </body>
 </html>

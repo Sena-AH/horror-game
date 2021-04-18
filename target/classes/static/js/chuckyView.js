@@ -61,8 +61,8 @@ function changeImage(){
 
 function fightButtonPress(){
     console.log("hey");
-    $('.chuckypic1').remove();
-    // $('.chuckymain').empty();
+   /* $('.chuckypic1').remove();*/
+    $('.chuckymain').empty();
     $('.chuckymain').append('<img src="/images/chuckyfirstfight.jpg">');
 }
 
