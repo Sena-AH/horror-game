@@ -6,6 +6,9 @@ document.getElementById("arrRight").addEventListener("click", right);
 function startmusic(){
     backgroundMusic.play();
 }
+function pausemusic(){
+    backgroundMusic.stop();
+}
 
 function down(){
     // backgroundMusic.play();
@@ -27,7 +30,7 @@ function right(){
 }
 
 function changeLocation(thePath){
-    startmusic()
+    pausemusic();
     location.href= thePath;
 }
 

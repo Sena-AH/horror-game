@@ -8,10 +8,10 @@ position:relative;
 p{
     position: absolute;
     top:74%;
-    left:5%;
+    left:10%;
     width:62%
 }
-.nextButton{
+.nextButt{
     margin-bottom: auto;
     top: 85%;
     left: 80%;
