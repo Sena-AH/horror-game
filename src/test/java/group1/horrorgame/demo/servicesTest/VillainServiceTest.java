@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentMatchers;
 import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,7 +69,7 @@ class VillainServiceTest {
     @Test
     void addVillain_ShouldAddVillainAndReturnCorrectName() {
         VillainDTO villainDTOFromDatabase = new VillainDTO(1, "Chucky", 10, "Knife skills", "7", "Annabelle");
-        Villain newVillain = new Villain(null, "Chucky", 10, "Knife skills", "7", "Annabelle");
+        Villain newVillain = new Villain(0, "Chucky", 10, "Knife skills", "7", "Annabelle");
 
         Mockito.when(villainDAO.addVillain(ArgumentMatchers.any(VillainDTO.class))).thenReturn(villainDTOFromDatabase);
         Villain createdVillain = villainService.addVillain(newVillain);
@@ -96,7 +97,7 @@ class VillainServiceTest {
     @Test
     void deleteVillain_ShouldNotInvokeAddVillain() {
         villainService.deleteVillain(1);
-        Mockito.verify(villainDAO, Mockito.times(0)).addVillain(new VillainDTO(null, null, null,null,null,null));
+        Mockito.verify(villainDAO, Mockito.times(0)).addVillain(new VillainDTO(0, null, 0,null,null,null));
     }
 
 

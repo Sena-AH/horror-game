@@ -70,7 +70,7 @@ class PlayerServiceTest{
     @Test
     void addPlayer_ShouldAddPlayerAndReturnCorrectName() {
         PlayerDTO playerDTOFromDatabase = new PlayerDTO(1, "Sena", 10, "9", 3, 2, 4, 10 );
-        Player newPlayer = new Player(null, "Sena", 10, "9", 3, 2, 4, 10 );
+        Player newPlayer = new Player(0, "Sena", 10, "9", 3, 2, 4, 10 );
 
         Mockito.when(playerDAO.addPlayer(ArgumentMatchers.any(PlayerDTO.class))).thenReturn(playerDTOFromDatabase);
         Player createdPlayer = playerService.addPlayer(newPlayer);
@@ -98,7 +98,7 @@ class PlayerServiceTest{
     @Test
     void deletePlayer_ShouldNotInvokeAddVillain() {
         playerService.deletePlayer(1);
-        Mockito.verify(playerDAO, Mockito.times(0)).addPlayer(new PlayerDTO(null, null, null,null,null,null,null, null));
+        Mockito.verify(playerDAO, Mockito.times(0)).addPlayer(new PlayerDTO(0, null, 0,null,0,0,0, 0));
     }
 
 
