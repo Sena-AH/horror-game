@@ -129,7 +129,9 @@ function screenTwoAnswerThree(){
 
 
 function screenThreeAnswerOne(){
-
+    $('.mainDiv').empty();
+    $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawDistractedScreen.jpg">');
+    $('.mainDiv').append('<button id="escapeScreenFourBtn" class="escapeScreenFourButton" onclick=changeLocation("player")></button>')
 }
 function screenThreeAnswerTwo(){
     $('.mainDiv').empty();
@@ -138,11 +140,29 @@ function screenThreeAnswerTwo(){
     $('.mainDiv').append('<button id="question2BtnScreen4" class="question2ButtonScreen4" onclick="questionTwoScreenFour()"></button>')
 }
 function screenThreeAnswerThree(){
+    $('.mainDiv').empty();
+    $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawShocked.jpg">');
+    $('.mainDiv').append('<button id="howDoIWinBtn" class="howDoIWinButton" onclick=""></button>')
+    $('.mainDiv').append('<button id="escapeTrickBtn" class="escapeTrickButton" onclick=changeLocation("player")></button>')
 
 }
 function questionOneScreenFour(){
     $('.mainDiv').empty();
     $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawScreenFive.jpg">');
+    $('.mainDiv').append('<button id="question1BtnScreen5" class="question1ButtonScreen5" onclick="questionOneScreenFive()"></button>')
+    $('.mainDiv').append('<button id="question2BtnScreen5" class="question2ButtonScreen5" onclick="questionTwoScreenFive()"></button>')
+
+}
+function questionTwoScreenFive(){
+    $('.mainDiv').empty();
+    $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawBikesCrying2.jpg">');
+    $('.mainDiv').append('<button id="enterRoomBtn" class="enterRoomButton" onclick=changeLocation("player")></button>')
+}
+
+function questionOneScreenFive(){
+    $('.mainDiv').empty();
+    $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawBikesCrying.jpg">');
+    $('.mainDiv').append('<button id="enterRoomBtn" class="enterRoomButton" onclick=changeLocation("player")></button>')
 }
 function questionTwoScreenFour(){
     $('.mainDiv').empty();

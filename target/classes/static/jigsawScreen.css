@@ -282,3 +282,59 @@
     top: 79%;
     left: 25%;
 }
+
+.question1ButtonScreen5{
+    background: url("/images/jigsawFight/jigsawQuestion1Screen5.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 76%;
+    left: 25%;
+}
+.question2ButtonScreen5{
+    background: url("/images/jigsawFight/jigsawQuestion2Screen5.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 83%;
+    left: 25%;
+}
+.escapeScreenFourButton{
+    background: url("/images/jigsawFight/jigsawEscapeDistracted.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 83%;
+    left: 25%;
+}
+.howDoIWinButton{
+    background: url("/images/jigsawFight/jigsawHowDoIWin.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 76%;
+    left: 25%;
+}
+.escapeTrickButton{
+    background: url("/images/jigsawFight/jigsawEscapeTrick.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 83%;
+    left: 25%;
+}
