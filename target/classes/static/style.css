@@ -7,7 +7,7 @@
     width: 100%;
     min-height: 100%;
 }
-button{
+.resumeBtn{
     position: absolute;
     border: none;
     cursor: pointer;

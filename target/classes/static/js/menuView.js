@@ -1,7 +1,7 @@
 
-document.getElementById("resumeButton").addEventListener("click", resumeButton);
-document.getElementById("startButton").addEventListener("click", startButton);
-document.getElementById("exitButton").addEventListener("click", exitButton);
+document.getElementById("resumeBtn").addEventListener("click", resumeButton);
+document.getElementById("startBtn").addEventListener("click", startButton);
+document.getElementById("exitBtn").addEventListener("click", exitButton);
 
 playSound();
 
