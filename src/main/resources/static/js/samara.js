@@ -5,6 +5,8 @@ $(function() {
 
     let playerItems = [];
 
+
+
     $.ajax({
         type: 'GET',
         url: 'api/items',
@@ -29,19 +31,21 @@ $(function() {
 
     setTimeout(function () {
         $('.mainDiv').empty();
-        $('.mainDiv').append('<img src="/images/fight_1_samara.jpg">');
+        $('.mainDiv').append('<img id="fightSamara" src="/images/fight_1_samara.jpg">');
         $('.mainDiv').append('<p id="greeting">A wild Samara appeared "YOU CANT RUN FROM ME!!" <br>Click fight to hurt her or escape to run</p>');
         $('.mainDiv').append('<button id="fightButton">FIGHT</button>');
         $('.mainDiv').append('<button id="escapeButton">ESCAPE</button>');
         $('.mainDiv').append('<button class ="itemButton "id="itemButton">ITEMS</button>');
+        $('.mainDiv').append('<div id="itemDiv"></div>')
     }, 1500);
 
 
 
     $(document).on("click", '.itemButton', function () {
-        $('.mainDiv').append('<div id="itemDiv"></div>');
+        $('#itemDiv').style.display = "initial";
         playerItems.forEach(function (item) {
             console.log(item);
+            $('#itemDiv').background = "grey";
             if (item === "Priest") {
                 $('#itemDiv').append('<img class="itemImage" src="/images/priest.jpg">')
             } //else if (playerItems === "Garlic") {
