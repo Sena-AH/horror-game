@@ -1,5 +1,5 @@
 
-.indexMainDiv{
+.indexMainDiv,.playerDiv{
     position: relative;
 }
 .menuImg{
@@ -12,6 +12,20 @@
     border: none;
     cursor: pointer;
     background: rgba(0,0,0,0.0);
+}
+table tr .edit {
+    position: absolute;
+    display: none;
+}
+
+table tr.edit .edit {
+    position: absolute;
+    display: initial;
+}
+
+table tr.edit .noEdit {
+    position: absolute;
+    display: none;
 }
 
 
