@@ -1,6 +1,62 @@
 
 
 
+$(function() {
+
+    let playerItems = [];
+
+    $.ajax({
+        type: 'GET',
+        url: 'api/items',
+        success: function (items) {
+            console.log('success', items);
+            $.each(items, function (i, item) {
+                addItem(item);
+            });
+        },
+        error: function () {
+            alert('Couldnt find any items');
+        }
+    });
+
+    function addItem(item) {
+
+        console.log(item.itemName);
+        let itemName = item.itemName;
+        playerItems.push(itemName);
+
+    }
+
+    setTimeout(function () {
+        $('.mainDiv').empty();
+        $('.mainDiv').append('<img src="/images/fight_1_samara.jpg">');
+        $('.mainDiv').append('<p id="greeting">A wild Samara appeared "YOU CANT RUN FROM ME!!" <br>Click fight to hurt her or escape to run</p>');
+        $('.mainDiv').append('<button id="fightButton">FIGHT</button>');
+        $('.mainDiv').append('<button id="escapeButton">ESCAPE</button>');
+        $('.mainDiv').append('<button class ="itemButton "id="itemButton">ITEMS</button>');
+    }, 1500);
+
+
+
+    $('.itemButton').on("click", function ()     {
+        $('.mainDiv').append('<div id="itemDiv"></div>');
+        playerItems.forEach(function (item) {
+            console.log(item);
+            if (item == "priest") {
+                $('#itemDiv').append('<img src="/images/priest.jpg>"')
+            } //else if (playerItems === "Garlic") {
+            //     $('#itemDiv').append('img 2');
+            // }
+            });
+    });
+
+
+
+});
+
+
+
+/*
 $(function()    {
     document.getElementById("samaraWell").style.display = "none";
     document.getElementById("winnerFrame").style.display = "none";
@@ -106,8 +162,4 @@ function escapeMessage()    {
 
 function backToCorridor()   {
 
-}
-
-
-
-
+}*/

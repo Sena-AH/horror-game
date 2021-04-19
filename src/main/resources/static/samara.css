@@ -57,32 +57,57 @@
     left: 180px;
 }
 
-#greeting   {
-    font-size: 1em;
-    color: white;
+#itemDiv img    {
+    max-width: 60px;
+    max-height: 80px;
     position: absolute;
-    top: 350px;
-    left: 205px;
+    top: 400px;
+    left: 650px;
+}
+
+button  {
+    background: grey;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    color: #d2d2d2;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:550;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#greeting   {
+    font-size: 1.1em;
+    color: #d2d2d2;
+    position: absolute;
+    font-weight: 500;
+    top: 386px;
+    left: 225px;
 }
 
 #fightButton   {
     position: absolute;
-    top: 425px;
-    left: 250px;
-    height: 20px;
-    width: 55px;
-}
-
-button  {
-    cursor: pointer;
+    top: 471px;
+    left: 320px;
 }
 
 #escapeButton   {
     position: absolute;
-    top: 425px;
-    left: 350px;
-    height: 20px;
-    width: 70px;
+    top: 471px;
+    left: 415px;
+}
+
+#itemButton     {
+    position: absolute;
+    top: 471px;
+    left: 525px;
 }
 
 .redHeart   {
@@ -110,5 +135,17 @@ button  {
     position: absolute;
     top: 391px;
     left: 122px;
+}
+
+.samaraBase {
+    min-width: 1000px;
+    max-width: 1050px;
+    min-height: 1000px;
+    max-height: 1050px;
+}
+
+img {
+    max-width: 900px;
+    max-height: 900px;
 }
 
