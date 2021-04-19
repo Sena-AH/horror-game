@@ -40,9 +40,10 @@ function sound(src) {
 
 $(function () {
     let $players = $('#players');
+    let $name = $('#name');
 
     function addPlayer(player) {
-        menuMusic();
+
         $players.append(
             '<tr>'+ '<td><span class="addPlayer">' + player.name + '</span><input class="editPlayerName"></td>'+'<tr>'
             /*'<td><span class="type noEdit">' + animal.type + '</span><input class="edit type"></td>' +
@@ -55,6 +56,7 @@ $(function () {
     }
 
 $('#add-player').on('click', function () {
+    menuMusic();
     let player = {
         name: $name.val()
     };
@@ -75,6 +77,7 @@ $('#add-player').on('click', function () {
         }
     });
 });
+    document.getElementById("name").value="";
 });
 
 

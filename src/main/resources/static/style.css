@@ -7,11 +7,32 @@
     width: 100%;
     min-height: 100%;
 }
-.resumeBtn{
+.indexMainDiv button{
     position: absolute;
     border: none;
     cursor: pointer;
     background: rgba(0,0,0,0.0);
+}
+.startBtn{
+    top:65%;
+    left:47%;
+}
+.resumeBtn{
+    top:71%;
+    left:47%;
+}
+.exitBtn{
+    top:78%;
+    left:47%;
+}
+.playerDiv{
+    position: absolute;
+    top:45%;
+    right:36%;
+    color:white;
+}
+.btn-info{
+    right:20%;
 }
 table tr .edit {
     position: absolute;
