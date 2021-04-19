@@ -54,26 +54,26 @@ function changeImage(){
 function fightButtonPress(){
     $('.chuckymain').empty();
     $('.chuckymain').append('<img src="/images/chuckyfight1.jpg">');
-    $('.chuckymain').append('<button class="chuckyitemBtn" id="itemButton" onclick="itemButtonPress()">items</button>');
-    $('.chuckymain').append('<button class="chuckyactBtn" id="actButton" onclick="actButtonPress()">act</button>');
-    $('.chuckymain').append('<button class="chuckyescapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');
+    $('.chuckymain').append('<button class="chuckyitemBtn chuckyfirstfightpageitemBtn" id="itemButton" onclick="itemButtonPress()">items</button>');
+    $('.chuckymain').append('<button class="chuckyactBtn chuckyfirstfightpageactBtn" id="actButton" onclick="actButtonPress()">act</button>');
+    $('.chuckymain').append('<button class="chuckyescapeBtn chuckyfirstfightpageescapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');
 }
 
 function itemButtonPress(){
     $('.chuckymain').empty();
-    $('.chuckymain').append('<img src="/images/chuckyfightitems.jpg">');
-    $('.chuckymain').append('<button class="chuckyitemBtn" id="itemButton" onclick="itemButtonPress()">items</button>');
-    $('.chuckymain').append('<button class="chuckyactBtn" id="actButton" onclick="actButtonPress()">act</button>');
-    $('.chuckymain').append('<button class="chuckyescapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');
+    $('.chuckymain').append('<img src="/images/chuckyfightitems.jpg" class="chuckyFightItemImage">');
+    $('.chuckymain').append('<button class="chuckyitemBtn itempageitemBtn" id="itemButton" onclick="itemButtonPress()">items</button>');
+    $('.chuckymain').append('<button class="chuckyactBtn itempageactBtn" id="actButton" onclick="actButtonPress()">act</button>');
+    $('.chuckymain').append('<button class="chuckyescapeBtn itempageescapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');
 
 }
 
 function actButtonPress(){
     $('.chuckymain').empty();
     $('.chuckymain').append('<img src="/images/chuckyfightact.jpg">');
-    $('.chuckymain').append('<button class="chuckyitemBtn" id="itemButton" onclick="itemButtonPress()">items</button>');
-    $('.chuckymain').append('<button class="chuckyactBtn" id="actButton" onclick="actButtonPress()">act</button>');
-    $('.chuckymain').append('<button class="chuckyescapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');
+    $('.chuckymain').append('<button class="chuckyitemBtn actpageitemBtn" id="itemButton" onclick="itemButtonPress()">items</button>');
+    $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn" id="actButton" onclick="actButtonPress()">act</button>');
+    $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');
 
 }
 

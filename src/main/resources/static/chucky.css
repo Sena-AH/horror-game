@@ -18,40 +18,100 @@
 }
 .fightBtn{
     position: absolute;
-    background-color: darkslateblue;
+    top: 655px;
+    left: 361px;
+    background-color:transparent;
     color: transparent;
     border: 0;
-    min-height: 100px;
-    min-width: 100px;
-    margin-top: 120px;
-    margin-left: 380px;
+    min-height: 50px;
+    min-width: 134px;
 }
 .escapeBtn{
     position: absolute;
-    background-color: lightsteelblue;
+    top: 655px;
+    left: 522px;
+    background-color:transparent;
     color: transparent;
     border: 0;
-    min-height: 100px;
-    min-width: 100px;
-    margin-top: 120px;
-    margin-left: 540px;
+    min-height: 50px;
+    min-width: 132px;
 }
 
 .chuckyitemBtn{
     position: absolute;
-    min-height: 100px;
-    min-width: 100px;
+    top: 678px;
+    left: 356px;
+    border: 0;
+    color: transparent;
+    background-color: transparent;
+    min-height: 40px;
+    min-width: 141px;
 }
 
 .chuckyactBtn{
     position: absolute;
-    min-height: 100px;
-    min-width: 100px;
+    top: 686px;
+    left: 530px;
+    border: 0;
+    color: transparent;
+    background-color: transparent;
+    min-height: 42px;
+    min-width: 141px;
 }
 
 .chuckyescapeBtn{
     position: absolute;
-    min-height: 100px;
-    min-width: 100px;
+    top: 686px;
+    left: 705px;
+    border: 0;
+    color: transparent;
+    background-color: transparent;
+    min-height: 41px;
+    min-width: 165px;
 
+}
+
+.chuckyfirstfightpageitemBtn{
+    top: 664px;
+    left: 439px;
+}
+
+.chuckyfirstfightpageactBtn{
+    top: 661px;
+    left: 614px;
+}
+
+.chuckyfirstfightpageescapeBtn{
+    top: 661px;
+    left: 788px;
+}
+
+.itempageitemBtn{
+    top: 667px;
+    left: 409px;
+}
+
+.itempageactBtn{
+    top: 665px;
+    left: 582px;
+}
+
+.itempageescapeBtn{
+    top: 666px;
+    left: 756px;
+}
+
+.actpageitemBtn{
+    top: 688px;
+    left: 356px;
+}
+
+.actpageactBtn{
+    top: 686px;
+    left: 530px;
+}
+
+.actpageescapeBtn{
+    top: 686px;
+    left: 705px;
 }
