@@ -1,5 +1,18 @@
-h1{
-    color: green;
+
+.indexMainDiv{
+    position: relative;
 }
+.menuImg{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+.resumeBtn{
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background: rgba(0,0,0,0.0);
+}
+
 
 
