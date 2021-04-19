@@ -1,4 +1,4 @@
-.annabelleDiv{
+.annabelleDiv {
     font-family: Castellar;
     color:white;
     position:relative;
@@ -10,33 +10,38 @@
 }
 .talkBubble1{
     position:absolute;
-    top:78%;
-    left:35%;
+    top:11%;
+    left:73%;
 }
 .talkBubble2,.talkBubble3{
     position:absolute;
     top:60%;
     left:70%;
 }
-.nextButton,.fightButton,.escapeButton{
-    margin-bottom: auto;
+#fightBtn,#escapeBtn{
+    position: absolute;
+   /* margin-bottom: auto;*/
     border: none;
     cursor: pointer;
     background: rgba(0,0,0,0.0);
-    width: 55px;
+
 }
 .nextBtn{
+    background: url("/images/nextBtn.jpg");
+    top: 94%;
+    left: 77%;
+    background-size: 100%;
+    width: 9%;
+    height: 8.7%;
+    border: 0;
     position: absolute;
-    top: 85%;
-    left: 80%;
+    cursor: pointer;
 }
 .fightButton{
-    position: absolute;
     top: 85%;
     left: 37%;
 }
 .escapeButton{
-    position: absolute;
     top: 85%;
     left: 52%;
 }
