@@ -161,3 +161,124 @@
     top: 55%;
     left: 30%;
 }
+
+.keycodeGenerator{
+    position: absolute;
+    left: 22%;
+    top: 45%;
+    width: 20%;
+    min-height: 5%;
+}
+
+.submitInput{
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    left: 22%;
+    top: 45%;
+    width: 20%;
+    min-height: 7.2%;
+}
+
+.submitButton{
+    position: absolute;
+    background-color: darkgray;
+    color: white;
+    border: 0;
+    left: 42%;
+    top: 45.2%;
+    width: 5%;
+    height: 8%;
+}
+.question1Button{
+    background: url("/images/jigsawFight/jigsawScreen2Question1.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 70%;
+    left: 25%;
+}
+.question2Button{
+    background: url("/images/jigsawFight/jigsawScreen2Question2.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 77%;
+    left: 25%;
+}
+.question3Button{
+    background: url("/images/jigsawFight/jigsawScreen2Question3.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 84%;
+    left: 25%;
+}
+
+.question1ButtonScreen3{
+    background: url("/images/jigsawFight/jigsawQuestion1Screen3.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 71%;
+    left: 25%;
+}
+.question2ButtonScreen3{
+    background: url("/images/jigsawFight/jigsawQuestion2Screen3.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 78%;
+    left: 25%;
+}
+.question3ButtonScreen3{
+    background: url("/images/jigsawFight/jigsawQuestion3Screen3.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 85%;
+    left: 25%;
+}
+
+.question1ButtonScreen4{
+    background: url("/images/jigsawFight/jigsawQuestion1Screen4.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 72%;
+    left: 25%;
+}
+.question2ButtonScreen4{
+    background: url("/images/jigsawFight/jigsawQuestion2Screen4.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 79%;
+    left: 25%;
+}
