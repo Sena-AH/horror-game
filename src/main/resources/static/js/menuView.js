@@ -4,40 +4,6 @@ document.getElementById("startBtn").addEventListener("click", startButton);
 document.getElementById("exitBtn").addEventListener("click", exitButton);
 
 
-function startButton(){
-        location.href = "intro";
-    }
-
-function resumeButton() {
-    location.href = "player";
-}
-
-function exitButton() {
- exit();
-}
-
-function menuMusic(){
-    menuSound.play();
-}
-function pauseMenuMusic(){
-    menuSound.stop();
-}
-
-function sound(src) {
-    this.sound = document.createElement("audio");
-    this.sound.src = src;
-    this.sound.setAttribute("preload", "auto");
-    this.sound.setAttribute("controls", "none");
-    this.sound.style.display = "none";
-    document.body.appendChild(this.sound);
-    this.play = function () {
-        this.sound.play();
-    }
-    this.stop = function () {
-        this.sound.pause();
-    }
-}
-
 $(function () {
     let $players = $('#players');
 
@@ -76,6 +42,41 @@ $('#add-player').on('click', function () {
     });
 });
 });
+
+
+function startButton(){
+    location.href = "intro";
+}
+
+function resumeButton() {
+    location.href = "player";
+}
+
+function exitButton() {
+    exit();
+}
+
+function menuMusic(){
+    menuSound.play();
+}
+function pauseMenuMusic(){
+    menuSound.stop();
+}
+
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function () {
+        this.sound.play();
+    }
+    this.stop = function () {
+        this.sound.pause();
+    }
+}
 
 
 
