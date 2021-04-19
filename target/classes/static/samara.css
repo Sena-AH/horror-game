@@ -13,12 +13,12 @@
     margin: 2% auto auto auto;
 }
 
-.samaraBase {
-
+.mainDiv {
     position: relative;
-
-    height: 450px;
-    margin: 2% auto auto auto;
+    min-width: 1000px;
+    max-width: 1050px;
+    min-height: 1000px;
+    max-height: 1050px;
 }
 
 #winnerFrame    {
@@ -57,7 +57,7 @@
     left: 180px;
 }
 
-#itemDiv img    {
+.itemImage    {
     max-width: 60px;
     max-height: 80px;
     position: absolute;
@@ -138,6 +138,7 @@ button  {
 }
 
 .samaraBase {
+    position: absolute;;
     min-width: 1000px;
     max-width: 1050px;
     min-height: 1000px;
@@ -147,5 +148,13 @@ button  {
 img {
     max-width: 900px;
     max-height: 900px;
+}
+
+#itemDiv    {
+    position: relative;
+    top: 100px;
+    left: 800px;
+    height:600px;
+    width: 80px;
 }
 

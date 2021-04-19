@@ -38,16 +38,16 @@ $(function() {
 
 
 
-    $('.itemButton').on("click", function ()     {
+    $(document).on("click", '.itemButton', function () {
         $('.mainDiv').append('<div id="itemDiv"></div>');
         playerItems.forEach(function (item) {
             console.log(item);
-            if (item == "priest") {
-                $('#itemDiv').append('<img src="/images/priest.jpg>"')
+            if (item === "Priest") {
+                $('#itemDiv').append('<img class="itemImage" src="/images/priest.jpg">')
             } //else if (playerItems === "Garlic") {
             //     $('#itemDiv').append('img 2');
             // }
-            });
+        });
     });
 
 
