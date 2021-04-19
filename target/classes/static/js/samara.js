@@ -42,7 +42,7 @@ $(function() {
 
     $(document).on("click", '.itemButton', function () {
         $('#itemDiv').show();
-        $('#itemDiv').empty();
+
         let i = 1;
         playerItems.forEach(function(item)    {
             console.log(item);

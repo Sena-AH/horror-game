@@ -36,3 +36,22 @@
     margin-top: 120px;
     margin-left: 540px;
 }
+
+.chuckyitemBtn{
+    position: absolute;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.chuckyactBtn{
+    position: absolute;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.chuckyescapeBtn{
+    position: absolute;
+    min-height: 100px;
+    min-width: 100px;
+
+}
