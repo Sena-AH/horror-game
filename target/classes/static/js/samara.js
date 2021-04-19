@@ -33,23 +33,61 @@ $(function() {
         $('.mainDiv').append('<p id="greeting">A wild Samara appeared "YOU CANT RUN FROM ME!!" <br>Click fight to hurt her or escape to run</p>');
         $('.mainDiv').append('<button id="fightButton">FIGHT</button>');
         $('.mainDiv').append('<button id="escapeButton">ESCAPE</button>');
-        $('.mainDiv').append('<button class ="itemButton "id="itemButton">ITEMS</button>');
+        $('.mainDiv').append('<button class ="itemButton" id="itemButton">ITEMS</button>');
         $('.mainDiv').append('<div id="itemDiv"></div>')
     }, 1500);
 
 
 
     $(document).on("click", '.itemButton', function () {
+        let i = 1;
+        playerItems.forEach(function(item)    {
+            console.log(item);
+            let $itemId = "item" + i;
+            $('#itemDiv').append("<img class='itemImage' id='" + $itemId + "' src=>");
+            let $itemPath = "/images/" + item + ".jpg";
 
+            $("#" + $itemId).attr("src", $itemPath);
+
+            i++;
+            /*
+            $($body).append("<img src='"+ $googleURL + "'></img>");
+            */
+
+        });
+        /*
+        for (i = 0; i < playerItems; i++)   {
+            console.log(playerItems[i]);
+            let itemId = playerItems[i] + (i+1);
+            console.log(itemId);
+            let $itemPath = "/images/" + playerItems[i] + ".jpg";
+            console.log($itemPath);
+        }
+        */
+        /*
         playerItems.forEach(function (item) {
             console.log(item);
-            if (item === "Priest") {
+            console.log(playerItems.length);
+            let $itemPath = "/images/" + item.toLowerCase() + ".jpg";
+
+            console.log($itemPath);
+
+            for (let i = 0; i < playerItems.length;  i++)   {
+                let itemIndex = item + (i+1);
+                $('#itemDiv').append("<img id='" + itemIndex + "' src='" + $itemPath + "'>")
+            }*/
+            /*
+            $($body).append("<img src='"+ $googleURL + "'></img>");
+            $('#itemDiv').append("<img src='" + $itemPath + "'>");
+            $()
+            */
+           /* if (item === "Priest") {
                 $('.itemImage').remove();
                 $('#itemDiv').append('<img class="itemImage" src="/images/priest.jpg">');
             } //else if (playerItems === "Garlic") {
             //     $('#itemDiv').append('img 2');
-            // }
-        });
+            // }*/
+       /* });*/
     });
 
 

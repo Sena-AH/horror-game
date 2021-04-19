@@ -22,16 +22,12 @@
     max-height: 800px;
 }
 
-#itemDiv img    {
-    padding: 22px;
-}
-
 .itemImage    {
-    max-width: 80px;
+    max-width: 90px;
     max-height: 120px;
-    position: absolute;
-    width: 60px;
-    height: 90px;
+    width: 80px;
+    height: 100px;
+    padding: 20px 0 0 20px;
 }
 
 button  {
