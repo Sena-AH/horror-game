@@ -34,12 +34,15 @@ $(function() {
         $('.mainDiv').append('<button id="fightButton">FIGHT</button>');
         $('.mainDiv').append('<button id="escapeButton">ESCAPE</button>');
         $('.mainDiv').append('<button class ="itemButton" id="itemButton">ITEMS</button>');
-        $('.mainDiv').append('<div id="itemDiv"></div>')
+        $('.mainDiv').append('<div id="itemDiv"></div>');
+        $('#itemDiv').hide();
     }, 1500);
 
 
 
     $(document).on("click", '.itemButton', function () {
+        $('#itemDiv').show();
+        $('#itemDiv').empty();
         let i = 1;
         playerItems.forEach(function(item)    {
             console.log(item);
@@ -50,9 +53,6 @@ $(function() {
             $("#" + $itemId).attr("src", $itemPath);
 
             i++;
-            /*
-            $($body).append("<img src='"+ $googleURL + "'></img>");
-            */
 
         });
         /*
