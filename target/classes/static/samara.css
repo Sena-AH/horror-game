@@ -23,7 +23,7 @@
 }
 
 #itemDiv img    {
-    padding: 7px;
+    padding: 22px;
 }
 
 .itemImage    {
@@ -82,9 +82,9 @@ button  {
 #itemDiv    {
     position: relative;
     top: 38px;
-    left: 699px;
+    left: 671px;
     height:600px;
-    width: 80px;
+    width: 107px;
     border-radius: 2em;
     background: grey;
 }

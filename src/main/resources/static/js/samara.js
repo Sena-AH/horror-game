@@ -22,8 +22,6 @@ $(function() {
     });
 
     function addItem(item) {
-
-        console.log(item.itemName);
         let itemName = item.itemName;
         playerItems.push(itemName);
 
@@ -42,12 +40,12 @@ $(function() {
 
 
     $(document).on("click", '.itemButton', function () {
-        $('#itemDiv').style.display = "initial";
+
         playerItems.forEach(function (item) {
             console.log(item);
-            $('#itemDiv').background = "grey";
             if (item === "Priest") {
-                $('#itemDiv').append('<img class="itemImage" src="/images/priest.jpg">')
+                $('.itemImage').remove();
+                $('#itemDiv').append('<img class="itemImage" src="/images/priest.jpg">');
             } //else if (playerItems === "Garlic") {
             //     $('#itemDiv').append('img 2');
             // }
