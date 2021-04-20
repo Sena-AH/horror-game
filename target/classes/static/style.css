@@ -7,26 +7,66 @@
     width: 100%;
     min-height: 100%;
 }
-.resumeBtn{
+
+.indexMainDiv button{
     position: absolute;
-    border: none;
-    cursor: pointer;
     background: rgba(0,0,0,0.0);
+    background: grey;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    color: #d2d2d2;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:550;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    cursor: pointer;
 }
-table tr .edit {
+.startBtn{
+    width:17%;
+    height:6%;
+    top:58%;
+    right:39%;
+}
+.resumeBtn{
+    width:15%;
+    height:6%;
+    top:68%;
+    right:40%;
+}
+.exitBtn{
+    width:13%;
+    height:6%;
+    top:78%;
+    right:41%;
+}
+.playerDiv{
     position: absolute;
-    display: none;
+    top:50%;
+    right:41%;
+    color:white;
+}
+.btn-info{
+    right:35%;
+    top:49%;
+}
+.editPlayer {
+    position: absolute;
+    right:28%;
+    top:49%;
 }
 
-table tr.edit .edit {
+.saveEditPlayer {
     position: absolute;
-    display: initial;
+    right:28%;
+    top:49%;
 }
 
-table tr.edit .noEdit {
-    position: absolute;
-    display: none;
-}
 
 
 
