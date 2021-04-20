@@ -1,3 +1,4 @@
+playerItems = [];
 $.ajax({
     type: 'GET',
     url: 'api/player',
@@ -8,6 +9,23 @@ $.ajax({
         alert('Couldnt find any players');
     }
 })
+$.ajax({
+    type: 'GET',
+    url: 'api/items',
+    success: function (items) {
+        console.log('success', items);
+        $.each(items, function (i, item) {
+            addItem(item);
+        });
+    },
+    error: function () {
+        alert('Couldnt find any items');
+    }
+});
+
+function addItem(items){
+    playerItems.push(items);
+}
 
 startJigsaw();
 
@@ -67,13 +85,14 @@ function checkVal(){
     if(document.getElementById("keycodeInputVal").value === "452395"){
         $('.mainDiv').empty();
         $('.mainDiv').append('<img class="answer1Screen2" src="/images/jigsawFight/jigsawYouHaveWon.jpg">')
+        console.log(playerItems);
         setTimeout(function(){
             $('.mainDiv').empty();
             $('.mainDiv').append('<img class="answer1Screen2" src="/images/winner_frame.jpg">')
-        },10000);
+        },30000);
         setTimeout(function(){
             location.href="player"
-        }, 15000)
+        }, 45000)
     }
 }
 

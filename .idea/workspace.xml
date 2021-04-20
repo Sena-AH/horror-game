@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jigsawScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/jigsawScreen.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jigsawView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jigsawView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

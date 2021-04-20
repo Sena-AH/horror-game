@@ -1,3 +1,4 @@
+playerItems = [];
 $.ajax({
     type: 'GET',
     url: 'api/player',
@@ -8,6 +9,23 @@ $.ajax({
         alert('Couldnt find any players');
     }
 })
+$.ajax({
+    type: 'GET',
+    url: 'api/items',
+    success: function (items) {
+        console.log('success', items);
+        $.each(items, function (i, item) {
+            addItem(item);
+        });
+    },
+    error: function () {
+        alert('Couldnt find any items');
+    }
+});
+
+function addItem(items){
+    playerItems.push(items);
+}
 
 startJigsaw();
 
