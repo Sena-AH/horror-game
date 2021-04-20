@@ -1,5 +1,6 @@
 let menuSound = new sound("/mp3/menuSound.mp3");
 
+
 document.getElementById("startBtn").addEventListener("click", introPath);
 document.getElementById("resumeBtn").addEventListener("click", playerPath);
 document.getElementById("exitBtn").addEventListener("click", $exit);
@@ -19,7 +20,7 @@ function playerPath(){
 function exitPath(){
     exit(0);
 }
-/*function startButton(){
+function startButton(){
     $('.indexMainDiv').append('<button id="startBtn" onclick= introPath()>Start</button>');
     }
 
@@ -31,7 +32,7 @@ function resumeButton() {
 function exitButton() {
     $('.indexMainDiv').append('<button id="resumeBtn" onclick= exitPath()>Exit</button>');
 
-}*/
+}
 
 function menuMusic(){
     menuSound.play();

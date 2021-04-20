@@ -1,4 +1,5 @@
 let menuSound = new sound("/mp3/menuSound.mp3");
+let startIntroSound = new sound("/mp3/introMusic.mp3");
 
 document.getElementById("startBtn").addEventListener("click", introPath);
 document.getElementById("resumeBtn").addEventListener("click", playerPath);
@@ -11,6 +12,7 @@ document.getElementById("startBtn").addEventListener("click", startButton);
 document.getElementById("exitBtn").addEventListener("click", exitButton);*/
 
 function introPath(){
+    startIntroSound.play();
     location.href = "intro";
 }
 function playerPath(){
@@ -19,7 +21,7 @@ function playerPath(){
 function exitPath(){
     exit(0);
 }
-/*function startButton(){
+function startButton(){
     $('.indexMainDiv').append('<button id="startBtn" onclick= introPath()>Start</button>');
     }
 
@@ -31,7 +33,7 @@ function resumeButton() {
 function exitButton() {
     $('.indexMainDiv').append('<button id="resumeBtn" onclick= exitPath()>Exit</button>');
 
-}*/
+}
 
 function menuMusic(){
     menuSound.play();
