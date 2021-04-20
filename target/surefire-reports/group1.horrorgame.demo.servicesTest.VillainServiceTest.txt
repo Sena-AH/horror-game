@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: group1.horrorgame.demo.servicesTest.VillainServiceTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.977 s <<< FAILURE! - in group1.horrorgame.demo.servicesTest.VillainServiceTest
+deleteVillain_ShouldInvokeDeleteVillain  Time elapsed: 0.046 s  <<< FAILURE!
+org.mockito.exceptions.verification.TooManyActualInvocations: 
+
+villainDAO.deleteVillain(1);
+Wanted 1 time:
+-> at group1.horrorgame.demo.servicesTest.VillainServiceTest.deleteVillain_ShouldInvokeDeleteVillain(VillainServiceTest.java:94)
+But was 2 times:
+-> at group1.horrorgame.demo.services.VillainService.deleteVillain(VillainService.java:58)
+-> at group1.horrorgame.demo.services.VillainService.deleteVillain(VillainService.java:58)
+
+
+	at group1.horrorgame.demo.servicesTest.VillainServiceTest.deleteVillain_ShouldInvokeDeleteVillain(VillainServiceTest.java:94)
+

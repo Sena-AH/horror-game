@@ -26,12 +26,13 @@ public class VillainDAO {
     public Optional<VillainDTO> findVillainByID(Integer id) {
         return repository.findById(id);
     }
-    public void deleteVillian(Integer id) {
+    public void deleteVillain(Integer id) {
         repository.deleteById(id);
     }
     public void deleteAllVillains() {
         repository.deleteAll();
     }
+
 }
 
 

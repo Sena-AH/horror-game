@@ -1,96 +1,89 @@
-/*$('#introBase2Img').hide();
-$('#introText1').show();
-$('#introText2').hide();
-$('#introText3').hide();
-$('#introText4').hide();
-$('#doorIntroText').hide();
-$('#doorIntroImg').hide();
-$('#gameStartText').hide();
-$('#gameStartImg').hide();*/
-document.getElementById("nextButt").addEventListener("click", clickNext);
-document.getElementById("nextButt2").addEventListener("click", scene2);
-/*document.getElementById("nextButt2").addEventListener("click", scene2);*/
-$('.nextButt2').hide();
 
-function clickNext() {
-    $('.annabelleDiv').empty();
-    $('.annabelleDiv').append('<img id="introBaseImg" src="images/introImg/introBase.jpg">');
-    $('.annabelleDiv').append('<p id="introText2">Now the couple got a new mission.\n' +
-        '\n' +
-        '        A family suspects that their home is haunted by evil spirits and they are in desperate need for aid ...</p>');
-    $('.nextButt2').show();
+/*document.getElementById("nextButt").addEventListener("click", IntroClickNext);*/
+
+/*document.getElementById("nextButt2").addEventListener("click", scene2);*/
+let introSound = new sound("/mp3/menuSound.mp3");
+
+showIntro();
+function showIntro() {
+    introMusic();
+    $('.container').append('<img id="introBaseImg" src="images/introImg/introBase.jpg">');
+    $('.container').append('<p class="introText1">In a little town outside Connecticut lives the couple Ed and Lorrain Warren\n' +
+        '    famous for their investigations of supernatural activitys and work with cases where paranormal activitys has ouccured.</p>');
+    $('.annabelleDiv').append('<button id=nextButt" onclick=IntroClickNext()></button>');
+
 
     /* $('.annabelleDiv').append('<button class="nextButt" onclick="scene1()"></button>');*/
     /*$('.annabelleDiv').prepend('<button class="nextBtn" onclick="showScene3()"></button>');*/
 }
-function scene2(){
+function IntroClickNext() {
+    introMusic();
+    $('.container').empty();
+    $('.container').append('<img id="introBaseImg" src="images/introImg/introBase.jpg">');
+    $('.container').append('<p class="introText2">Now the couple got a new mission.\n' +
+        '\n' +
+        '        A family suspects that their home is haunted by evil spirits and they are in desperate need for aid ...</p>');
+    $('.annabelleDiv').append('<button id=nextButt" onclick=introScene2()></button>');
+
+
+    /* $('.annabelleDiv').append('<button class="nextButt" onclick="scene1()"></button>');*/
+    /*$('.annabelleDiv').prepend('<button class="nextBtn" onclick="showScene3()"></button>');*/
+}
+function introScene3(){
+    introMusic();
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img id="introBaseImg" src="images/introImg/introBase.jpg">');
-    $('.annabelleDiv').append('<p id="introText3"> This time Ed and Lorrain needs your help to defeat whatever\n' +
+    $('.annabelleDiv').append('<p class="introText3"> This time Ed and Lorrain needs your help to defeat whatever\n' +
         '\n' +
         '        lurking in the poor familys home.</p>');
-    $('.nextButt2').hide();
+    $('.annabelleDiv').append('<button id=nextButt" onclick=introScene4()></button>');
 
 }
-    /*function clickNext() {
+function introScene4(){
+    introMusic();
+    $('.annabelleDiv').empty();
+    $('.annabelleDiv').append('<img id="introBaseImg2" src="images/introImg/introBase2.jpg">');
+    $('.annabelleDiv').append('<p class="introText4"> You´ll have to search for the answers in the spirit world and no one knows what you will find there...\n' +
+        '        but one thing is certain.\n' +
+        '        You have to hurry up before it is to late!</p>');
+    $('.annabelleDiv').append('<button id=nextButt" onclick=gameStartScene()></button>');
 
-        let baseImg1 = document.getElementById("introBaseImg").src;
-        let baseImg2 = document.getElementById("introBase2Img").src;
-        let baseImg3 = document.getElementById("gameStartImg").src;
-        let baseImg4 = document.getElementById("doorIntroImg").src;
-        let locationHref = location.href = "player";
-
-
-        if (baseImg1.includes('introBase.jpg')) {
-            document.getElementById("introText1");
-            $('introText1').hide();
-
-        }
-        }*/
-
-    /*if(baseImg1.includes("introText3")) {
-        $('introBaseImg').hide();
-        $('introText3').hide();
-        $(baseImg2).show();
-        $('introText4').show();
-
-
-    }
-    if(baseImg2.includes("introText4")) {
-        $(baseImg2).hide();
-        $('introText4').hide();
-        $(baseImg3).show();
-        $('gameStartText').show();
-
-
-    }
-
-    if(baseImg3.includes("gameStartText")) {
-        location.href = "player";
-
-    }
-    if(locationHref.includes ("BaseScreen.jpg")){
-            $(baseImg4).show();
-            $('doorIntroText').show();
-        }
-    if(baseImg4.includes('doorIntroText')) {
-            $(baseImg4).hide();
-            $('doorIntroText').hide();
-        }
+}
+function gameStartScene(){
+    introMusic();
+    $('.annabelleDiv').empty();
+    $('.annabelleDiv').append('<img id="gameStartImg" src="images/introImg/gameStart.jpg">');
+    $('.annabelleDiv').append('<p class="gameStartText"> Choose which way you want to go by clicking on one of the arrows.</p>');
+    $('.annabelleDiv').append('<button id=nextButt" onclick=doorScene()></button>');
 
 }
 
-function sound(src){
+function doorScene(){
+    introMusic();
+    $('.annabelleDiv').empty();
+    $('.annabelleDiv').append('<img id="doorIntroImg" src="images/introImg/doorImage.jpg">');
+    $('.annabelleDiv').append('<p class="doorIntroText">Choose which door you want to enter by clicking on one of them.</p>');
+    $('.annabelleDiv').append('<button id=nextButt" onclick=introScene3()></button>');
+
+}
+function introMusic(){
+    introSound.play();
+}
+function pauseIntroMusic(){
+    menuSound.stop();
+}
+
+function sound(src) {
     this.sound = document.createElement("audio");
     this.sound.src = src;
     this.sound.setAttribute("preload", "auto");
     this.sound.setAttribute("controls", "none");
     this.sound.style.display = "none";
     document.body.appendChild(this.sound);
-    this.play = function(){
+    this.play = function () {
         this.sound.play();
     }
-    this.stop = function(){
+    this.stop = function () {
         this.sound.pause();
     }
-}*/
+}
