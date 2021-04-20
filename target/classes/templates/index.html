@@ -9,21 +9,15 @@
 <body>
 <div class="indexMainDiv">
     <img class= "menuImg" th:src="@{/images/mainImg.jpg}">
-    <button id="startBtn" class="startBtn">Start</button>
-    <button id="exitBtn" class="exitBtn">Exit</button>
-    <button id="resumeBtn" class="resumeBtn">Resume</button>
-    <button class="btn btn-info" id="add-player">Add</button>
-    <button class="btn editPlayer" id="editPlayer">Edit</button>
-    <button class="btn saveEditPlayer" id="savEditPlayer">Save</button>
+    <button id="startBtn" class="startBtn"><img th:src="@{/images/startBtn.jpg}" width="50x50"></button>
+    <button id="exitBtn" class="exitBtn"><img th:src="@{/images/exitBtn.jpg}" width="70x70"></button>
+    <button id="resumeBtn" class="resumeBgn"><img th:src="@{/images/resumeBtn.jpg}" width="70x70"></button>
 
-   <!-- <button class="btn editPlayer">Edit</button>
-    <button class="btn saveEditPlayer">Save</button>-->
 </div>
 <div class="playerDiv">
     <h3>Add username</h3>
     <p>Name:<input type="text" id="name"></p>
-    </div>
-
+    <button class="btn-info" id="add-animal">Add</button>
 <script th:src="@{webjars/jquery/3.1.1/jquery.js}"></script>
 <script th:src="@{/js/menuView.js}"></script>
 </body>

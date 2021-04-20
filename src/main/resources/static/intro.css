@@ -11,15 +11,17 @@ position:relative;
     left:10%;
     width:62%
 }
-#nextButt,#nextButt2{
-
-    margin-bottom: auto;
+#nextButt{
+    background: url("/images/nextBtn.jpg");
     top: 85%;
     left: 80%;
+    background-size: 100%;
+    width: 9%;
+    height: 8.7%;
+    border: 0;
     position: absolute;
-    border: none;
     cursor: pointer;
-    background: rgba(0,0,0,0.0)
+
 }
 #introBaseImg,#introBase2Img,#doorIntroImg,#gameStartImg{
 

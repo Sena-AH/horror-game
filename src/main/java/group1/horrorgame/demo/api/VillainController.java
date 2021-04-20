@@ -33,7 +33,7 @@ public class VillainController {
 
     @DeleteMapping("/{id}")
     public void deleteVillain(@PathVariable("id") Integer id){
-        villainService.deleteVillian(id);
+        villainService.deleteVillain(id);
     }
 
     @PutMapping("/{id}")
