@@ -1,5 +1,6 @@
 DELETE FROM item;
 DELETE FROM villains;
+DELETE FROM player_items;
 
 INSERT INTO item (id, attack_points, item_name, special_ability) VALUES
 (1, 2, 'priest', 'Uses holy water and chants for extra damage on villains and heals player with one life point'),
@@ -10,3 +11,7 @@ INSERT INTO item (id, attack_points, item_name, special_ability) VALUES
 
 INSERT INTO villains (id, difficulty, health, special_attack, villain_name, weakness) VALUES
 (1, 7, 10, 'Knife skills', 'Chucky', 'Annabelle');
+
+
+INSERT INTO player_items(id, itemName, playerId) VALUES
+(1, 'priest', 1);
