@@ -83,9 +83,11 @@ function actButtonPress(){
 function act1() {
     $('.chuckymain').empty();
     $('.chuckymain').append('<img src="/images/act1.jpg">');
-    $('.chuckymain').append('<button class="chuckyitemBtn actpageitemBtn" id="itemButton" onclick="itemButtonPress()">items</button>');
+    $('.chuckymain').append('<button class="fullPageButton" id="gameOver" onclick="gameOver()">Full Page</button>');
+
+    /*$('.chuckymain').append('<button class="chuckyitemBtn actpageitemBtn" id="itemButton" onclick="itemButtonPress()">items</button>');
     $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn" id="actButton" onclick="actButtonPress()">act</button>');
-    $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');
+    $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');*/
 }
 function act2() {
     $('.chuckymain').empty();
@@ -109,16 +111,28 @@ function act300(){
     $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn" id="actButton" onclick="act300()">act</button>');
     $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');
 
-    $('.chuckymain').append('<button class="act1" id="act301" onclick="act1()">act1</button>');
+    $('.chuckymain').append('<button class="act1" id="act301" onclick="act301()">act1</button>');
     $('.chuckymain').append('<button class="act2" id="act302" onclick="act302()">act2</button>');
-    $('.chuckymain').append('<button class="act3" id="act303" onclick="act3()">act3</button>');
+    $('.chuckymain').append('<button class="act3" id="act303" onclick="act303()">act3</button>');
+}
+
+function act301(){
+    $('.chuckymain').empty();
+    $('.chuckymain').append('<img src="/images/act301.jpg">');
+    $('.chuckymain').append('<button class="fullPageButton" id="gameOver" onclick="gameOver()">Full Page</button>');
 }
 
 function act302(){
     $('.chuckymain').empty();
     $('.chuckymain').append('<img src="/images/act302.jpg">');
-    $('.chuckymain').append('<button class="youwinbutton" id="youWin" onclick="youWin()">YOU WIN</button>');
+    $('.chuckymain').append('<button class="fullPageButton" id="youWin" onclick="youWin()">YOU WIN</button>');
 
+}
+
+function act303(){
+    $('.chuckymain').empty();
+    $('.chuckymain').append('<img src="/images/act303.jpg">');
+    $('.chuckymain').append('<button class="fullPageButton" id="gameOver" onclick="gameOver()">Full Page</button>');
 }
 
 function youWin(){
@@ -130,11 +144,28 @@ function youWin(){
 function chuckyGone(){
     $('.chuckymain').empty();
     $('.chuckymain').append('<img src="/images/actwinchuckygone.jpg">');
-    $('.chuckymain').append('<button class="doorclick doorclickexit" id="doorClickButton">door</button>');
+    $('.chuckymain').append('<button class="doorclick doorclickexit" id="doorClickButton" onclick="treasureRoom()">door</button>');
     $('.chuckymain').append('<button id="arrDown" class="arrowDown" onclick=changeLocation("player")><img src="@{/images/arrowDown}" width="50x50"></button>');
 
 }
 
+function gameOver(){
+    let chuckyLaugh = new sound("/mp3/ChuckyLaughSoundEffect.mp3");
+    chuckyLaugh.play();
+    $('.chuckymain').empty();
+    $('.chuckymain').append('<img src="/images/chuckyGameOver.jpg">');
+    $('.chuckymain').append('<button class="fullPageButton" id="gameOver" onclick="escapeButtonPress()">GAME OVER</button>');
+
+}
+
+function treasureRoom(){
+    $('.chuckymain').empty();
+    $('.chuckymain').append('<img src="/images/treasure.jpg">');
+    $('.chuckymain').append('<button class="treasureButton" id="treasure" onclick="treasureItem()">treasure</button>');
+
+}
+/*
+$('.chuckymain').append('<button class="fullPageButton" id="gameOver" onclick="gameOver()">Full Page</button>');*/
 
 function escapeButtonPress(){
     location.href = 'player';
