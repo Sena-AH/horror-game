@@ -7,22 +7,42 @@
     width: 100%;
     min-height: 100%;
 }
+
 .indexMainDiv button{
     position: absolute;
-    border: none;
-    cursor: pointer;
     background: rgba(0,0,0,0.0);
+    background: grey;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    color: #d2d2d2;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:550;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    cursor: pointer;
 }
 .startBtn{
+    width:17%;
+    height:6%;
     top:65%;
     left:47%;
 }
 .resumeBtn{
+    width:15%;
+    height:6%;
     top:71%;
     left:47%;
 }
 .exitBtn{
-    top:78%;
+    width:13%;
+    height:6%;
+    top:81%;
     left:47%;
 }
 .playerDiv{
@@ -32,7 +52,8 @@
     color:white;
 }
 .btn-info{
-    right:20%;
+    right:29%;
+    top:50%;
 }
 table tr .edit {
     position: absolute;
