@@ -5,23 +5,49 @@
 position:relative;
     text-align: center;
 }
-.container p{
+.introText1,.introText2,.introText3,.introText4{
     position: absolute;
-    top:74%;
+    top:65%;
     left:10%;
     width:62%
 }
-#nextButt{
+.gameStartText{
+    position: absolute;
+    top:65%;
+    left:18%;
+    width:62%
+}
+.doorIntroText{
+    position: absolute;
+    top:63%;
+    left:16%;
+    width:62%
+}
+.nextButt,.gameStartButt,.doorStartButt{
     background: url("/images/nextBtn.jpg");
-    top: 85%;
-    left: 80%;
     background-size: 100%;
     width: 9%;
-    height: 8.7%;
-    border: 0;
+    height: 6.7%;
+
     position: absolute;
     cursor: pointer;
 
+}
+
+.nextButt{
+    top: 85%;
+    left: 80%;
+    height: 6.7%;
+}
+.gameStartButt{
+    top: 77%;
+    left: 80%;
+    height: 8.7%;
+}
+.doorStartButt{
+    top: 75%;
+    left: 80%;
+    height: 8.7%;
 }
 #introBaseImg,#introBase2Img,#doorIntroImg,#gameStartImg{
 

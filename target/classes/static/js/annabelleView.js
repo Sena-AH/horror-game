@@ -1,7 +1,8 @@
 
 document.getElementById("fightBtn").addEventListener("click", fightButton);
 document.getElementById("escapeBtn").addEventListener("click", escapeButton);
-
+let annabelleLaugh= new sound("/mp3/annabelleLaugh.mp3");
+let victorySound= new sound("/mp3/victorySound.mp3");
 /*document.getElementById("nextBtn").addEventListener("click", showScene2);*/
 
 /*
@@ -14,6 +15,7 @@ function showAnnabelle() {
 }*/
 
 function fightButton() {
+    annabelleSound();
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene1" src="images/annabelleFight/annabelleScene1.jpg">');
     $('.annabelleDiv').append('<p class="talkBubble2">I will defeat you "name"!</p>');
@@ -24,6 +26,7 @@ function fightButton() {
 
 }
 function showScene2() {
+    /*annabelleLaugh.pause();*/
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene2" src="images/annabelleFight/annabelleScene2.jpg">');
     $('.annabelleDiv').append('<button class="nextBtn" onclick=showScene3()></button>');
@@ -48,6 +51,7 @@ function showScene5() {
     $('.annabelleDiv').append('<button class="nextBtn" onclick=winnerScene()></button>');
 }
 function winnerScene() {
+    winnerSound();
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene4" src="images/annabelleFight/youWin.jpg">');
     $('.annabelleDiv').append('<button class="nextBtn" onclick= escapeButton()></button>');
@@ -55,4 +59,28 @@ function winnerScene() {
 function escapeButton() {
     location.href= 'player';
 }
+
+function annabelleSound() {
+    annabelleLaugh.play();
+}
+
+function winnerSound() {
+    victorySound.play();
+}
+
+    function sound(src) {
+        this.sound = document.createElement("audio");
+        this.sound.src = src;
+        this.sound.setAttribute("preload", "auto");
+        this.sound.setAttribute("controls", "none");
+        this.sound.style.display = "none";
+        document.body.appendChild(this.sound);
+        this.play = function () {
+            this.sound.play();
+        }
+        this.stop = function () {
+            this.sound.pause();
+        }
+    }
+
 

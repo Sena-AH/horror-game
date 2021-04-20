@@ -10,13 +10,19 @@
 }
 .talkBubble1{
     position:absolute;
-    top:11%;
-    left:73%;
+    top:75%;
+    left:36%;
 }
-.talkBubble2,.talkBubble3{
+.talkBubble2{
     position:absolute;
-    top:60%;
-    left:70%;
+    top:10%;
+    left:72%;
+}
+.talkBubble3{
+    position:absolute;
+    top:13%;
+    width:20%;
+    left:72%;
 }
 #fightBtn,#escapeBtn{
     position: absolute;
@@ -24,24 +30,25 @@
     border: none;
     cursor: pointer;
     background: rgba(0,0,0,0.0);
-
+    border: 0;
+    min-height: 50px;
+    min-width: 132px;
 }
 .nextBtn{
     background: url("/images/nextBtn.jpg");
-    top: 94%;
+    top: 87%;
     left: 77%;
     background-size: 100%;
     width: 9%;
     height: 8.7%;
-    border: 0;
     position: absolute;
     cursor: pointer;
 }
-.fightButton{
+.fightBtn{
     top: 85%;
     left: 37%;
 }
-.escapeButton{
+.escapeBtn{
     top: 85%;
     left: 52%;
 }
