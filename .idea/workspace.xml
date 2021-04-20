@@ -9,8 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/menuView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/menuView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/menuView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/menuView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/samara.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/samara.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +143,7 @@
       <workItem from="1618515557756" duration="348000" />
       <workItem from="1618558310472" duration="4861000" />
       <workItem from="1618595029057" duration="467000" />
+      <workItem from="1618923844042" duration="2146000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>

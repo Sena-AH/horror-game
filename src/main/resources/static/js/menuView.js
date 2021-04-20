@@ -1,19 +1,30 @@
 let menuSound = new sound("/mp3/menuSound.mp3");
+
 document.getElementById("resumeBtn").addEventListener("click", resumeButton);
 document.getElementById("startBtn").addEventListener("click", startButton);
 document.getElementById("exitBtn").addEventListener("click", exitButton);
 
-
+function introPath(){
+    location.href = "intro";
+}
+function playerPath(){
+    location.href = "player";
+}
+function exitPath(){
+    exit(0);
+}
 function startButton(){
-        location.href = "intro";
+    $('.indexMainDiv').append('<button id="startBtn" onclick= introPath()>Start</button>');
     }
 
 function resumeButton() {
-    location.href = "player";
+
+    $('.indexMainDiv').append('<button id="resumeBtn" onclick= playerPath()>Resume</button>');
 }
 
 function exitButton() {
- exit();
+    $('.indexMainDiv').append('<button id="resumeBtn" onclick= exitPath()>Exit</button>');
+
 }
 
 function menuMusic(){
