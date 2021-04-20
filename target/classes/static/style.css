@@ -30,45 +30,43 @@
 .startBtn{
     width:17%;
     height:6%;
-    top:65%;
-    left:47%;
+    top:58%;
+    right:39%;
 }
 .resumeBtn{
     width:15%;
     height:6%;
-    top:71%;
-    left:47%;
+    top:68%;
+    right:40%;
 }
 .exitBtn{
     width:13%;
     height:6%;
-    top:81%;
-    left:47%;
+    top:78%;
+    right:41%;
 }
 .playerDiv{
     position: absolute;
-    top:45%;
-    right:36%;
+    top:50%;
+    right:41%;
     color:white;
 }
 .btn-info{
-    right:29%;
-    top:50%;
+    right:35%;
+    top:49%;
 }
-table tr .edit {
+.editPlayer {
     position: absolute;
-    display: none;
+    right:28%;
+    top:49%;
 }
 
-table tr.edit .edit {
+.saveEditPlayer {
     position: absolute;
-    display: initial;
+    right:28%;
+    top:49%;
 }
 
-table tr.edit .noEdit {
-    position: absolute;
-    display: none;
-}
 
 
 

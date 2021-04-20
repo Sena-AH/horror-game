@@ -143,7 +143,7 @@
       <workItem from="1618515557756" duration="348000" />
       <workItem from="1618558310472" duration="4861000" />
       <workItem from="1618595029057" duration="467000" />
-      <workItem from="1618923844042" duration="9109000" />
+      <workItem from="1618923844042" duration="17025000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>
@@ -207,5 +207,8 @@
     <MESSAGE value="+ ItemService ready for initial testing&#10;+ gameController, autowire ItemService&#10;+ ItemController, started working on it&#10;+ ItemDTO ready for initial testing" />
     <MESSAGE value="merged item-branch into main" />
     <option name="LAST_COMMIT_MESSAGE" value="merged item-branch into main" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demo$DemoApplication__1_.ic" NAME="DemoApplication (1) Coverage Results" MODIFIED="1618941170299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

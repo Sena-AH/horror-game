@@ -78,8 +78,8 @@ $(function () {
         $players.append(
             '<tr>'+ '<td><span class="addPlayer">' + player.name + '</span><input class="editPlayerName"></td>'+
 
-            '<td><button class="btn editPlayer " data-id="' + player.id + '">Change</button>' +
-            '<button class="btn saveEditPlayer" data-id="' + player.id + '">Save</button>' +
+            '<td><span class="editPlayer" data-id="' + player.id + '"></span></td>' +
+            '<td><span class="saveEditPlayer" data-id="' + player.id + '"></span></td>' +
             '</tr>'
         );
     }
@@ -105,8 +105,37 @@ $('#add-player').on('click', function () {
             alert('Could not save your username.');
         }
     });
-});
     document.getElementById("name").value="";
+});
+    $players.delegate('.editPlayer', 'click', function () {
+        let $row = $(this).closest('tr');
+        $row.find('input.name').val( $row.find('span.name').html() );
+        $row.addClass('edit');
+    });
+    $players.delegate('.savePlayer', 'click', function () {
+        let $row = $(this).closest('tr');
+
+        let player = {
+            name: $row.find('input.name').val()
+
+        }
+        $.ajax({
+            type: 'PUT',
+            url: 'api/animals/' + $(this).attr('data-id'),
+            headers: {
+                'Accept' : 'application/json',
+                'Content-Type' : 'application/json'
+            },
+            data: JSON.stringify(player),
+            success: function (newPlayer) {
+                $row.find('span.name').html(player.name);
+                addPlayer(newPlayer);
+            },
+            error: function () {
+                alert('Could not change your animal');
+            }
+        });
+    });
 });
 
 
