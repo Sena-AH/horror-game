@@ -173,3 +173,14 @@
     min-width: 226px;
     margin: 0;
 }
+
+.treasureButton{
+    position: absolute;
+    border: 1px black solid;
+    color: transparent;
+    background-color: transparent;
+    top: 388px;
+    left: 550px;
+    min-height: 225px;
+    min-width: 325px;
+}

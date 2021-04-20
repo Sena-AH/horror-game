@@ -7,8 +7,9 @@
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/chucky.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/chucky.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/chuckyfightbubble.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/chuckyView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/chuckyView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/chucky.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/chucky.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/chuckyView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/chuckyView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +152,8 @@
       <workItem from="1618837907258" duration="1291000" />
       <workItem from="1618845619579" duration="503000" />
       <workItem from="1618846253874" duration="10646000" />
+      <workItem from="1618943295936" duration="1048000" />
+      <workItem from="1618944486872" duration="1530000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>
