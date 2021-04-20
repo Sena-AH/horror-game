@@ -338,3 +338,47 @@
     top: 83%;
     left: 25%;
 }
+.playGameButton{
+    background: url("/images/jigsawFight/jigsawEnterTheDoor.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 76%;
+    left: 25%;
+}
+.uglyButton{
+    background: url("/images/jigsawFight/jigsawUglyWIthMakeup.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 76%;
+    left: 25%;
+}
+.trickAndEscapeButton{
+    background: url("/images/jigsawFight/jigsawTrickAndEscapeBtn.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 83%;
+    left: 25%;
+}
+.letsPlayButton{
+    background: url("/images/jigsawFight/jigsawLetsPlayTheGame.jpg");
+    background-size: 100%;
+    position: absolute;
+    border: 0;
+    width: 50%;
+    height: 6.2%;
+    padding: 0;
+    top: 80%;
+    left: 25%;
+}

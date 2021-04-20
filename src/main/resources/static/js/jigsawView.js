@@ -121,7 +121,15 @@ function screenTwoAnswerOne(){
     $('.mainDiv').append('<button id="question3BtnScreen3" class="question3ButtonScreen3" onclick="screenThreeAnswerThree()"></button>')
 }
 function screenTwoAnswerTwo(){
-    $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawAnswer2Screen3.jpg">');
+    $('.mainDiv').empty();
+    $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawMockingScreen2.jpg">');
+    $('.mainDiv').append('<button id="uglyBtn" class="uglyButton" onclick="keepMocking()"></button>')
+    $('.mainDiv').append('<button id="trickAndEscapeBtn" class="trickAndEscapeButton" onclick=changeLocation("player")></button>')
+}
+function keepMocking(){
+    $('.mainDiv').empty();
+    $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawIfYouWin.jpg">');
+    $('.mainDiv').append('<button id="letsPlayBtn" class="letsPlayButton" onclick="enterRoomBtn()"></button>')
 }
 function screenTwoAnswerThree(){
     location.href="player";
@@ -142,10 +150,17 @@ function screenThreeAnswerTwo(){
 function screenThreeAnswerThree(){
     $('.mainDiv').empty();
     $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawShocked.jpg">');
-    $('.mainDiv').append('<button id="howDoIWinBtn" class="howDoIWinButton" onclick=""></button>')
+    $('.mainDiv').append('<button id="howDoIWinBtn" class="howDoIWinButton" onclick=howYouWin()></button>')
     $('.mainDiv').append('<button id="escapeTrickBtn" class="escapeTrickButton" onclick=changeLocation("player")></button>')
 
 }
+function howYouWin(){
+    $('.mainDiv').empty();
+    $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawHowToWin.jpg">');
+    $('.mainDiv').append('<button id="playGameBtn" class="playGameButton" onclick=enterRoomBtn()></button>')
+    $('.mainDiv').append('<button id="question3Btn" class="question3Button" onclick=changeLocation("player")></button>')
+}
+
 function questionOneScreenFour(){
     $('.mainDiv').empty();
     $('.mainDiv').append('<img class="answer1Screen2" src="images/jigsawFight/jigsawScreenFive.jpg">');
