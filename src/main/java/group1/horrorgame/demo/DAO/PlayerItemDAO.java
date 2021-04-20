@@ -1,6 +1,7 @@
 package group1.horrorgame.demo.DAO;
 
 
+import group1.horrorgame.demo.models.DTO.PlayerItemDTO;
 import group1.horrorgame.demo.repository.PlayerItemRepository;
 import org.springframework.stereotype.Repository;
 
