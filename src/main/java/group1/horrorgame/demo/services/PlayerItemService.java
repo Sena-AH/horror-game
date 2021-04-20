@@ -20,7 +20,7 @@ public class PlayerItemService {
     }
 
     public List<PlayerItem> getAllPlayerItems(){
-        List<PlayerItem> playersItem = new ArrayList<>();
+        List<PlayerItem> playerItems = new ArrayList<>();
         for(PlayerItemDTO playerItemDTO : playerItemDAO.getAllPlayerItems()){
             PlayerItem playerItem = mapToPlayerItem(playerItemDTO);
             playerItems.add(playerItem);
@@ -40,24 +40,24 @@ public class PlayerItemService {
         else{
             playerItemToUpdate.setId(id);
         }
-        PlayerItemDTO updatedPlayerItem = playerItemDAO.addPlayerItem(mapFromPlayerItem(playerItemToUpdate));
+        PlayerItemDTO updatedPlayerItem = playerItemDAO.addPlayerItems(mapFromPlayerItem(playerItemToUpdate));
         return mapToPlayerItem(updatedPlayerItem);
     }
 
     public PlayerItem addPlayerItem(PlayerItem playerItem){
-        PlayerItemDTO newPlayerItemDTO = playerItemDAO.addPlayerItem(mapFromPlayerItem(playerItem));
+        PlayerItemDTO newPlayerItemDTO = playerItemDAO.addPlayerItems(mapFromPlayerItem(playerItem));
         return mapToPlayerItem(newPlayerItemDTO);
     }
 
     public PlayerItem getPlayerItemById(int id){
-        if (playerItemDAO.findPlayerItemByID(id).isPresent()) {
-            return mapToPlayerItem(playerItemDAO.findPlayerItemByID(id).get());
+        if (playerItemDAO.findPlayerItemsByID(id).isPresent()) {
+            return mapToPlayerItem(playerItemDAO.findPlayerItemsByID(id).get());
         }
         return null;
     }
 
     public void deletePlayerItem(Integer id){
-        playerItemDAO.deletePlayerItem(id);
+        playerItemDAO.deletePlayerItems(id);
     }
 
     public void deleteAllPlayerItems(){
