@@ -1,6 +1,7 @@
 package group1.horrorgame.demo.controllers;
 
 import group1.horrorgame.demo.services.ItemService;
+import group1.horrorgame.demo.services.PlayerItemService;
 import group1.horrorgame.demo.services.PlayerService;
 import group1.horrorgame.demo.services.VillainService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,10 @@ public class gameController {
 
     @Autowired
     VillainService villainService;
+
+    @Autowired
+    PlayerItemService playerItemService;
+    
 
     @RequestMapping("/index")
     public String start()   {
