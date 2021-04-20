@@ -2,7 +2,9 @@ package group1.horrorgame.demo.api;
 
 
 import group1.horrorgame.demo.models.Item;
+import group1.horrorgame.demo.models.PlayerItem;
 import group1.horrorgame.demo.services.ItemService;
+import group1.horrorgame.demo.services.PlayerItemService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,33 +21,33 @@ public class PlayerItemController {
 
     @GetMapping("/{id}")
     public PlayerItem getPlayerItemsById(@PathVariable("id") Integer id) {
-        return PlayerItemService.getPlayerItemById(id);
+        return playerItemService.getPlayerItemById(id);
     }
 
     @GetMapping()
     public List<PlayerItem> getAllItems(){
-        return PlayerItemService.getAllItems();
+        return playerItemService.getAllPlayerItems();
     }
 
     @PostMapping
-    public PlayerItem addItem(@RequestBody PlayerItem playerItem) {
-        return PlayerItemService.addItem(playerItem);
+    public PlayerItem addPlayerItem(@RequestBody PlayerItem playerItem) {
+        return playerItemService.addPlayerItem(playerItem);
     }
 
     @DeleteMapping("/{id}")
     public void deletePlayerItems(@PathVariable("id") Integer id)  {
-        PlayerItemService.deleteItem(id);
+        playerItemService.deletePlayerItem(id);
     }
 
     @PutMapping("/{id}")
-    public PlayerItem updateItem(@PathVariable("id") Integer id,
+    public PlayerItem updatePlayerItem(@PathVariable("id") Integer id,
                            @RequestBody PlayerItem newPlayerItem)  {
-        return PlayerItemService.updatePlayerItem(newPlayerItem, id);
+        return playerItemService.updatePlayerItem(newPlayerItem, id);
     }
 
     @DeleteMapping("/empty-database")
     public void deleteAllPlayerItems()    {
-        PlayerItemsService.deleteAllItems();
+        playerItemService.deleteAllPlayerItems();
     }
 
 
