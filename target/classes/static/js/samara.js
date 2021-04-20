@@ -4,6 +4,7 @@
 $(function() {
 
     let playerItems = [];
+    let clicked = false;
 
 
 
@@ -41,20 +42,27 @@ $(function() {
 
 
     $(document).on("click", '.itemButton', function () {
-        $('#itemDiv').show();
-        $('#itemDiv').empty();
-        let i = 1;
-        playerItems.forEach(function(item)    {
-            console.log(item);
-            let $itemId = "item" + i;
-            $('#itemDiv').append("<img class='itemImage' id='" + $itemId + "' src=>");
-            let $itemPath = "/images/" + item + ".jpg";
 
-            $("#" + $itemId).attr("src", $itemPath);
 
-            i++;
 
-        });
+        if (clicked === false) {
+            $('#itemDiv').show();
+
+            let i = 1;
+            playerItems.forEach(function (item) {
+                console.log(item);
+                let $itemId = "item" + i;
+                $('#itemDiv').append("<img class='itemImage' id='" + $itemId + "' src=>");
+                let $itemPath = "/images/" + item + ".jpg";
+
+                $("#" + $itemId).attr("src", $itemPath);
+
+                i++;
+
+            });
+        }   else    {
+            $('#itemDiv').hide();
+        }
         /*
         for (i = 0; i < playerItems; i++)   {
             console.log(playerItems[i]);

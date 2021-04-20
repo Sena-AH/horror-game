@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
-      <change beforePath="$PROJECT_DIR$/.idea/horror-game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/horror-game.iml" afterDir="false" />
+    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="+ item images, view items in fight-scene by clicking &quot;item&quot;. Items displayed depend on which items player has.">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/samara.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/samara.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/samara.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/samara.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/samara.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/samara.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/samara.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/samara.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/samara.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/samara.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/samara.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/samara.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +152,7 @@
       <workItem from="1618595029057" duration="467000" />
       <workItem from="1618823023831" duration="3386000" />
       <workItem from="1618833464840" duration="3988000" />
-      <workItem from="1618837907258" duration="1291000" />
+      <workItem from="1618837907258" duration="2343000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>
@@ -190,7 +190,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1617904292820</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="+ item images, view items in fight-scene by clicking &quot;item&quot;. Items displayed depend on which items player has.">
+      <created>1618839368268</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1618839368268</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +221,7 @@
     <MESSAGE value="+ ItemDAO ready for initial testing" />
     <MESSAGE value="+ ItemService ready for initial testing&#10;+ gameController, autowire ItemService&#10;+ ItemController, started working on it&#10;+ ItemDTO ready for initial testing" />
     <MESSAGE value="merged item-branch into main" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged item-branch into main" />
+    <MESSAGE value="+ item images, view items in fight-scene by clicking &quot;item&quot;. Items displayed depend on which items player has." />
+    <option name="LAST_COMMIT_MESSAGE" value="+ item images, view items in fight-scene by clicking &quot;item&quot;. Items displayed depend on which items player has." />
   </component>
 </project>
