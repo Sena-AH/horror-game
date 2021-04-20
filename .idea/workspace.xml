@@ -153,7 +153,7 @@
       <workItem from="1618845619579" duration="503000" />
       <workItem from="1618846253874" duration="10646000" />
       <workItem from="1618943295936" duration="1048000" />
-      <workItem from="1618944486872" duration="1530000" />
+      <workItem from="1618944486872" duration="2862000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>

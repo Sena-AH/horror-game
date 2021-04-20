@@ -184,3 +184,30 @@
     min-height: 225px;
     min-width: 325px;
 }
+
+.treasureText{
+    position: absolute;
+    top: 541px;
+    left: 300px;
+    color: azure;
+    font-family: "Courier New";
+    font-size: xx-large;
+    min-height: 30px;
+    max-width: 750px;
+}
+
+.takeBtn{
+    top: 684px;
+    left: 459px;
+}
+
+.replaceBtn{
+    top: 683px;
+    left: 634px;
+}
+
+.returnBtn{
+    top: 683px;
+    left: 808px;
+}
+

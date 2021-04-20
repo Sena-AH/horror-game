@@ -169,6 +169,15 @@ function treasureRoom(){
     $('.chuckymain').empty();
     $('.chuckymain').append('<img src="/images/treasure.jpg">');
     $('.chuckymain').append('<button class="treasureButton" id="treasure" onclick="treasureItem()">treasure</button>');
+}
+
+function treasureItem(){
+    $('.chuckymain').empty();
+    $('.chuckymain').append('<img src="/images/treasuretext.jpg">');
+    $('.chuckymain').append('<p class="treasureText">Congratulations (player name)! You found (item name)!</p>');
+    $('.chuckymain').append('<button class="chuckyitemBtn actpageitemBtn takeBtn" id="take" onclick="saveItemInPlayerItemFunction()">Take</button>');
+    $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn replaceBtn" id="replace" onclick="replaceItemfunction()">replace</button>');
+    $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn returnBtn" id="return" onclick="chuckyGone()">return</button>');
 
 }
 
