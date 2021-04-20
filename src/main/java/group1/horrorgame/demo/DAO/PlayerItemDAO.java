@@ -24,7 +24,7 @@ public class PlayerItemDAO {
         return playerItemRepository.findAll();
     }
 
-    public Optional<PlayerItemDTO> findPlayerItemsById(Integer id)  {
+    public Optional<PlayerItemDTO> findPlayerItemsByID(Integer id)  {
         return playerItemRepository.findById(id);
     }
 

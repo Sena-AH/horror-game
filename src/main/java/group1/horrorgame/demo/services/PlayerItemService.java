@@ -49,7 +49,7 @@ public class PlayerItemService {
         return mapToPlayerItem(newPlayerItemDTO);
     }
 
-    public PlayerItem getPlayerItemById(int id){
+    public PlayerItem getPlayerItemById(Integer id){
         if (playerItemDAO.findPlayerItemsByID(id).isPresent()) {
             return mapToPlayerItem(playerItemDAO.findPlayerItemsByID(id).get());
         }
@@ -70,7 +70,7 @@ public class PlayerItemService {
     }
 
     public PlayerItem mapToPlayerItem(PlayerItemDTO playerItemDTO) {
-        return new PlayerItem(playerItemDTO.getId(), playerItemDTO.getItemName(),
-                playerItemDTO.getPlayerId());
+        return new PlayerItem(playerItemDTO.getId(), playerItemDTO.getItem_name(),
+                playerItemDTO.getPlayer_id());
     }
 }

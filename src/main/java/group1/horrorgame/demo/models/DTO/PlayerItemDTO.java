@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.net.Inet4Address;
 
 @Entity
-@Table(name = "playerItems")
+@Table(name = "playerItem")
 public class PlayerItemDTO {
 
     @Id
