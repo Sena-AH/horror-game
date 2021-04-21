@@ -46,8 +46,9 @@
     right:41%;
 }
 .exitImg{
-   background:url("/images/scaryNun.jpg");
-    background-size: 100%;
+    width: 100%;
+    min-height: 100%;
+
 }
 .playerDiv{
     position: absolute;
