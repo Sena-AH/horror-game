@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/player_items")
+@RequestMapping("/api/player_items  ")
 public class PlayerItemController {
 
     final PlayerItemService playerItemService;

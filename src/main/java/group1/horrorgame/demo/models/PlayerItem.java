@@ -3,13 +3,13 @@ package group1.horrorgame.demo.models;
 public class PlayerItem {
 
     private Integer id;
-    private String itemName;
-    private Integer playerId;
+    private String item_name;
+    private Integer player_id;
 
     public PlayerItem(Integer id, String itemName, Integer playerId) {
         this.id = id;
-        this.itemName = itemName;
-        this.playerId = playerId;
+        this.item_name = itemName;
+        this.player_id = playerId;
     }
 
     public PlayerItem() {
@@ -24,18 +24,18 @@ public class PlayerItem {
     }
 
     public String getItemName() {
-        return itemName;
+        return item_name;
     }
 
     public void setItemName(String itemName) {
-        this.itemName = itemName;
+        this.item_name = itemName;
     }
 
     public Integer getPlayerId() {
-        return playerId;
+        return player_id;
     }
 
     public void setPlayerId(Integer playerId) {
-        this.playerId = playerId;
+        this.player_id = playerId;
     }
 }
