@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="+ player_item GET request via Ajax, (Y).&#10;fixed player_item.html to check console.log().&#10;fixed some faulting naming.&#10;+ gameController path player_item.html.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="+ player_item POST request via Ajax, (Y).">
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/ajaxTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ajaxTests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +205,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1619031227262</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="+ player_item POST request via Ajax, (Y).">
+      <created>1619031763337</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1619031763337</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +237,7 @@
     <MESSAGE value="+ ItemService ready for initial testing&#10;+ gameController, autowire ItemService&#10;+ ItemController, started working on it&#10;+ ItemDTO ready for initial testing" />
     <MESSAGE value="merged item-branch into main" />
     <MESSAGE value="+ player_item GET request via Ajax, (Y).&#10;fixed player_item.html to check console.log().&#10;fixed some faulting naming.&#10;+ gameController path player_item.html." />
-    <option name="LAST_COMMIT_MESSAGE" value="+ player_item GET request via Ajax, (Y).&#10;fixed player_item.html to check console.log().&#10;fixed some faulting naming.&#10;+ gameController path player_item.html." />
+    <MESSAGE value="+ player_item POST request via Ajax, (Y)." />
+    <option name="LAST_COMMIT_MESSAGE" value="+ player_item POST request via Ajax, (Y)." />
   </component>
 </project>

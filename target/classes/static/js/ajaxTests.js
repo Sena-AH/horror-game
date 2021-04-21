@@ -7,6 +7,7 @@ $(function ()   {
         "player_id" : "5"
     };
 
+
     $.ajax({
         type: 'GET',
         url: 'api/player_item',
@@ -48,6 +49,18 @@ $(function ()   {
             alert('POST of new player_items failed');
         }
     });
+
+
+
+
+    $.ajax({
+        type: 'DELETE',
+        url: '/api/player_item/1',
+        success: function () {
+            alert("You'll have to make a GET-request if you want to verify from DB ")
+        }
+    });
+
 
 
 });
