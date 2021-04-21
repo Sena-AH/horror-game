@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/menuView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/menuView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/menuView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/menuView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/mp3/introMusic.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/mp3/introMusic.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/mp3/scareScream.mp3" beforeDir="false" />
+    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="+ player_item POST request via Ajax, (Y).">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/ajaxTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ajaxTests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +15,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Interface" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -65,7 +60,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="corretto-11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes/static/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -82,12 +77,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nikel\OneDrive\Skrivbord\horror-game\target\classes\static\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/static/mp3" />
+      <recent name="C:\Users\nikel\OneDrive\Skrivbord\horror-game\src\main\resources\static\images" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/images/jigsawFight" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/images/introImg" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/mp3" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -98,13 +96,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,8 +156,12 @@
       <workItem from="1618515557756" duration="348000" />
       <workItem from="1618558310472" duration="4861000" />
       <workItem from="1618595029057" duration="467000" />
-      <workItem from="1618905872806" duration="3031000" />
-      <workItem from="1619018458030" duration="2441000" />
+      <workItem from="1618823023831" duration="3386000" />
+      <workItem from="1618833464840" duration="3988000" />
+      <workItem from="1618837907258" duration="1291000" />
+      <workItem from="1618845619579" duration="503000" />
+      <workItem from="1618846253874" duration="10646000" />
+      <workItem from="1619028402312" duration="679000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>
@@ -195,7 +199,19 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1617904292820</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="+ player_item GET request via Ajax, (Y).&#10;fixed player_item.html to check console.log().&#10;fixed some faulting naming.&#10;+ gameController path player_item.html.">
+      <created>1619031227262</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1619031227262</updated>
+    </task>
+    <task id="LOCAL−00008" summary="+ player_item POST request via Ajax, (Y).">
+      <created>1619031763337</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1619031763337</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,9 +236,8 @@
     <MESSAGE value="+ ItemDAO ready for initial testing" />
     <MESSAGE value="+ ItemService ready for initial testing&#10;+ gameController, autowire ItemService&#10;+ ItemController, started working on it&#10;+ ItemDTO ready for initial testing" />
     <MESSAGE value="merged item-branch into main" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged item-branch into main" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/demo$DemoApplication__1_.ic" NAME="DemoApplication (1) Coverage Results" MODIFIED="1618941170299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <MESSAGE value="+ player_item GET request via Ajax, (Y).&#10;fixed player_item.html to check console.log().&#10;fixed some faulting naming.&#10;+ gameController path player_item.html." />
+    <MESSAGE value="+ player_item POST request via Ajax, (Y)." />
+    <option name="LAST_COMMIT_MESSAGE" value="+ player_item POST request via Ajax, (Y)." />
   </component>
 </project>
