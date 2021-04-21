@@ -19,14 +19,14 @@ function left(){
     $('.baseDiv').empty();
     $('.baseDiv').append('<img class="doorScreenImage"src="images/doorScreen.jpg">');
     $('.baseDiv').append('<button class="enterLeftRoomButton" onclick=changeLocation("chucky")></button>')
-    $('.baseDiv').append('<button class="enterRightRoomButton" onclick=changeLocation("notDone")></button>')
+    $('.baseDiv').append('<button class="enterRightRoomButton" onclick=changeLocation("annabelle")></button>')
 }
 function right(){
     startmusic()
     $('.baseDiv').empty();
     $('.baseDiv').append('<img class="doorScreenImage"src="images/doorScreen.jpg">');
     $('.baseDiv').append('<button class="enterLeftRoomButton" onclick=changeLocation("jigsaw")></button>')
-    $('.baseDiv').append('<button class="enterRightRoomButton" onclick=changeLocation("notDone")></button>')
+    $('.baseDiv').append('<button class="enterRightRoomButton" onclick=changeLocation("samara")></button>')
 }
 
 function changeLocation(thePath){

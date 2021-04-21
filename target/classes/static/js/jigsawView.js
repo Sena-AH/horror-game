@@ -85,14 +85,13 @@ function checkVal(){
     if(document.getElementById("keycodeInputVal").value === "452395"){
         $('.mainDiv').empty();
         $('.mainDiv').append('<img class="answer1Screen2" src="/images/jigsawFight/jigsawYouHaveWon.jpg">')
-        console.log(playerItems);
         setTimeout(function(){
             $('.mainDiv').empty();
             $('.mainDiv').append('<img class="answer1Screen2" src="/images/winner_frame.jpg">')
-        },30000);
+        },10000);
         setTimeout(function(){
             location.href="player"
-        }, 45000)
+        }, 15000)
     }
 }
 
