@@ -1,59 +1,38 @@
 let menuSound = new sound("/mp3/menuSound.mp3");
-document.getElementById("resumeBtn").addEventListener("click", resumeButton);
+let startIntroSound = new sound("/mp3/introMusic.mp3");
+
+document.getElementById("startBtn").addEventListener("click", introPath);
+document.getElementById("resumeBtn").addEventListener("click", playerPath);
+document.getElementById("exitBtn").addEventListener("click", $exit);
+startButton();
+resumeButton();
+exitButton();
+/*document.getElementById("resumeBtn").addEventListener("click", resumeButton);
 document.getElementById("startBtn").addEventListener("click", startButton);
-document.getElementById("exitBtn").addEventListener("click", exitButton);
+document.getElementById("exitBtn").addEventListener("click", exitButton);*/
 
-
-$(function () {
-    let $players = $('#players');
-
-    function addPlayer(player) {
-        menuMusic();
-        $players.append(
-            '<tr>'+ '<td><span class="addPlayer">' + player.name + '</span><input class="editPlayerName"></td>'+'<tr>'
-            /*'<td><span class="type noEdit">' + animal.type + '</span><input class="edit type"></td>' +
-            '<td><button class="btn remove" data-id=' + animal.id + '>Ta bort</button></td>' +
-            '<td><button class="btn editAnimal noEdit" data-id="' + animal.id + '">Ändra</button>' +
-            '<button class="btn saveEdit edit" data-id="' + animal.id + '">Spara</button>' +
-            '<button class="btn cancelEdit edit">Avbryt</button></td>' +
-            '</tr>'*/
-        );
-    }
-
-$('#add-player').on('click', function () {
-    let player = {
-        name: $name.val()
-    };
-
-    $.ajax({
-        type: 'POST',
-        url: 'api/players/',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        data: JSON.stringify(player),
-        success: function (newPlayer) {
-            addPlayer(newPlayer);
-        },
-        error: function () {
-            alert('Det gick inte att spara ner ditt användarnamn');
-        }
-    });
-});
-});
-
-
-function startButton(){
+function introPath(){
+    startIntroSound.play();
     location.href = "intro";
 }
+function playerPath(){
+    location.href = "player";
+}
+function exitPath(){
+    exit(0);
+}
+function startButton(){
+    $('.indexMainDiv').append('<button id="startBtn" onclick= introPath()>Start</button>');
+    }
 
 function resumeButton() {
-    location.href = "player";
+
+    $('.indexMainDiv').append('<button id="resumeBtn" onclick= playerPath()>Resume</button>');
 }
 
 function exitButton() {
-    exit();
+    $('.indexMainDiv').append('<button id="resumeBtn" onclick= exitPath()>Exit</button>');
+
 }
 
 function menuMusic(){
@@ -77,6 +56,89 @@ function sound(src) {
         this.sound.pause();
     }
 }
+
+$(function () {
+    let $players = $('#players');
+    let $name = $('#name');
+
+    $.ajax({
+        type: 'Get',
+        url: 'api/players/',
+        success: function () {
+            console.log('success', players);
+            /*$.each(players, function (i, player) {*/
+                addPlayer(player);
+          /*  })*/
+        },
+        error: function () {
+            alert('Could not find any players.');
+        }
+    });
+
+    function addPlayer(player) {
+
+        $players.append(
+            '<tr>'+ '<td><span class="addPlayer">' + player.name + '</span><input class="editPlayerName"></td>'+
+
+            '<td><span class="editPlayer" data-id="' + player.id + '"></span></td>' +
+            '<td><span class="saveEditPlayer" data-id="' + player.id + '"></span></td>' +
+            '</tr>'
+        );
+    }
+
+$('#add-player').on('click', function () {
+    menuMusic();
+    let player = {
+        name: $name.val()
+    };
+
+    $.ajax({
+        type: 'POST',
+        url: 'api/players/',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        data: JSON.stringify(player),
+        success: function (newPlayer) {
+            addPlayer(newPlayer);
+        },
+        error: function () {
+            alert('Could not save your username.');
+        }
+    });
+    document.getElementById("name").value="";
+});
+    $players.delegate('.editPlayer', 'click', function () {
+        let $row = $(this).closest('tr');
+        $row.find('input.name').val( $row.find('span.name').html() );
+        $row.addClass('edit');
+    });
+    $players.delegate('.savePlayer', 'click', function () {
+        let $row = $(this).closest('tr');
+
+        let player = {
+            name: $row.find('input.name').val()
+
+        }
+        $.ajax({
+            type: 'PUT',
+            url: 'api/animals/' + $(this).attr('data-id'),
+            headers: {
+                'Accept' : 'application/json',
+                'Content-Type' : 'application/json'
+            },
+            data: JSON.stringify(player),
+            success: function (newPlayer) {
+                $row.find('span.name').html(player.name);
+                addPlayer(newPlayer);
+            },
+            error: function () {
+                alert('Could not change your animal');
+            }
+        });
+    });
+});
 
 
 
