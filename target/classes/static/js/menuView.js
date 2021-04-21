@@ -1,5 +1,6 @@
 let menuSound = new sound("/mp3/menuSound.mp3");
-let startIntroSound = new sound("/mp3/introMusic.mp3");
+let scareSound = new sound("/mp3/scareScream.mp3");
+
 
 document.getElementById("startBtn").addEventListener("click", introPath);
 document.getElementById("resumeBtn").addEventListener("click", playerPath);
@@ -12,7 +13,6 @@ document.getElementById("startBtn").addEventListener("click", startButton);
 document.getElementById("exitBtn").addEventListener("click", exitButton);*/
 
 function introPath(){
-    startIntroSound.play();
     location.href = "intro";
 }
 function playerPath(){
@@ -31,7 +31,8 @@ function resumeButton() {
 }
 
 function exitButton() {
-    $('.indexMainDiv').append('<button id="resumeBtn" onclick= exitPath()>Exit</button>');
+    scareSound.play();
+    $('.indexMainDiv').append('<img class="exitImg">');
 
 }
 

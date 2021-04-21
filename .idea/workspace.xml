@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/annabelle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/annabelle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/intro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/introView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/introView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/menuView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/menuView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,9 +82,9 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/mp3" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/images/jigsawFight" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/images/introImg" />
     </key>
   </component>
@@ -147,6 +144,7 @@
       <workItem from="1618558310472" duration="4861000" />
       <workItem from="1618595029057" duration="467000" />
       <workItem from="1618905872806" duration="3031000" />
+      <workItem from="1619018458030" duration="2441000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>

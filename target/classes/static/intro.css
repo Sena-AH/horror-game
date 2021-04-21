@@ -7,7 +7,7 @@ position:relative;
 }
 .introText1,.introText2,.introText3,.introText4{
     position: absolute;
-    top:65%;
+    top:70%;
     left:10%;
     width:62%
 }

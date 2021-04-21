@@ -1,4 +1,5 @@
 let menuSound = new sound("/mp3/menuSound.mp3");
+let scareSound = new sound("/mp3/scareScream.mp3");
 
 
 document.getElementById("startBtn").addEventListener("click", introPath);
@@ -30,7 +31,8 @@ function resumeButton() {
 }
 
 function exitButton() {
-    $('.indexMainDiv').append('<button id="resumeBtn" onclick= exitPath()>Exit</button>');
+    scareSound.play();
+    $('.indexMainDiv').append('<img class="exitImg">');
 
 }
 
