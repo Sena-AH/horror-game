@@ -22,7 +22,9 @@ public class gameController {
 
     @Autowired
     PlayerItemService playerItemService;
-    
+
+    @RequestMapping("/player_item")
+    public String playerItems() { return "player_item"; }
 
     @RequestMapping("/index")
     public String start()   {
