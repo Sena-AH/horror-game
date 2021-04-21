@@ -211,3 +211,14 @@
     left: 808px;
 }
 
+.back{
+    position: absolute;
+    top: 669px;
+    left: 639px;
+    border: 0;
+    color: transparent;
+    background-color: transparent;
+    min-height: 70px;
+    min-width: 80px;
+}
+
