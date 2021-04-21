@@ -1,13 +1,6 @@
 
 $(function ()   {
 
-    let player_items    = {
-        "id" : "16",
-        "item_name" : "owl",
-        "player_id" : "5"
-    };
-
-
     $.ajax({
         type: 'GET',
         url: 'api/player_item',
@@ -33,6 +26,12 @@ $(function ()   {
 
 
 
+    let player_items    = {
+        "id" : "16",
+        "item_name" : "owl",
+        "player_id" : "5"
+    };
+
     $.ajax({
         type: 'POST',
         url: 'api/player_item/',
@@ -55,7 +54,7 @@ $(function ()   {
 
     $.ajax({
         type: 'DELETE',
-        url: '/api/player_item/1',
+        url: '/api/player_item/11',
         success: function () {
             alert("You'll have to make a GET-request if you want to verify from DB ")
         }

@@ -55,7 +55,7 @@ $(function ()   {
 
     $.ajax({
         type: 'DELETE',
-        url: '/api/player_item/1',
+        url: '/api/player_item/10',
         success: function () {
             alert("You'll have to make a GET-request if you want to verify from DB ")
         }
