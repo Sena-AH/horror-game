@@ -1,7 +1,11 @@
 
 $(function ()   {
 
-
+    let player_items    = {
+        "id" : "16",
+        "item_name" : "owl",
+        "player_id" : "5"
+    };
 
     $.ajax({
         type: 'GET',
@@ -24,5 +28,26 @@ $(function ()   {
              console.log(playerId);
              console.log(itemName);
     }
+
+
+
+
+    $.ajax({
+        type: 'POST',
+        url: 'api/player_item/',
+        headers: {
+            'Accept' : 'application/json',
+            'Content-Type' : 'application/json'
+        },
+        data: JSON.stringify(player_items),
+        success: function() {
+            console.log(player_items);
+
+        },
+        error: function () {
+            alert('POST of new player_items failed');
+        }
+    });
+
 
 });
