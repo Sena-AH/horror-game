@@ -55,39 +55,7 @@ $(function() {
             i++;
 
         });
-        /*
-        for (i = 0; i < playerItems; i++)   {
-            console.log(playerItems[i]);
-            let itemId = playerItems[i] + (i+1);
-            console.log(itemId);
-            let $itemPath = "/images/" + playerItems[i] + ".jpg";
-            console.log($itemPath);
-        }
-        */
-        /*
-        playerItems.forEach(function (item) {
-            console.log(item);
-            console.log(playerItems.length);
-            let $itemPath = "/images/" + item.toLowerCase() + ".jpg";
 
-            console.log($itemPath);
-
-            for (let i = 0; i < playerItems.length;  i++)   {
-                let itemIndex = item + (i+1);
-                $('#itemDiv').append("<img id='" + itemIndex + "' src='" + $itemPath + "'>")
-            }*/
-            /*
-            $($body).append("<img src='"+ $googleURL + "'></img>");
-            $('#itemDiv').append("<img src='" + $itemPath + "'>");
-            $()
-            */
-           /* if (item === "Priest") {
-                $('.itemImage').remove();
-                $('#itemDiv').append('<img class="itemImage" src="/images/priest.jpg">');
-            } //else if (playerItems === "Garlic") {
-            //     $('#itemDiv').append('img 2');
-            // }*/
-       /* });*/
     });
 
 
@@ -95,6 +63,7 @@ $(function() {
 });
 
 
+//DUMPED FRONTEND
 
 /*
 $(function()    {

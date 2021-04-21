@@ -45,6 +45,11 @@
     top:78%;
     right:41%;
 }
+.exitImg{
+    width: 100%;
+    min-height: 100%;
+
+}
 .playerDiv{
     position: absolute;
     top:50%;
