@@ -1,0 +1,38 @@
+.chuckymain {
+    /*  background: url('images/chuckydoor.png');*/
+    max-width: 1000px;
+    min-width: 1000px;
+    min-height: 750px;
+    /*background-repeat: no-repeat;*/
+    position: relative;
+}
+.doorclick{
+    position: absolute;
+    background-color: transparent;
+    color: transparent;
+    border: transparent 1px solid;
+    min-height: 390px;
+    min-width: 180px;
+    margin-top: -520px;
+    margin-left: 405px;
+}
+.fightBtn{
+    position: absolute;
+    background-color: darkslateblue;
+    color: transparent;
+    border: 0;
+    min-height: 100px;
+    min-width: 100px;
+    margin-top: 120px;
+    margin-left: 380px;
+}
+.escapeBtn{
+    position: absolute;
+    background-color: lightsteelblue;
+    color: transparent;
+    border: 0;
+    min-height: 100px;
+    min-width: 100px;
+    margin-top: 120px;
+    margin-left: 540px;
+}

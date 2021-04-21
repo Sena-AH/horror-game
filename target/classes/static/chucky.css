@@ -151,9 +151,9 @@
 
 }
 
-.youwinbutton{
+.fullPageButton{
     position: absolute;
-    border: 1px black solid;
+    border: 0;
     color: transparent;
     background-color: transparent;
     top: 0px;
@@ -173,3 +173,41 @@
     min-width: 226px;
     margin: 0;
 }
+
+.treasureButton{
+    position: absolute;
+    border: 0;
+    color: transparent;
+    background-color: transparent;
+    top: 388px;
+    left: 550px;
+    min-height: 225px;
+    min-width: 325px;
+}
+
+.treasureText{
+    position: absolute;
+    top: 541px;
+    left: 300px;
+    color: azure;
+    font-family: "Courier New";
+    font-size: xx-large;
+    min-height: 30px;
+    max-width: 750px;
+}
+
+.takeBtn{
+    top: 684px;
+    left: 459px;
+}
+
+.replaceBtn{
+    top: 683px;
+    left: 634px;
+}
+
+.returnBtn{
+    top: 683px;
+    left: 808px;
+}
+
