@@ -27,9 +27,9 @@ $(function ()   {
 
 
     let player_items    = {
-        "id" : "16",
-        "item_name" : "owl",
-        "player_id" : "5"
+        "id" : "97",
+        "item_name" : "bully",
+        "player_id" : "1"
     };
 
     $.ajax({
@@ -51,7 +51,7 @@ $(function ()   {
 
 
 
-
+/*
     $.ajax({
         type: 'DELETE',
         url: '/api/player_item/11',
@@ -60,6 +60,6 @@ $(function ()   {
         }
     });
 
-
+*/
 
 });
