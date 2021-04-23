@@ -22,7 +22,7 @@
 /*    margin-left: 22%;*/
 /*    background-size:100%;*/
 /*}*/
-.itemsDiv>.item0, .itemsDiv>.item1, .itemsDiv>.item2, .itemsDiv>.item3{
+.itemsDiv>.item1, .itemsDiv>.item2, .itemsDiv>.item3, .itemsDiv>.item4{
     background-color: transparent;
     width: 20%;
     height: 20%;
@@ -37,7 +37,7 @@
     height:100%;
     border-radius: 7px;
 }
-.deleteButton0,.deleteButton1,.deleteButton2,.deleteButton3{
+.deleteButton1,.deleteButton2,.deleteButton3,.deleteButton4{
     position: absolute;
     width: 30%;
     height: 15%;
@@ -46,19 +46,19 @@
     color: white;
 
 }
-.deleteButton0{
+.deleteButton1{
     top: 1%;
     left: 42%;
 }
-.deleteButton1{
+.deleteButton2{
     top: 21%;
     left: 42%;
 }
-.deleteButton2{
+.deleteButton3{
     top: 41%;
     left: 42%;
 }
-.deleteButton3{
+.deleteButton4{
     top: 61%;
     left: 42%;
 }

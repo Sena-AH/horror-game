@@ -14,13 +14,13 @@
         }
     });
 
-    index = 0;
     function addItem(items){
         let item = items.itemName;
+        let itemId = items.id;
+        console.log(itemId);
         let imageSource = "/images/"+item+".jpg";
-        $('.itemsDiv').append('<button class="item'+index+'" id="itemBtn'+index+'" onclick="item'+index+'()"><img src="'+imageSource+'" 70x70></button>')
-        playerItems.push(item);
-        index++;
+        $('.itemsDiv').append('<button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button>')
+        playerItems.push(itemId);
     }
     function showItems(){
         if($(".itemsDiv").is(':visible')){
@@ -31,37 +31,94 @@
         }
     }
 
-    function item0(){
-        console.log("item 0");
-        $('.deleteButton1').remove();
-        $('.deleteButton2').remove();
-        $('.deleteButton3').remove();
-        $('.itemsDiv').append('<button class="deleteButton0">DELETE</button>');
-    }
     function item1(){
-        console.log("item 1");
-        $('.deleteButton0').remove();
+        console.log("item 0");
         $('.deleteButton2').remove();
         $('.deleteButton3').remove();
-        $('.itemsDiv').append('<button class="deleteButton1">DELETE</button>');
-
+        $('.deleteButton4').remove();
+        $('.itemsDiv').append('<button class="deleteButton1" onclick="deleteItem1()">DELETE</button>');
+    }
+    function deleteItem1(){
+        let itemImageAndButton = document.getElementById("itemBtn1");
+        console.log(itemImageAndButton);
+        $.ajax({
+            type: 'DELETE',
+            url: 'api/items/'+playerItems[0],
+            success: function () {
+                itemImageAndButton.remove();
+                console.log("success");
+            },
+            error: function () {
+                alert('Couldnt find any items');
+            }
+        });
     }
     function item2(){
-        console.log("item 2");
-        $('.deleteButton0').remove();
+        console.log("item 1");
         $('.deleteButton1').remove();
         $('.deleteButton3').remove();
-        $('.itemsDiv').append('<button class="deleteButton2">DELETE</button>');
+        $('.deleteButton4').remove();
+        $('.itemsDiv').append('<button class="deleteButton2" onclick="deleteItem2()">DELETE</button>');
 
+    }
+    function deleteItem2(){
+        let itemImageAndButton = document.getElementById("itemBtn2");
+        $.ajax({
+            type: 'DELETE',
+            url: 'api/items/'+playerItems[1],
+            success: function () {
+                itemImageAndButton.remove();
+                console.log("success");
+            },
+            error: function () {
+                alert('Couldnt find any items');
+            }
+        });
     }
     function item3(){
-        console.log("item 3");
-        $('.deleteButton0').remove();
+        console.log("item 2");
         $('.deleteButton1').remove();
         $('.deleteButton2').remove();
-        $('.itemsDiv').append('<button class="deleteButton3">DELETE</button>');
+        $('.deleteButton4').remove();
+        $('.itemsDiv').append('<button class="deleteButton3" onclick="deleteItem3()">DELETE</button>');
 
     }
+    function deleteItem3(){
+        let itemImageAndButton = document.getElementById("itemBtn3");
+        $.ajax({
+             type: 'DELETE',
+             url: 'api/items/'+playerItems[2],
+             success: function () {
+                 itemImageAndButton.remove();
+                console.log("success");
+             },
+             error: function () {
+               alert('Couldnt find any items');
+             }
+        });
+    }
+    function item4(){
+        console.log("item 3");
+        $('.deleteButton1').remove();
+        $('.deleteButton2').remove();
+        $('.deleteButton3').remove();
+        $('.itemsDiv').append('<button class="deleteButton4" onclick="deleteItem4()">DELETE</button>');
+
+    }
+    function deleteItem4(){
+        let itemImageAndButton = document.getElementById("itemBtn4");
+        $.ajax({
+           type: 'DELETE',
+           url: 'api/items/'+playerItems[3],
+          success: function () {
+               itemImageAndButton.remove();
+              console.log("success");
+          },
+          error: function () {
+              alert('Couldnt find any items');
+             }
+         });
+ }
     startJigsaw();
     function startJigsaw(){
         $('.mainDiv').append('<h3 class="jigsawGreeting">Hello there "name", I want to play a game</h3>');

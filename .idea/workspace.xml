@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="+ player_item POST request via Ajax, (Y).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/ajaxTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ajaxTests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/chuckyView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/chuckyView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jigsawScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/jigsawScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jigsawView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jigsawView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,5 +229,8 @@
     <MESSAGE value="+ player_item GET request via Ajax, (Y).&#10;fixed player_item.html to check console.log().&#10;fixed some faulting naming.&#10;+ gameController path player_item.html." />
     <MESSAGE value="+ player_item POST request via Ajax, (Y)." />
     <option name="LAST_COMMIT_MESSAGE" value="+ player_item POST request via Ajax, (Y)." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demo$DemoApplication__1_.ic" NAME="DemoApplication (1) Coverage Results" MODIFIED="1618941170299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
