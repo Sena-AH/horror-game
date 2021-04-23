@@ -1,12 +1,13 @@
 let menuSound = new sound("/mp3/menuSound.mp3");
+let scareSound = new sound("/mp3/scareScream.mp3");
 
 
 document.getElementById("startBtn").addEventListener("click", introPath);
 document.getElementById("resumeBtn").addEventListener("click", playerPath);
-document.getElementById("exitBtn").addEventListener("click", $exit);
-startButton();
-resumeButton();
-exitButton();
+document.getElementById("exitBtn").addEventListener("click", exitButton);
+/*startButton();
+resumeButton();*/
+
 /*document.getElementById("resumeBtn").addEventListener("click", resumeButton);
 document.getElementById("startBtn").addEventListener("click", startButton);
 document.getElementById("exitBtn").addEventListener("click", exitButton);*/
@@ -17,9 +18,7 @@ function introPath(){
 function playerPath(){
     location.href = "player";
 }
-function exitPath(){
-    exit(0);
-}
+
 function startButton(){
     $('.indexMainDiv').append('<button id="startBtn" onclick= introPath()>Start</button>');
     }
@@ -30,15 +29,19 @@ function resumeButton() {
 }
 
 function exitButton() {
-    $('.indexMainDiv').append('<button id="resumeBtn" onclick= exitPath()>Exit</button>');
+    scarySound();
+    $('.indexMainDiv').empty();
+    $('.playerDiv').empty();
+   /* $('.indexMainDiv').append('<button id="resumeBtn" onclick= playerPath()>Resume</button>');*/
+    $('.indexMainDiv').append('<img class="exitImg" src="/images/scaryNun.jpg">');
 
 }
 
 function menuMusic(){
     menuSound.play();
 }
-function pauseMenuMusic(){
-    menuSound.stop();
+function scarySound(){
+    scareSound.play();
 }
 
 function sound(src) {
@@ -69,9 +72,9 @@ $(function () {
                 addPlayer(player);
           /*  })*/
         },
-        error: function () {
-            alert('Could not find any players.');
-        }
+       /* error: function () {
+            alert('Could not find any players.');*/
+        /*}*/
     });
 
     function addPlayer(player) {
@@ -103,7 +106,7 @@ $('#add-player').on('click', function () {
             addPlayer(newPlayer);
         },
         error: function () {
-            alert('Could not save your username.');
+            alert('Could not add your username.');
         }
     });
     document.getElementById("name").value="";

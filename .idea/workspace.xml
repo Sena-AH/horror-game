@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="+ player_item DELETE request via Ajax, (Y)." />
+    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="+ player_item POST request via Ajax, (Y).">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jigsawScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/jigsawScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jigsawView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jigsawView.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,19 +98,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="horror-game" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="group1.horrorgame.demo.DemoApplication" />
@@ -160,6 +151,7 @@
       <workItem from="1618845619579" duration="503000" />
       <workItem from="1618846253874" duration="10646000" />
       <workItem from="1619028402312" duration="679000" />
+      <workItem from="1619080655433" duration="516000" />
     </task>
     <task id="LOCAL−00001" summary="Added dependency needed for full connection from DB to client. Started work on Item class, ItemDAO etc.">
       <created>1617892644327</created>
@@ -209,13 +201,7 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1619031763337</updated>
     </task>
-    <task id="LOCAL−00009" summary="+ player_item DELETE request via Ajax, (Y).">
-      <created>1619032334643</created>
-      <option name="number" value="LOCAL−00009" />
-      <option name="presentableId" value="LOCAL−00009" />
-      <updated>1619032334643</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +228,9 @@
     <MESSAGE value="merged item-branch into main" />
     <MESSAGE value="+ player_item GET request via Ajax, (Y).&#10;fixed player_item.html to check console.log().&#10;fixed some faulting naming.&#10;+ gameController path player_item.html." />
     <MESSAGE value="+ player_item POST request via Ajax, (Y)." />
-    <MESSAGE value="+ player_item DELETE request via Ajax, (Y)." />
-    <option name="LAST_COMMIT_MESSAGE" value="+ player_item DELETE request via Ajax, (Y)." />
+    <option name="LAST_COMMIT_MESSAGE" value="+ player_item POST request via Ajax, (Y)." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demo$DemoApplication__1_.ic" NAME="DemoApplication (1) Coverage Results" MODIFIED="1618941170299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
