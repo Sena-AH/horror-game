@@ -1,7 +1,7 @@
 package group1.horrorgame.demo.api;
 
 
-import group1.horrorgame.demo.models.Item;
+import group1.horrorgame.demo.models.recordsmodel.ItemRecord;
 import group1.horrorgame.demo.services.ItemService;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,17 +18,17 @@ public class ItemController {
     }
 
     @GetMapping("/{id}")
-    public Item getItemById(@PathVariable("id") Integer id) {
+    public ItemRecord getItemById(@PathVariable("id") Integer id) {
         return itemService.getItemById(id);
     }
 
     @GetMapping()
-    public List<Item> getAllItems(){
+    public List<ItemRecord> getAllItems(){
         return itemService.getAllItems();
     }
 
     @PostMapping
-    public Item addItem(@RequestBody Item item) {
+    public ItemRecord addItem(@RequestBody ItemRecord item) {
         return itemService.addItem(item);
     }
 
@@ -38,8 +38,8 @@ public class ItemController {
     }
 
     @PutMapping("/{id}")
-    public Item updateItem(@PathVariable("id") Integer id,
-                           @RequestBody Item newItem)  {
+    public ItemRecord updateItem(@PathVariable("id") Integer id,
+                           @RequestBody ItemRecord newItem)  {
         return itemService.updateItem(newItem, id);
     }
 

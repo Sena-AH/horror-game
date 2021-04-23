@@ -1,7 +1,7 @@
 package group1.horrorgame.demo.api;
 
+import group1.horrorgame.demo.models.recordsmodel.PlayerRecord;
 import org.springframework.web.bind.annotation.*;
-import group1.horrorgame.demo.models.Player;
 import group1.horrorgame.demo.services.PlayerService;
 
 import java.util.List;
@@ -16,17 +16,17 @@ public class PlayerController {
         this.playerService = playerService;
     }
     @GetMapping()
-    public List<Player> getAllPlayers(){
+    public List<PlayerRecord> getAllPlayers(){
         return playerService.getAllPlayers();
     }
 
     @GetMapping("/{id}")
-    public Player getPlayerById(@PathVariable("id") Integer id){
+    public PlayerRecord getPlayerById(@PathVariable("id") Integer id){
         return playerService.getPlayerById(id);
     }
 
     @PostMapping
-    public Player addPlayer(@RequestBody Player player){
+    public PlayerRecord addPlayer(@RequestBody PlayerRecord player){
         return playerService.addPlayer(player);
     }
 
@@ -36,8 +36,8 @@ public class PlayerController {
     }
 
     @PutMapping("/{id}")
-    public Player updatePlayer(@PathVariable("id") Integer id,
-                               @RequestBody Player newPlayer){
+    public PlayerRecord updatePlayer(@PathVariable("id") Integer id,
+                                     @RequestBody PlayerRecord newPlayer){
         return playerService.updatePlayer(newPlayer, id);
     }
 

@@ -2,7 +2,8 @@ package group1.horrorgame.demo.services;
 
 import group1.horrorgame.demo.DAO.PlayerDAO;
 import group1.horrorgame.demo.models.DTO.PlayerDTO;
-import group1.horrorgame.demo.models.Player;
+//import group1.horrorgame.demo.models.Player;
+import group1.horrorgame.demo.models.recordsmodel.PlayerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,40 +20,34 @@ public class PlayerService {
         this.playerDAO = playerDAO;
     }
 
-    public List<Player> getAllPlayers(){
-        List<Player> players = new ArrayList<>();
+    public List<PlayerRecord> getAllPlayers(){
+        List<PlayerRecord> players = new ArrayList<>();
         for(PlayerDTO playerDTO : playerDAO.getAllPlayers()){
-            Player player = mapToPlayer(playerDTO);
+            PlayerRecord player = mapToPlayer(playerDTO);
             players.add(player);
         }
         return players;
     }
 
-    public Player updatePlayer(Player player, Integer id){
-        Player playerToUpdate = getPlayerById(id);
+    public PlayerRecord updatePlayer(PlayerRecord player, Integer id){
+        PlayerRecord playerToUpdate = getPlayerById(id);
 
         if(playerToUpdate != null){
-            playerToUpdate.setName(player.getName());
-            playerToUpdate.setHealth(player.getHealth());
-            playerToUpdate.setLevel(player.getLevel());
-            playerToUpdate.setFighterScore(player.getFighterScore());
-            playerToUpdate.setLiarScore(player.getLiarScore());
-            playerToUpdate.setPacifistScore(player.getPacifistScore());
-            playerToUpdate.setTotalScore(player.getTotalScore());
+            playerToUpdate.name(player.name());
         }
         else{
-            playerToUpdate.setId(id);
+            playerToUpdate.id(id);
         }
         PlayerDTO updatedPlayer = playerDAO.addPlayer(mapFromPlayer(playerToUpdate));
         return mapToPlayer(updatedPlayer);
     }
 
-    public Player addPlayer(Player player){
+    public PlayerRecord addPlayer(PlayerRecord player){
         PlayerDTO newPlayerDTO = playerDAO.addPlayer(mapFromPlayer(player));
         return mapToPlayer(newPlayerDTO);
     }
 
-    public Player getPlayerById(int id){
+    public PlayerRecord getPlayerById(int id){
         if (playerDAO.findPlayerByID(id).isPresent()) {
             return mapToPlayer(playerDAO.findPlayerByID(id).get());
         }
@@ -67,15 +62,11 @@ public class PlayerService {
         playerDAO.deleteAllPlayers();
     }
 
-    public PlayerDTO mapFromPlayer(Player player) {
-        return new PlayerDTO(player.getId(), player.getName(),
-                player.getHealth(), player.getLevel(), player.getFighterScore(),
-                player.getLiarScore(), player.getPacifistScore(), player.getTotalScore());
+    public PlayerDTO mapFromPlayer(PlayerRecord player) {
+        return new PlayerDTO(player.id(), player.name());
     }
 
-    public Player mapToPlayer(PlayerDTO playerDTO) {
-        return new Player(playerDTO.getId(), playerDTO.getName(),
-                playerDTO.getHealth(), playerDTO.getLevel(), playerDTO.getFighterScore(),
-                playerDTO.getLiarScore(), playerDTO.getPacifistScore(), playerDTO.getTotalScore());
+    public PlayerRecord mapToPlayer(PlayerDTO playerDTO) {
+        return new PlayerRecord(playerDTO.getId(), playerDTO.getName());
     }
 }

@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="+ player_item POST request via Ajax, (Y).">
+      <change beforePath="$PROJECT_DIR$/.idea/horror-game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/horror-game.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/ajaxTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ajaxTests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/chuckyView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/chuckyView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/api/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/api/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/api/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/api/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/models/DTO/PlayerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/models/DTO/PlayerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/services/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/services/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/services/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/services/PlayerService.java" afterDir="false" />
+    </list>
+    <list id="a363b60a-7918-449b-b266-a92d532bcbab" name="Changes by sena" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/api/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/api/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/models/DTO/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/models/DTO/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/services/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/services/ItemService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +27,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Interface" />
         <option value="JavaScript File" />
+        <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -40,6 +51,31 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/api/ItemController.java">
+      <ranges>
+        <range start1="3" end1="4" start2="3" end2="3" changelist="10466bfb-1d8c-47c1-a490-371682409bdc" />
+        <range start1="20" end1="21" start2="19" end2="20" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="25" end1="26" start2="24" end2="25" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="30" end1="31" start2="29" end2="30" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="40" end1="42" start2="39" end2="41" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/group1/horrorgame/demo/services/ItemService.java">
+      <ranges>
+        <range start1="4" end1="5" start2="4" end2="5" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="7" end1="8" start2="7" end2="8" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="22" end1="23" start2="22" end2="23" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="29" end1="30" start2="29" end2="30" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="42" end1="44" start2="42" end2="44" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="45" end1="46" start2="45" end2="46" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="51" end1="53" start2="51" end2="53" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="55" end1="58" start2="55" end2="59" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="64" end1="67" start2="65" end2="68" changelist="a363b60a-7918-449b-b266-a92d532bcbab" />
+        <range start1="69" end1="72" start2="70" end2="73" changelist="10466bfb-1d8c-47c1-a490-371682409bdc" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1qALjDFYGQtWyuEbaWXNoM1C6XD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -61,6 +97,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="corretto-11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes/static/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -98,6 +135,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="horror-game" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="group1.horrorgame.demo.DemoApplication" />
@@ -229,5 +277,8 @@
     <MESSAGE value="+ player_item GET request via Ajax, (Y).&#10;fixed player_item.html to check console.log().&#10;fixed some faulting naming.&#10;+ gameController path player_item.html." />
     <MESSAGE value="+ player_item POST request via Ajax, (Y)." />
     <option name="LAST_COMMIT_MESSAGE" value="+ player_item POST request via Ajax, (Y)." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demo$DemoApplication__1_.ic" NAME="DemoApplication (1) Coverage Results" MODIFIED="1618941170299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

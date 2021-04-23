@@ -12,13 +12,13 @@ public class ItemDTO {
     private Integer id;
 
     private String itemName;
-    private Integer attackPoints;
+  /*  private Integer attackPoints;*/
     private String specialAbility;
 
-    public ItemDTO(Integer id, String itemName, Integer attackPoints, String specialAbility) {
+    public ItemDTO(Integer id, String itemName/*, Integer attackPoints*/, String specialAbility) {
         this.id = id;
         this.itemName = itemName;
-        this.attackPoints = attackPoints;
+       /* this.attackPoints = attackPoints;*/
         this.specialAbility = specialAbility;
     }
 
@@ -33,9 +33,9 @@ public class ItemDTO {
         return itemName;
     }
 
-    public Integer getAttackPoints() {
+   /* public Integer getAttackPoints() {
         return attackPoints;
-    }
+    }*/
 
     public String getSpecialAbility() {
         return specialAbility;
