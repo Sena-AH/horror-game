@@ -58,6 +58,6 @@ $(function ()   {
     //         alert("You'll have to make a GET-request if you want to verify from DB ")
     //     }
     // });
-    //
+
 
 });
