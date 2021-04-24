@@ -18,6 +18,8 @@ function left(){
     startmusic()
     $('.baseDiv').empty();
     $('.baseDiv').append('<img class="doorScreenImage"src="images/doorScreen.jpg">');
+
+    //add if statement for if chuckyIsGone == true or false?? so you dont have to fight chucky again
     $('.baseDiv').append('<button class="enterLeftRoomButton" onclick=changeLocation("chucky")></button>')
     $('.baseDiv').append('<button class="enterRightRoomButton" onclick=changeLocation("notDone")></button>')
 }
