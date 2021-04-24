@@ -1,8 +1,12 @@
 let playerItems = [];
 document.getElementById("showItemsBtn").addEventListener("click", showItems);
-ajaxGet()
-function startAjax(){
+ajaxGet();
 function ajaxGet(){
+    $('.item1').remove();
+    $('.item2').remove();
+    $('.item3').remove();
+    $('.item4').remove();
+
     $.ajax({
         type: 'GET',
         url: 'api/items',
@@ -27,6 +31,8 @@ function ajaxGet(){
         playerItems.push(itemId);
     }
 
+}
+
     function showItems() {
         if ($(".itemsDiv").is(':visible')) {
             $(".itemsDiv").hide();
@@ -34,10 +40,9 @@ function ajaxGet(){
             $(".itemsDiv").show();
         }
     }
-}
-function ajaxDelete(){
+
     function item1() {
-        console.log("item 0");
+        ajaxPut("1");
         $('.deleteButton2').remove();
         $('.deleteButton3').remove();
         $('.deleteButton4').remove();
@@ -61,7 +66,7 @@ function ajaxDelete(){
     }
 
     function item2() {
-        console.log("item 1");
+        ajaxPut("2");
         $('.deleteButton1').remove();
         $('.deleteButton3').remove();
         $('.deleteButton4').remove();
@@ -85,7 +90,7 @@ function ajaxDelete(){
     }
 
     function item3() {
-        console.log("item 2");
+        ajaxPut("3");
         $('.deleteButton1').remove();
         $('.deleteButton2').remove();
         $('.deleteButton4').remove();
@@ -109,7 +114,7 @@ function ajaxDelete(){
     }
 
     function item4() {
-        console.log("item 3");
+        ajaxPut("4");
         $('.deleteButton1').remove();
         $('.deleteButton2').remove();
         $('.deleteButton3').remove();
@@ -131,8 +136,8 @@ function ajaxDelete(){
             }
         });
     }
-}
-function ajaxPut() {
+
+function ajaxPut(itemId) {
     let newItemTest = {
         id: '2',
         attackPoints: '3',
@@ -143,13 +148,14 @@ function ajaxPut() {
 
     $.ajax({
         type: 'PUT',
-        url: 'api/items/'
+        url: 'api/items/'+itemId,
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
         data: JSON.stringify(newItemTest),
         success: function () {
+            ajaxGet();
             console.log("success");
         },
         error: function () {
@@ -157,7 +163,7 @@ function ajaxPut() {
         }
     });
 }
-}
+
 let chuckyIsGone = false;
 
 function sound(src){
@@ -330,7 +336,7 @@ function sound(src){
             $('.chuckymain').append('<img src="/images/treasuretext.jpg">');
             $('.chuckymain').append('<p class="treasureText">Congratulations (player name)! You found (item name)!</p>');
             $('.chuckymain').append('<button class="chuckyitemBtn actpageitemBtn takeBtn" id="take" onclick="saveItemInPlayerItemFunction()">Take</button>');
-            $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn replaceBtn" id="replace" onclick="showItems() ajaxPut()" >replace</button>');
+            $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn replaceBtn" id="replace" onclick="showItems()" >replace</button>');
             $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn returnBtn" id="return" onclick="chuckyGone()">return</button>');
 
         }
