@@ -15,8 +15,7 @@ public class PlayerDAO {
         this.repository = repository;
     }
 
-    public PlayerDTO addPlayer(PlayerDTO animalDTO) {
-        return repository.save(animalDTO);
+    public PlayerDTO addPlayer(PlayerDTO playerDTO) { return repository.save(playerDTO);
     }
 
     public Iterable<PlayerDTO> getAllPlayers() {
