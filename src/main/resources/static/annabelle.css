@@ -24,15 +24,24 @@
     width:20%;
     left:72%;
 }
-#fightBtn,#escapeBtn{
+#fightBtn,#escapeBtn,#itemsBtn{
     position: absolute;
    /* margin-bottom: auto;*/
     border: none;
     cursor: pointer;
-    background: rgba(0,0,0,0.0);
     border: 0;
-    min-height: 50px;
-    min-width: 132px;
+    background-color:transparent;
+    color: transparent;
+}
+.AnnabelleitemBtn{
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    border: 0;
+    color: transparent;
+    background-color: transparent;
+    min-height: 40px;
+    min-width: 141px;
 }
 .nextBtn{
     background: url("/images/nextBtn.jpg");
@@ -47,8 +56,18 @@
 .fightBtn{
     top: 85%;
     left: 37%;
+    min-height: 50px;
+    min-width: 134px;
 }
 .escapeBtn{
     top: 85%;
     left: 52%;
+    min-height: 50px;
+    min-width: 132px;
+}
+.escapeBtn{
+    top: 85%;
+    left: 40%;
+    min-height: 40px;
+    min-width: 141px;
 }

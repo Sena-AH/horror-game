@@ -1,6 +1,7 @@
 
 document.getElementById("fightBtn").addEventListener("click", fightButton);
 document.getElementById("escapeBtn").addEventListener("click", escapeButton);
+document.getElementById("itemsBtn").addEventListener("click", showItems);
 let annabelleLaugh= new sound("/mp3/annabelleLaugh.mp3");
 let victorySound= new sound("/mp3/victorySound.mp3");
 /*document.getElementById("nextBtn").addEventListener("click", showScene2);*/
@@ -90,5 +91,17 @@ function pauseAnnabelleMusic(){
             this.sound.pause();
         }
     }
+   /* function
+$.ajax({
+    type: 'GET',
+    url: 'api/player',
+    success: function (player) {
+        console.log('success', player);
+    },
+    error: function () {
+        alert('Couldnt find any players or items');
+    }
+});
+}*/
 
 
