@@ -1,8 +1,12 @@
 
+
 document.getElementById("fightBtn").addEventListener("click", fightButton);
 document.getElementById("escapeBtn").addEventListener("click", escapeButton);
+document.getElementById("showItemsBtn").addEventListener("click", showItems);
+/*document.getElementById("itemsBtn").addEventListener("click", showItems);*/
 let annabelleLaugh= new sound("/mp3/annabelleLaugh.mp3");
 let victorySound= new sound("/mp3/victorySound.mp3");
+let playerItems = [];
 /*document.getElementById("nextBtn").addEventListener("click", showScene2);*/
 
 /*
@@ -14,14 +18,146 @@ function showAnnabelle() {
     $('.annabelleDiv').prepend('<button class="escapeButton" onclick=escapeButton()></button>');
 }*/
 
+/*document.getElementById("showItemsBtn").addEventListener("click", showItems);*/
+$.ajax({
+    type: 'GET',
+    url: 'api/items',
+    success: function (items) {
+        console.log('success', items);
+        $.each(items, function (i, item) {
+            addItem(item);
+        });
+    },
+    error: function () {
+        alert('Couldnt find any items');
+    }
+});
+
+function addItem(items){
+    let item = items.itemName;
+    let itemId = items.id;
+    console.log(itemId);
+    let imageSource = "/images/"+item+".jpg";
+    $('.itemsDiv').append('<button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button>')
+    playerItems.push(itemId);
+}
+function showItems(){
+    if($(".itemsDiv").is(':visible')){
+        $(".itemsDiv").hide();
+    }
+    else{
+        $(".itemsDiv").show();
+    }
+}
+
+function item1(){
+    console.log("item 0");
+    $('.deleteButton2').remove();
+    $('.deleteButton3').remove();
+    $('.deleteButton4').remove();
+    $('.itemsDiv').append('<button class="deleteButton1" onclick="deleteItem1()">DELETE</button>');
+}
+function deleteItem1(){
+    let itemImageAndButton = document.getElementById("itemBtn1");
+    console.log(itemImageAndButton);
+    $.ajax({
+        type: 'DELETE',
+        url: 'api/items/'+playerItems[0],
+        success: function () {
+            itemImageAndButton.remove();
+            console.log("success");
+        },
+        error: function () {
+            alert('Couldnt find any items');
+        }
+    });
+}
+function item2(){
+    console.log("item 1");
+    $('.deleteButton1').remove();
+    $('.deleteButton3').remove();
+    $('.deleteButton4').remove();
+    $('.itemsDiv').append('<button class="deleteButton2" onclick="deleteItem2()">DELETE</button>');
+
+}
+function deleteItem2(){
+    let itemImageAndButton = document.getElementById("itemBtn2");
+    $.ajax({
+        type: 'DELETE',
+        url: 'api/items/'+playerItems[1],
+        success: function () {
+            itemImageAndButton.remove();
+            console.log("success");
+        },
+        error: function () {
+            alert('Couldnt find any items');
+        }
+    });
+}
+function item3(){
+    console.log("item 2");
+    $('.deleteButton1').remove();
+    $('.deleteButton2').remove();
+    $('.deleteButton4').remove();
+    $('.itemsDiv').append('<button class="deleteButton3" onclick="deleteItem3()">DELETE</button>');
+
+}
+function deleteItem3(){
+    let itemImageAndButton = document.getElementById("itemBtn3");
+    $.ajax({
+        type: 'DELETE',
+        url: 'api/items/'+playerItems[2],
+        success: function () {
+            itemImageAndButton.remove();
+            console.log("success");
+        },
+        error: function () {
+            alert('Couldnt find any items');
+        }
+    });
+}
+function item4(){
+    console.log("item 3");
+    $('.deleteButton1').remove();
+    $('.deleteButton2').remove();
+    $('.deleteButton3').remove();
+    $('.itemsDiv').append('<button class="deleteButton4" onclick="deleteItem4()">DELETE</button>');
+
+}
+function deleteItem4(){
+    let itemImageAndButton = document.getElementById("itemBtn4");
+    $.ajax({
+        type: 'DELETE',
+        url: 'api/items/'+playerItems[3],
+        success: function () {
+            itemImageAndButton.remove();
+            console.log("success");
+        },
+        error: function () {
+            alert('Couldnt find any items');
+        }
+    });
+}
+function annabelleSound() {
+    annabelleLaugh.play();
+}
+
+function winnerSound() {
+    victorySound.play();
+}
+
+function pauseAnnabelleMusic(){
+    annabelleLaugh.stop();
+}
+
 function fightButton() {
     annabelleSound();
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene1" src="images/annabelleFight/annabelleScene1.jpg">');
-    $('.annabelleDiv').append('<p class="talkBubble2">I will defeat you "name"!</p>');
-    $('.nextBtn').show();
+    $('.annabelleDiv').append('<p class="talkBubble2">I will defeat you!</p>');
+    /*$('.nextBtn').show();*/
     $('.annabelleDiv').append('<button class="nextBtn" onclick=showScene2()></button>');
-
+    /*"'+playerName+'"*/
     /*$('.annabelleDiv').prepend('<button class="nextBtn" onclick="showScene2()"></button>');*/
 
 }
@@ -63,19 +199,6 @@ function escapeButton() {
     location.href= 'player';
 }
 
-function annabelleSound() {
-    annabelleLaugh.play();
-}
-
-function winnerSound() {
-    victorySound.play();
-}
-
-function pauseAnnabelleMusic(){
-    annabelleLaugh.stop();
-}
-
-
     function sound(src) {
         this.sound = document.createElement("audio");
         this.sound.src = src;
@@ -90,5 +213,17 @@ function pauseAnnabelleMusic(){
             this.sound.pause();
         }
     }
+   /* function
+$.ajax({
+    type: 'GET',
+    url: 'api/player',
+    success: function (player) {
+        console.log('success', player);
+    },
+    error: function () {
+        alert('Couldnt find any players or items');
+    }
+});
+}*/
 
 
