@@ -26,7 +26,7 @@ function fightButton() {
 
 }
 function showScene2() {
-    /*annabelleLaugh.pause();*/
+    pauseAnnabelleMusic();
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene2" src="images/annabelleFight/annabelleScene2.jpg">');
     $('.annabelleDiv').append('<button class="nextBtn" onclick=showScene3()></button>');
@@ -34,12 +34,14 @@ function showScene2() {
 
 }
 function showScene3() {
+
         $('.annabelleDiv').empty();
         $('.annabelleDiv').append('<img class="annabelleScene3" src="images/annabelleFight/annabelleScene3.jpg">');
         $('.annabelleDiv').append('<button class="nextBtn" onclick=showScene4()></button>');
 }
 
 function showScene4() {
+
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene4" src="images/annabelleFight/annabelleScene4.jpg">');
     $('.annabelleDiv').append('<p class="talkBubble3">Haha did you really thought you could beat me with that!!</p>');
@@ -51,6 +53,7 @@ function showScene5() {
     $('.annabelleDiv').append('<button class="nextBtn" onclick=winnerScene()></button>');
 }
 function winnerScene() {
+
     winnerSound();
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene4" src="images/annabelleFight/youWin.jpg">');
@@ -67,6 +70,11 @@ function annabelleSound() {
 function winnerSound() {
     victorySound.play();
 }
+
+function pauseAnnabelleMusic(){
+    annabelleLaugh.stop();
+}
+
 
     function sound(src) {
         this.sound = document.createElement("audio");

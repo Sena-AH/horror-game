@@ -4,12 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+    <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="+ player_item POST request via Ajax, (Y).">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/annabelle 2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/chucky 2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleDoor 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene1 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene2 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene3 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene4 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/annabelleScene5 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/annabelleFight/youWin 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/introImg/doorImage 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/introImg/gameStart 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/introImg/introBase 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView 2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/chuckyView 2.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/menuView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/menuView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/annabelle 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chucky 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/samara2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/annabelle 2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/chucky 2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/annabelleFight/annabelleDoor 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/annabelleFight/annabelleScene1 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/annabelleFight/annabelleScene2 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/annabelleFight/annabelleScene3 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/annabelleFight/annabelleScene4 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/annabelleFight/annabelleScene5 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/annabelleFight/youWin 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/introImg/doorImage 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/introImg/gameStart 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/introImg/introBase 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/annabelleView 2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/annabelleView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/annabelleView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/chuckyView 2.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/menuView.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/menuView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/annabelle 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/chucky 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/samara2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +134,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="horror-game" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="group1.horrorgame.demo.DemoApplication" />
