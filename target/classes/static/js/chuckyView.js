@@ -1,8 +1,5 @@
 let playerItems = [];
 document.getElementById("showItemsBtn").addEventListener("click", showItems);
-// ajaxGet()
-// function startAjax(){
-// function ajaxGet(){
 ajaxGet();
 function ajaxGet(){
     $('.item1').remove();
@@ -43,17 +40,9 @@ function ajaxGet(){
             $(".itemsDiv").show();
         }
     }
-    function showItems2() {
-        if ($(".itemsDiv").is(':visible')) {
-           $(".itemsDiv").hide();
-        } else {
-            $(".itemsDiv").show();
-        }
-    }
-// }
-// function ajaxDelete(){
+
     function item1() {
-        console.log("item 0");
+        ajaxPut("1");
         $('.deleteButton2').remove();
         $('.deleteButton3').remove();
         $('.deleteButton4').remove();
@@ -101,7 +90,7 @@ function ajaxGet(){
     }
 
     function item3() {
-        console.log("item 2");
+        ajaxPut("3");
         $('.deleteButton1').remove();
         $('.deleteButton2').remove();
         $('.deleteButton4').remove();
@@ -125,7 +114,7 @@ function ajaxGet(){
     }
 
     function item4() {
-        console.log("item 3");
+        ajaxPut("4");
         $('.deleteButton1').remove();
         $('.deleteButton2').remove();
         $('.deleteButton3').remove();
@@ -147,10 +136,10 @@ function ajaxGet(){
             }
         });
     }
-// }
+
 function ajaxPut(itemId) {
     let newItemTest = {
-        id: '2',
+        id: itemId,
         attackPoints: '3',
         itemName: 'Exorcist',
         specialAbility: 'Exorcising demons'
@@ -174,7 +163,7 @@ function ajaxPut(itemId) {
         }
     });
 }
-// }
+
 let chuckyIsGone = false;
 
 function sound(src){
@@ -347,7 +336,7 @@ function sound(src){
             $('.chuckymain').append('<img src="/images/treasuretext.jpg">');
             $('.chuckymain').append('<p class="treasureText">Congratulations (player name)! You found (item name)!</p>');
             $('.chuckymain').append('<button class="chuckyitemBtn actpageitemBtn takeBtn" id="take" onclick="saveItemInPlayerItemFunction()">Take</button>');
-            $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn replaceBtn" id="replace" onclick="showItems2()" >replace</button>');
+            $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn replaceBtn" id="replace" onclick="showItems()" >replace</button>');
             $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn returnBtn" id="return" onclick="chuckyGone()">return</button>');
 
         }

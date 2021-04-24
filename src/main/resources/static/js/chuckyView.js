@@ -139,7 +139,7 @@ function ajaxGet(){
 
 function ajaxPut(itemId) {
     let newItemTest = {
-        id: '2',
+        id: itemId,
         attackPoints: '3',
         itemName: 'Exorcist',
         specialAbility: 'Exorcising demons'
