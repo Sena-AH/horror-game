@@ -6,6 +6,10 @@
     /*background-repeat: no-repeat;*/
     position: relative;
 }
+
+.chuckyDoorImage{
+    position: relative;
+}
 .doorclick{
     position: absolute;
     background-color: transparent;
@@ -291,4 +295,13 @@
     border-radius: 10px;
     top: 89%;
     left: 2%;
+}
+
+.itemsDiv{
+    position: absolute;
+    width: 17%;
+    height: 400px;
+    background-color: rgba(0,0,0,0.2);
+    left: 23px;
+    top: 356px;
 }

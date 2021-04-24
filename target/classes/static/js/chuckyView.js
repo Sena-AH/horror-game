@@ -121,8 +121,7 @@ function deleteItem4(){
 }
 
 let newItemTest = {
-    id: 2,
-    attack_points: 3,
+    attack_points: '3',
     name: 'Exorcist',
     special_ability: 'Exorcising demons'
 }
