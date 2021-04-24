@@ -114,14 +114,7 @@ function thisfunction(){
     let playerName = document.getElementById("name").value;
     console.log(playerName);
     let player ={
-        // id: 10,
-        // fighter_score: '10',
-        // health: '1',
-        // level: 'five',
-        // liar_score: '5',
         name: playerName
-        // pacifist_score: '3',
-        // total_score: '100'
     };
     console.log(player);
     $.ajax({

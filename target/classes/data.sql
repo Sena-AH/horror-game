@@ -13,8 +13,8 @@ INSERT INTO item (id, attack_points, item_name, special_ability) VALUES
 INSERT INTO villains (id, difficulty, health, special_attack, villain_name, weakness) VALUES
 (1, 7, 10, 'Knife skills', 'Chucky', 'Annabelle');
 
-INSERT INTO players(id, fighter_score, health, level, liar_score, name, pacifist_score, total_score) VALUES
-(3, 10, 3, 'five', 10, 'newname', 3, 2);
+-- INSERT INTO players(id, fighter_score, health, level, liar_score, name, pacifist_score, total_score) VALUES
+-- (3, 10, 3, 'five', 10, 'newname', 3, 2);
 
 INSERT INTO player_item(id, item_name, player_id) VALUES
 (1, 'priest', 1),
