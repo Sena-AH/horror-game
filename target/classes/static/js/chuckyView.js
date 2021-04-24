@@ -7,6 +7,7 @@ $.ajax({
         console.log('success', items);
         $.each(items, function (i, item) {
             addItem(item);
+
         });
     },
     error: function () {
@@ -121,9 +122,10 @@ function deleteItem4(){
 }
 
 let newItemTest = {
-    attack_points: '3',
-    name: 'Exorcist',
-    special_ability: 'Exorcising demons'
+    id: '2',
+    attackPoints: '3',
+    itemName: 'Exorcist',
+    specialAbility: 'Exorcising demons'
 }
 console.log(newItemTest);
 
