@@ -1,6 +1,10 @@
 let playerItems = [];
+
 document.getElementById("showItemsBtn").addEventListener("click", showItems);
 ajaxGet();
+let playerName;
+
+
 function ajaxGet(){
     $('.item1').remove();
     $('.item2').remove();
@@ -21,21 +25,7 @@ function ajaxGet(){
             alert('Couldnt find any items');
         }
     });
-let playerName;
 
-    $.ajax({
-        type: 'GET',
-        url: 'api/player',
-        success: function (players) {
-            $.each(players, function (i, player) {
-                console.log(player.name);
-                playerName = player.name;
-            });
-        },
-        error: function () {
-            alert('Couldnt find any items');
-        }
-    });
 
     function addItem(items) {
         let item = items.itemName;
@@ -174,12 +164,10 @@ function ajaxPut(itemId) {
             console.log("success");
         },
         error: function () {
-            alert('Det gick inte att ändra ditt djur');
+            alert('Couldnt change item');
         }
     });
 }
-
-let chuckyIsGone = false;
 
 function sound(src){
     this.sound = document.createElement("audio");
@@ -239,9 +227,6 @@ function sound(src){
         $('.chuckymain').append('<img src="/images/act1.jpg">');
         $('.chuckymain').append('<button class="fullPageButton" id="gameOver" onclick="gameOver()">Full Page</button>');
 
-        /*$('.chuckymain').append('<button class="chuckyitemBtn actpageitemBtn" id="itemButton" onclick="itemButtonPress()">items</button>');
-        $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn" id="actButton" onclick="actButtonPress()">act</button>');
-        $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn" id="escapeButton" onclick="escapeButtonPress()">escape</button>');*/
     }
 
     function act2() {
@@ -324,11 +309,6 @@ function sound(src){
     }
 
 
-
-
-
-
-
         function chuckyGone() {
 
             $('.chuckymain').empty();
@@ -345,13 +325,25 @@ function sound(src){
             $('.chuckymain').append('<button class="treasureButton" id="treasure" onclick="treasureItem()">treasure</button>');
             $('.chuckymain').append('<button id="back" class="back" onclick="chuckyGone()">down</button>');
         }
-
+$.ajax({
+    type: 'GET',
+    url: 'api/player',
+    success: function (players) {
+        $.each(players, function (i, player) {
+            console.log(player.name);
+            playerName = player.name;
+        });
+    },
+    error: function () {
+        alert('Couldnt find any items');
+    }
+});
         function treasureItem() {
 
 
             $('.chuckymain').empty();
             $('.chuckymain').append('<img src="/images/treasuretext.jpg">');
-            $('.chuckymain').append('<p class="treasureText">Congratulations '+ playerName +' ! You found (item name)!</p>');
+            $('.chuckymain').append('<p class="treasureText">Congratulations '+ playerName +' ! You found an exorcist!</p>');
             $('.chuckymain').append('<button class="chuckyitemBtn actpageitemBtn takeBtn" id="take" onclick="saveItemInPlayerItemFunction()">Take</button>');
             $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn replaceBtn" id="replace" onclick="showItems()" >replace</button>');
             $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn returnBtn" id="return" onclick="chuckyGone()">return</button>');
