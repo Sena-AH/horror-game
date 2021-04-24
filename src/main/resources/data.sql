@@ -14,4 +14,6 @@ INSERT INTO villains (id, difficulty, health, special_attack, villain_name, weak
 
 
 INSERT INTO player_item(id, item_name, player_id) VALUES
-(1, 'priest', 1);
+(1, 'priest', 1),
+(8, 'garlic', 18),
+(99, 'rubber duck', 99);
