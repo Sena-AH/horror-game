@@ -15,12 +15,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/annabelle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/annabelle.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chucky.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chucky.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jigsaw.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jigsaw.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/annabelle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/annabelle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/chucky.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/chucky.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/jigsawScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/jigsawScreen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/annabelle.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/annabelle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/chucky.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/chucky.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/jigsaw.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/jigsaw.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,17 +105,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in horror-game" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="horror-game" />
       <option name="PACKAGE_NAME" value="" />

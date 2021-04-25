@@ -377,7 +377,7 @@ function ajaxGet() {
 
 
         $('.chuckymain').empty();
-        ajaxGet();
+        /*ajaxGet();*/
         showItems();
         $('.chuckymain').append('<img src="/images/treasuretext.jpg">');
         $('.chuckymain').append('<p class="treasureText">Congratulations ' + playerName + ' ! You found an exorcist!</p>');
