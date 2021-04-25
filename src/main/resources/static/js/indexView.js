@@ -133,6 +133,9 @@ function thisfunction(){
         data: JSON.stringify(player),
         success: function () {
             // addPlayer(newPlayer);
+            $('.playerDiv').empty();
+            $('.playerDiv').append('<h3>Welcome '+playerName+'!</h3>');
+            document.getElementById('add-player').remove();
             console.log("success");
         },
         error: function () {
