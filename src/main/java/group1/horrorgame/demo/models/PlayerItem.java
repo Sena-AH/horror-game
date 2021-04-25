@@ -12,8 +12,7 @@ public class PlayerItem {
         this.player_id = playerId;
     }
 
-    public PlayerItem() {
-    }
+
 
     public Integer getId() {
         return id;
