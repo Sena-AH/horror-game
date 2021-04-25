@@ -73,9 +73,6 @@ function startPath() {
 function introMusic(){
     introSound.play();
 }
-function pauseIntroMusic(){
-    menuSound.stop();
-}
 
 function sound(src) {
     this.sound = document.createElement("audio");

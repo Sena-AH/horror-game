@@ -12,13 +12,6 @@ function getValue(){
 
 }
 
-/*startButton();
-resumeButton();*/
-
-/*document.getElementById("resumeBtn").addEventListener("click", resumeButton);
-document.getElementById("startBtn").addEventListener("click", startButton);
-document.getElementById("exitBtn").addEventListener("click", exitButton);*/
-
 function introPath(){
     location.href = "intro";
 }
@@ -26,21 +19,12 @@ function playerPath(){
     location.href = "player";
 }
 
-/*function startButton(){
-    $('.indexMainDiv').append('<button id="startBtn" onclick= introPath()>Start</button>');
-    }
-
-function resumeButton() {
-
-    $('.indexMainDiv').append('<button id="resumeBtn" onclick= playerPath()>Resume</button>');
-}*/
 
 function exitButton() {
     pauseMenuMusic();
     scarySound();
     $('.indexMainDiv').empty();
     $('.playerDiv').empty();
-   /* $('.indexMainDiv').append('<button id="resumeBtn" onclick= playerPath()>Resume</button>');*/
     $('.indexMainDiv').append('<img class="exitImg" src="/images/scaryNun.jpg">');
 
 }
@@ -70,34 +54,6 @@ function sound(src) {
     }
 }
 
-// $(function () {
-//     let $players = $('#players');
-//     let $name = $('#name');
-//
-//     $.ajax({
-//         type: 'Get',
-//         url: 'api/players/',
-//         success: function () {
-//             console.log('success', players);
-//             /*$.each(players, function (i, player) {*/
-//                 addPlayer(player);
-//           /*  })*/
-//         },
-//        /* error: function () {
-//             alert('Could not find any players.');*/
-//         /*}*/
-//     });
-//
-//     function addPlayer(player) {
-//
-//         $players.append(
-//             '<tr>'+ '<td><span class="addPlayer">' + player.name + '</span><input class="editPlayerName"></td>'+
-//
-//             '<td><span class="editPlayer" data-id="' + player.id + '"></span></td>' +
-//             '<td><span class="saveEditPlayer" data-id="' + player.id + '"></span></td>' +
-//             '</tr>'
-//         );
-//     }
 startwithThis();
 function startwithThis(){
     $.ajax({
@@ -134,7 +90,7 @@ function thisfunction(){
         success: function () {
             // addPlayer(newPlayer);
             $('.playerDiv').empty();
-            $('.playerDiv').append('<h3>Welcome '+playerName+'!</h3>');
+            $('.playerDiv').append('<h3 id="greetingText">Welcome '+playerName+'!</h3>');
             document.getElementById('add-player').remove();
             console.log("success");
         },
@@ -144,61 +100,4 @@ function thisfunction(){
     });
     document.getElementById("name").value="";
 }
-
-// $('#add-player').on('click', function testing(inputname) {
-//     menuMusic();
-//
-//     let player = {
-//         "name": "newname"
-//         // document.getElementById('name').value
-//     };
-//     $.ajax({
-//         type: 'POST',
-//         url: 'api/players/',
-//         headers: {
-//             'Accept': 'application/json',
-//             'Content-Type': 'application/json'
-//         },
-//         data: JSON.stringify(player),
-//         success: function (newPlayer) {
-//             // addPlayer(newPlayer);
-//         },
-//         error: function () {
-//             alert('Could not add your username.');
-//         }
-//     });
-//     document.getElementById("name").value="";
-// });
-    // $players.delegate('.editPlayer', 'click', function () {
-    //     let $row = $(this).closest('tr');
-    //     $row.find('input.name').val( $row.find('span.name').html() );
-    //     $row.addClass('edit');
-    // });
-    // $players.delegate('.savePlayer', 'click', function () {
-    //     let $row = $(this).closest('tr');
-    //
-    //     let player = {
-    //         name: $row.find('input.name').val()
-    //
-    //     }
-    //     $.ajax({
-    //         type: 'PUT',
-    //         url: 'api/animals/' + $(this).attr('data-id'),
-    //         headers: {
-    //             'Accept' : 'application/json',
-    //             'Content-Type' : 'application/json'
-    //         },
-    //         data: JSON.stringify(player),
-    //         success: function (newPlayer) {
-    //             $row.find('span.name').html(player.name);
-    //             addPlayer(newPlayer);
-    //         },
-    //         error: function () {
-    //             alert('Could not change your animal');
-    //         }
-    //     });
-    // });
-// });
-
-
 

@@ -8,18 +8,6 @@ let annabelleLaugh= new sound("/mp3/annabelleLaugh.mp3");
 let victorySound= new sound("/mp3/victorySound.mp3");
 let playerItems = [];
 let playerName;
-/*document.getElementById("nextBtn").addEventListener("click", showScene2);*/
-
-/*
-showAnnabelle();
-function showAnnabelle() {
-   document.getElementById('annabelleDiv').innerHTML+='<img class="annabelleDoor" src="images/annabelleFight/annabelleDoor.jpg">';*/
-   /* $('.annabelleDiv').append('<p class="talkBubble1">"Annabelles evil laughter is echoing in the room"</p>');
-    $('.annabelleDiv').prepend('<button class="fightButton" onclick=fightButton()></button>');
-    $('.annabelleDiv').prepend('<button class="escapeButton" onclick=escapeButton()></button>');
-}*/
-
-/*document.getElementById("showItemsBtn").addEventListener("click", showItems);*/
 
 $.ajax({
     type: 'GET',
@@ -175,10 +163,7 @@ function fightButton() {
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene1" src="images/annabelleFight/annabelleScene1.jpg">');
     $('.annabelleDiv').append('<p class="talkBubble2">I will defeat you '+playerName+'!</p>');
-    /*$('.nextBtn').show();*/
     $('.annabelleDiv').append('<button class="nextBtn" onclick=showScene2()></button>');
-    /*"'+playerName+'"*/
-    /*$('.annabelleDiv').prepend('<button class="nextBtn" onclick="showScene2()"></button>');*/
 
 }
 function showScene2() {
@@ -186,7 +171,6 @@ function showScene2() {
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene2" src="images/annabelleFight/annabelleScene2.jpg">');
     $('.annabelleDiv').append('<button class="nextBtn" onclick=showScene3()></button>');
-    /*$('.annabelleDiv').prepend('<button class="nextBtn" onclick="showScene3()"></button>');*/
 
 }
 function showScene3() {
@@ -233,17 +217,3 @@ function escapeButton() {
             this.sound.pause();
         }
     }
-   /* function
-$.ajax({
-    type: 'GET',
-    url: 'api/player',
-    success: function (player) {
-        console.log('success', player);
-    },
-    error: function () {
-        alert('Couldnt find any players or items');
-    }
-});
-}*/
-
-

@@ -52,9 +52,12 @@
 }
 .playerDiv{
     position: absolute;
-    top:45%;
+    top:47%;
     right:41%;
     color:white;
+}
+.playerDiv #greetingText{
+    font-size:1.4rem;
 }
 .btn-info{
     right:33%;
