@@ -58,6 +58,25 @@
     position: absolute;
     cursor: pointer;
 }
+.showAnnabelleItems {
+    width: 47%;
+    height: 13%;
+    position: absolute;
+    background-color: rgba(142,142,142,0.4);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    top: 89%;
+    left: 2%;
+}
+.annabelleItemsDiv{
+    position: absolute;
+    width: 28%;
+    height: 50%;
+    /* background-color: rgba(0,0,0,0.2); */
+    left: 1.5%;
+    top: 55%;
+}
 
 /*
 .itemsBtn{
