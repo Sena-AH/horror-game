@@ -361,16 +361,20 @@ function ajaxGet() {
         }
     });
 
-    function appendButtons(){
+    function appendButtons() {
         $('.removeAndAdd1').remove();
         $('.removeAndAdd2').remove();
         $('.removeAndAdd3').remove();
         $('.removeAndAdd4').remove();
-        $('.itemSmallDiv1').append('<button class="removeAndAdd1"onclick="ajaxPut(1)">REPLACE1</button>')
-        $('.itemSmallDiv2').append('<button class="removeAndAdd2"onclick="ajaxPut(2)">REPLACE2</button>')
-        $('.itemSmallDiv3').append('<button class="removeAndAdd3"onclick="ajaxPut(3)">REPLACE3</button>')
-        $('.itemSmallDiv4').append('<button class="removeAndAdd4"onclick="ajaxPut(4)">REPLACE4</button>')
+        $('.itemSmallDiv4').append('<button class="removeAndAdd4"onclick="ajaxPut(4)">REPLACE Item 4</button>')
+        $('.itemSmallDiv3').append('<button class="removeAndAdd3"onclick="ajaxPut(3)">REPLACE Item 3</button>')
+        $('.itemSmallDiv2').append('<button class="removeAndAdd2"onclick="ajaxPut(2)">REPLACE Item 2</button>')
+        $('.itemSmallDiv1').append('<button class="removeAndAdd1"onclick="ajaxPut(1)">REPLACE Item 1</button>')
     }
+       /* $('.itemSmallDiv2').append('<button class="removeAndAdd2"onclick="ajaxPut(2)">REPLACE Item 2</button>')
+        $('.itemSmallDiv3').append('<button class="removeAndAdd3"onclick="ajaxPut(3)">REPLACE Item 3</button>')
+        $('.itemSmallDiv4').append('<button class="removeAndAdd4"onclick="ajaxPut(4)">REPLACE Item 4</button>')
+    }*/
 
 
     function treasureItem() {
