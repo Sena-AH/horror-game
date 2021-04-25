@@ -287,7 +287,7 @@
                 $('.mainDiv').append('<button class="showItems" id="showItemsBtn">ITEMS</button>')
                 $('.mainDiv').append('<img class="answer1Screen2" src="/images/end_frame.jpg">')
                 getItems();
-            }, 12000)
+            }, 10000)
         }
     }
 
