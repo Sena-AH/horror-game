@@ -13,7 +13,6 @@ public class PlayerItem {
     }
 
 
-
     public Integer getId() {
         return id;
     }

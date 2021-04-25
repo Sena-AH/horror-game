@@ -1,9 +1,8 @@
 package group1.horrorgame.demo.api;
 
 
-import group1.horrorgame.demo.models.Item;
+
 import group1.horrorgame.demo.models.PlayerItem;
-import group1.horrorgame.demo.services.ItemService;
 import group1.horrorgame.demo.services.PlayerItemService;
 import org.springframework.web.bind.annotation.*;
 

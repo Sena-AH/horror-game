@@ -61,11 +61,6 @@ public class gameController {
     public String chuckyFight(){
         return "chucky";
     }
-//
-//    @Autowired
-//    PlayerService playerService;
-//
-//    @Autowired
-//    VillainService villainService;
+
 
 }
