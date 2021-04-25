@@ -52,7 +52,7 @@ function scarySound(){
     scareSound.play();
 }
 function pauseMenuMusic(){
-    backgroundMusic.stop();
+   menuSound.stop();
 }
 
 function sound(src) {
