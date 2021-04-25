@@ -26,16 +26,17 @@ function playerPath(){
     location.href = "player";
 }
 
-function startButton(){
+/*function startButton(){
     $('.indexMainDiv').append('<button id="startBtn" onclick= introPath()>Start</button>');
     }
 
 function resumeButton() {
 
     $('.indexMainDiv').append('<button id="resumeBtn" onclick= playerPath()>Resume</button>');
-}
+}*/
 
 function exitButton() {
+    pauseMenuMusic();
     scarySound();
     $('.indexMainDiv').empty();
     $('.playerDiv').empty();
@@ -49,6 +50,9 @@ function menuMusic(){
 }
 function scarySound(){
     scareSound.play();
+}
+function pauseMenuMusic(){
+    backgroundMusic.stop();
 }
 
 function sound(src) {
@@ -107,9 +111,11 @@ function startwithThis(){
         }
     });
 }
+
 document.getElementById('add-player').addEventListener("click", thisfunction);
 
 function thisfunction(){
+    menuMusic();
 
     let playerName = document.getElementById("name").value;
     console.log(playerName);
@@ -133,6 +139,7 @@ function thisfunction(){
             alert('Could not add your username.');
         }
     });
+    document.getElementById("name").value="";
 }
 
 // $('#add-player').on('click', function testing(inputname) {

@@ -10,9 +10,13 @@
 <body>
 <div class="annabelleDiv">
     <img class="annabelleDoor" th:src="@{/images/annabelleFight/annabelleDoor.jpg}">
-    <button class="fightBtn" id="fightBtn"><img th:src="@{/images/fight_button.jpg}" width="100x100"></button>
-    <button class="escapeBtn" id="escapeBtn"><img th:src="@{/images/escape_button.jpg}" width="100x100"></button>
+    <button class="fightBtn" id="fightBtn"></button>
+    <button class="escapeBtn" id="escapeBtn"></button>
+<!--    <button class="itemsBtn" id="itemsBtn"><img th:src="@{/images/itemsbutton.jpg}"width="100x100"></button>-->
     <p class="talkBubble1">"Annabelle's evil laughter is echoing in the room"</p>
+</div>
+<div class="itemsDiv" id="itemsDivDiv">
+    <button class="showItems" id="showItemsBtn">ITEMS</button>
 </div>
 <script th:src="@{webjars/jquery/3.1.1/jquery.js}"></script>
 <script th:src="@{/js/annabelleView.js}"></script>

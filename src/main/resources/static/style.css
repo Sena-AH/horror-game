@@ -52,13 +52,13 @@
 }
 .playerDiv{
     position: absolute;
-    top:50%;
+    top:45%;
     right:41%;
     color:white;
 }
 .btn-info{
-    right:35%;
-    top:49%;
+    right:33%;
+    top:45%;
 }
 .editPlayer {
     position: absolute;

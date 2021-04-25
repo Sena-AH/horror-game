@@ -63,7 +63,7 @@ function doorScene(){
     $('.container').append('<img id="doorIntroImg" src="images/introImg/doorImage.jpg">');
     $('.container').append('<p class="doorIntroText">When you find the doors choose which one you want to enter by ' +
                                                     'clicking on one of them.</p>');
-    $('.container').append('<button class="nextButt" onclick=startPath()></button>');
+    $('.container').append('<button class="doorStartButt" onclick=startPath()></button>');
 
 }
 

@@ -29,11 +29,25 @@
    /* margin-bottom: auto;*/
     border: none;
     cursor: pointer;
-    background: rgba(0,0,0,0.0);
-    border: 0;
-    min-height: 50px;
-    min-width: 132px;
+    background-color:transparent;
+    color: transparent;
+    width: 13%;
+    height: 6.5%;
+
 }
+#escapeBtn{
+    background: url("/images/escape_button.jpg");
+    background-size: 100%;
+    top: 85%;
+    left: 52%;
+}
+#fightBtn{
+    background: url("/images/fight_button.jpg");
+    background-size: 100%;
+    top: 85%;
+    left: 37%;
+}
+
 .nextBtn{
     background: url("/images/nextBtn.jpg");
     top: 87%;
@@ -44,11 +58,18 @@
     position: absolute;
     cursor: pointer;
 }
-.fightBtn{
-    top: 85%;
-    left: 37%;
+
+/*
+.itemsBtn{
+    background: url("/images/itemsbutton.jpg");
+    top: 87%;
+    left: 42%;
+    background-size: 100%;
+    width: 13%;
+    height: 7.0%;
+    position: absolute;
+    cursor: pointer;
+
 }
-.escapeBtn{
-    top: 85%;
-    left: 52%;
-}
+*/
+
