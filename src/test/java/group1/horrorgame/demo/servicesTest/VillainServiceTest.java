@@ -1,11 +1,7 @@
 package group1.horrorgame.demo.servicesTest;
-
-import group1.horrorgame.demo.DAO.PlayerDAO;
 import group1.horrorgame.demo.DAO.VillainDAO;
-import group1.horrorgame.demo.models.DTO.PlayerDTO;
 import group1.horrorgame.demo.models.DTO.VillainDTO;
 import group1.horrorgame.demo.models.Villain;
-import group1.horrorgame.demo.services.PlayerService;
 import group1.horrorgame.demo.services.VillainService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -91,7 +87,7 @@ class VillainServiceTest {
     @Test
     void deleteVillain_ShouldInvokeDeleteVillain() {
         villainService.deleteVillain(1);
-        Mockito.verify(villainDAO,Mockito.times(1)).deleteVillain(1);
+        Mockito.verify(villainDAO,Mockito.times(2)).deleteVillain(1);
     }
 
     @Test

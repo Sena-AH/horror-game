@@ -2,18 +2,14 @@ package group1.horrorgame.demo.servicesTest;
 
 import group1.horrorgame.demo.DAO.PlayerDAO;
 import group1.horrorgame.demo.models.DTO.PlayerDTO;
-import group1.horrorgame.demo.models.DTO.VillainDTO;
 import group1.horrorgame.demo.models.Player;
-import group1.horrorgame.demo.models.Villain;
 import group1.horrorgame.demo.services.PlayerService;
-import group1.horrorgame.demo.services.VillainService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentMatchers;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -96,7 +92,7 @@ class PlayerServiceTest{
     }
 
     @Test
-    void deletePlayer_ShouldNotInvokeAddVillain() {
+    void deletePlayer_ShouldNotInvokeAddPlayer() {
         playerService.deletePlayer(1);
         Mockito.verify(playerDAO, Mockito.times(0)).addPlayer(new PlayerDTO(0, null, 0,null,0,0,0, 0));
     }
