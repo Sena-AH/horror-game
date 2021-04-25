@@ -7,6 +7,7 @@ document.getElementById("showItemsBtn").addEventListener("click", showItems);
 let annabelleLaugh= new sound("/mp3/annabelleLaugh.mp3");
 let victorySound= new sound("/mp3/victorySound.mp3");
 let playerItems = [];
+let playerName;
 /*document.getElementById("nextBtn").addEventListener("click", showScene2);*/
 
 /*
@@ -150,11 +151,25 @@ function pauseAnnabelleMusic(){
     annabelleLaugh.stop();
 }
 
+$.ajax({
+    type: 'GET',
+    url: 'api/player',
+    success: function (players) {
+        $.each(players, function (i, player) {
+            console.log(player.name);
+            playerName = player.name;
+        });
+    },
+    error: function () {
+        alert('Couldnt find any items');
+    }
+});
+
 function fightButton() {
     annabelleSound();
     $('.annabelleDiv').empty();
     $('.annabelleDiv').append('<img class="annabelleScene1" src="images/annabelleFight/annabelleScene1.jpg">');
-    $('.annabelleDiv').append('<p class="talkBubble2">I will defeat you!</p>');
+    $('.annabelleDiv').append('<p class="talkBubble2">I will defeat you '+playerName+'!</p>');
     /*$('.nextBtn').show();*/
     $('.annabelleDiv').append('<button class="nextBtn" onclick=showScene2()></button>');
     /*"'+playerName+'"*/
