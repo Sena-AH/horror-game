@@ -1,18 +1,21 @@
  let playerItems = [];
  document.getElementById("showItemsBtn").addEventListener("click", showItems);
-    $.ajax({
-        type: 'GET',
-        url: 'api/items',
-        success: function (items) {
-            console.log('success', items);
-            $.each(items, function (i, item) {
-                addItem(item);
-            });
-        },
-        error: function () {
-            alert('Couldnt find any items');
-        }
-    });
+
+ $.ajax({
+     type: 'GET',
+     url: 'api/items',
+     success: function (items) {
+         console.log('success', items);
+         $.each(items, function (i, item) {
+             addItem(item);
+         });
+     },
+     error: function () {
+         alert('Couldnt find any items');
+     }
+ });
+
+
  $.ajax({
      type: 'GET',
      url: 'api/player',
@@ -179,10 +182,10 @@
         $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawFight/jigsawGameScreen2.jpg">');
         $('.mainDiv').append('<button class="nextButton" onclick=nextGameScreen()></button>');
     }
-
+    let gameOverTimeout;
     function nextGameScreen(){
         $('.mainDiv').empty();
-        setTimeout(gameOver, 60000);
+        gameOverTimeout = setTimeout(gameOver, 60000);
         $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawFight/jigsawGameScreen3.jpg">')
         $('.mainDiv').append('<button class="jigsawGameClueNumberOne" onclick=clueOne()></button>')
         $('.mainDiv').append('<button class="jigsawGameClueNumberTwo" onclick=clueTwo()></button>')
@@ -203,17 +206,88 @@
         }
     }
 
+    function getItems(){
+        $.ajax({
+            type: 'GET',
+            url: 'api/items',
+            success: function (items) {
+                console.log('success', items);
+                $.each(items, function (i, item) {
+                    addItem(item);
+                });
+            },
+            error: function () {
+                alert('Couldnt find any items');
+            }
+        });
+
+        function addItem(items){
+            let item = items.itemName;
+            let itemId = items.id;
+            console.log(itemId);
+            let imageSource = "/images/"+item+".jpg";
+            $('.itemsDiv').append('<div class="itemSmallDiv'+itemId+'" id="itemSmallDiv'+itemId+'"><button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button></div>')
+            playerItems.push(itemId);
+        }
+    }
+
+ function ajaxPut(itemId) {
+     let newItemTest = {
+         id: itemId,
+         attackPoints: '3',
+         itemName: 'pinkElephant',
+         specialAbility: 'Scary pink toy'
+     }
+     console.log(newItemTest);
+
+     $.ajax({
+         type: 'PUT',
+         url: 'api/items/' + itemId,
+         headers: {
+             'Accept': 'application/json',
+             'Content-Type': 'application/json'
+         },
+         data: JSON.stringify(newItemTest),
+         success: function () {
+             location.href = "player";
+             console.log("success");
+         },
+         error: function () {
+             alert('Couldnt change item');
+         }
+     });
+ }
+
+    function appendButtons() {
+        $('.removeAndAdd1').remove();
+        $('.removeAndAdd2').remove();
+        $('.removeAndAdd3').remove();
+        $('.removeAndAdd4').remove();
+        $('.itemSmallDiv4').append('<button class="removeAndAdd4"onclick="ajaxPut(4)">REPLACE ITEM 4</button>')
+        $('.itemSmallDiv3').append('<button class="removeAndAdd3"onclick="ajaxPut(3)">REPLACE ITEM 3</button>')
+        $('.itemSmallDiv2').append('<button class="removeAndAdd2"onclick="ajaxPut(2)">REPLACE ITEM 2</button>')
+        $('.itemSmallDiv1').append('<button class="removeAndAdd1"onclick="ajaxPut(1)">REPLACE ITEM 1</button>')
+    }
+
+
     function checkVal(){
         if(document.getElementById("keycodeInputVal").value === "452395"){
+            clearTimeout(gameOverTimeout);
             $('.mainDiv').empty();
             $('.mainDiv').append('<img class="answer1Screen2" src="/images/jigsawFight/jigsawYouHaveWon.jpg">')
             setTimeout(function(){
                 $('.mainDiv').empty();
                 $('.mainDiv').append('<img class="answer1Screen2" src="/images/winner_frame.jpg">')
-            },10000);
+            },7000);
             setTimeout(function(){
-                location.href="player"
-            }, 15000)
+                $('.mainDiv').empty();
+                $('.mainDiv').append('<button class="replaceElephant" onclick="appendButtons()">REPLACE</button>')
+                $('.mainDiv').append('<button class="leaveJigsawScreen" onclick=location.href="player">LEAVE</button>')
+                $('.mainDiv').append('<div class="itemsDiv" id="itemsDivDiv"></div>');
+                $('.mainDiv').append('<button class="showItems" id="showItemsBtn">ITEMS</button>')
+                $('.mainDiv').append('<img class="answer1Screen2" src="/images/end_frame.jpg">')
+                getItems();
+            }, 12000)
         }
     }
 
