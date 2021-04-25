@@ -5,7 +5,6 @@ import group1.horrorgame.demo.models.DTO.ItemDTO;
 import group1.horrorgame.demo.models.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 

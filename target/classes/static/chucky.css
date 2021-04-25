@@ -240,7 +240,6 @@
     margin-left: 72px;
     height:30px;
 }
-.chucky .chuckyItemsDiv #itemImage1, .chucky .chuckyItemsDiv #itemImage2, .chucky .chuckyItemsDiv #itemImage3, .chucky .chuckyItemsDiv #itemImage4{
+.chucky .chuckyItemsDiv #itemImage1, .chucky .chuckyItemsDiv #itemImage2, .chucky .chuckyItemsDiv #itemImage3, .chucky .chuckyItemsDiv #itemImage4,.chucky .chuckyItemsDiv #itemImage5{
     height: 60px;
 }
-

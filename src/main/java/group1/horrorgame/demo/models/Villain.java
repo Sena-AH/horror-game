@@ -1,14 +1,15 @@
 package group1.horrorgame.demo.models;
 
 public class Villain {
-    private int id;
+    private Integer id;
     private String villainName;
     private double health;
     private String specialAttack;
     private String difficulty;
     private String weakness;
 
-    public Villain(int id,String villainName, double health, String specialAttack, String difficulty, String weakness) {
+    public Villain(Integer id,String villainName, double health, String specialAttack, String difficulty, String weakness) {
+        this.id = id;
         this.villainName = villainName;
         this.health = health;
         this.specialAttack = specialAttack;
@@ -18,10 +19,12 @@ public class Villain {
 
     public Villain() {
     }
-    public int getId(){
+
+    public Integer getId(){
         return id;
     }
-    public void setId(int id){
+
+    public void setId(Integer id){
         this.id = id;
     }
 
