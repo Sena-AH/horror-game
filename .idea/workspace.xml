@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10466bfb-1d8c-47c1-a490-371682409bdc" name="Default Changelist" comment="merged item-branch into main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/annabelle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/annabelle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/chucky.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/chucky.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jigsawScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/jigsawScreen.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/annabelleView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/chuckyView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/chuckyView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jigsawView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jigsawView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/annabelle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/annabelle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chucky.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chucky.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jigsaw.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jigsaw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/annabelle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/annabelle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/chucky.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/chucky.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/jigsawScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/jigsawScreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/annabelle.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/annabelle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/chucky.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/chucky.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/jigsaw.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/jigsaw.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

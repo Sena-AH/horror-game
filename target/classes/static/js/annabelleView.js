@@ -20,6 +20,7 @@ function showAnnabelle() {
 }*/
 
 /*document.getElementById("showItemsBtn").addEventListener("click", showItems);*/
+
 $.ajax({
     type: 'GET',
     url: 'api/items',
@@ -39,10 +40,11 @@ function addItem(items){
     let itemId = items.id;
     console.log(itemId);
     let imageSource = "/images/"+item+".jpg";
-    $('.itemsDiv').append('<button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button>')
+    $('.itemsDiv').append('<div class="itemSmallDiv'+itemId+'" id="itemSmallDiv'+itemId+'"><button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button></div>')
     playerItems.push(itemId);
 }
 function showItems(){
+    console.log($(".itemsDiv").is(':visible'));
     if($(".itemsDiv").is(':visible')){
         $(".itemsDiv").hide();
     }
@@ -53,19 +55,19 @@ function showItems(){
 
 function item1(){
     console.log("item 0");
+    $('.deleteButton1').remove();
     $('.deleteButton2').remove();
     $('.deleteButton3').remove();
     $('.deleteButton4').remove();
-    $('.itemsDiv').append('<button class="deleteButton1" onclick="deleteItem1()">DELETE</button>');
+    $('.itemSmallDiv1').append('<button class="deleteButton1" onclick="deleteItem1()">DELETE</button>');
 }
 function deleteItem1(){
-    let itemImageAndButton = document.getElementById("itemBtn1");
-    console.log(itemImageAndButton);
+    let itemSmallDivRemove = document.getElementById("itemSmallDiv1");
     $.ajax({
         type: 'DELETE',
         url: 'api/items/'+playerItems[0],
         success: function () {
-            itemImageAndButton.remove();
+            itemSmallDivRemove.remove();
             console.log("success");
         },
         error: function () {
@@ -76,18 +78,19 @@ function deleteItem1(){
 function item2(){
     console.log("item 1");
     $('.deleteButton1').remove();
+    $('.deleteButton2').remove();
     $('.deleteButton3').remove();
     $('.deleteButton4').remove();
-    $('.itemsDiv').append('<button class="deleteButton2" onclick="deleteItem2()">DELETE</button>');
+    $('.itemSmallDiv2').append('<button class="deleteButton2" onclick="deleteItem2()">DELETE</button>');
 
 }
 function deleteItem2(){
-    let itemImageAndButton = document.getElementById("itemBtn2");
+    let itemSmallDivRemove = document.getElementById("itemSmallDiv2");
     $.ajax({
         type: 'DELETE',
         url: 'api/items/'+playerItems[1],
         success: function () {
-            itemImageAndButton.remove();
+            itemSmallDivRemove.remove();
             console.log("success");
         },
         error: function () {
@@ -99,17 +102,18 @@ function item3(){
     console.log("item 2");
     $('.deleteButton1').remove();
     $('.deleteButton2').remove();
+    $('.deleteButton3').remove();
     $('.deleteButton4').remove();
-    $('.itemsDiv').append('<button class="deleteButton3" onclick="deleteItem3()">DELETE</button>');
+    $('.itemSmallDiv3').append('<button class="deleteButton3" onclick="deleteItem3()">DELETE</button>');
 
 }
 function deleteItem3(){
-    let itemImageAndButton = document.getElementById("itemBtn3");
+    let itemSmallDivRemove = document.getElementById("itemSmallDiv3");
     $.ajax({
         type: 'DELETE',
         url: 'api/items/'+playerItems[2],
         success: function () {
-            itemImageAndButton.remove();
+            itemSmallDivRemove.remove();
             console.log("success");
         },
         error: function () {
@@ -122,16 +126,17 @@ function item4(){
     $('.deleteButton1').remove();
     $('.deleteButton2').remove();
     $('.deleteButton3').remove();
-    $('.itemsDiv').append('<button class="deleteButton4" onclick="deleteItem4()">DELETE</button>');
+    $('.deleteButton4').remove();
+    $('.itemSmallDiv4').append('<button class="deleteButton4" onclick="deleteItem4()">DELETE</button>');
 
 }
 function deleteItem4(){
-    let itemImageAndButton = document.getElementById("itemBtn4");
+    let itemSmallDivRemove = document.getElementById("itemSmallDiv4");
     $.ajax({
         type: 'DELETE',
         url: 'api/items/'+playerItems[3],
         success: function () {
-            itemImageAndButton.remove();
+            itemSmallDivRemove.remove();
             console.log("success");
         },
         error: function () {

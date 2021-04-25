@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Chucky</title>
+
     <link rel="stylesheet" type="text/css" href="/chucky.css">
+    <link rel="stylesheet" type="text/css" href="/jigsawScreen.css">
 </head>
 <body>
 
@@ -11,11 +13,11 @@
 <div class="chuckymain" >
     <img  class="chuckyDoorImage" th:src="@{/images/chuckydoor.png}">
     <button class="doorclick" id="doorClickButton" >door</button>
-</div>
 
-<div class="itemsDiv" id="itemsDivDiv">
-    <button class="showItems" id="showItemsBtn">ITEMS</button>
 </div>
+<div class="itemsDiv" id="itemsDivDiv">
+</div>
+<button class="showItems" id="showItemsBtn">ITEMS</button>
 
 <script th:src="@{webjars/jquery/3.1.1/jquery.js}"></script>
 <script th:src="@{/js/chuckyView.js}"></script>

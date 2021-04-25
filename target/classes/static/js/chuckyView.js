@@ -4,8 +4,144 @@ document.getElementById("showItemsBtn").addEventListener("click", showItems);
 ajaxGet();
 let playerName;
 
+// $.ajax({
+//     type: 'GET',
+//     url: 'api/items',
+//     success: function (items) {
+//         console.log('success', items);
+//         $.each(items, function (i, item) {
+//             addItem(item);
+//         });
+//     },
+//     error: function () {
+//         alert('Couldnt find any items');
+//     }
+// });
 
-function ajaxGet(){
+function addItem(items){
+    let item = items.itemName;
+    let itemId = items.id;
+    console.log(itemId);
+    let imageSource = "/images/"+item+".jpg";
+    $('.itemsDiv').append('<div class="itemSmallDiv'+itemId+'" id="itemSmallDiv'+itemId+'"><button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button></div>')
+    playerItems.push(itemId);
+}
+function showItems(){
+    console.log($(".itemsDiv").is(':visible'));
+    if($(".itemsDiv").is(':visible')){
+        $(".itemsDiv").hide();
+    }
+    else{
+        $(".itemsDiv").show();
+    }
+}
+
+// function putItem1(){
+//     ajaxPut("item1");
+// }
+// function putItem2(){
+//     ajaxPut("item2")
+// }
+// function putItem2(){
+//     ajaxPut("item3")
+// }
+// function putItem2(){
+//     ajaxPut("item4")
+// }
+function item1(){
+    // if(replace = true){
+    //     ajaxPut("1");
+    // }
+    $('.deleteButton1').remove();
+    $('.deleteButton2').remove();
+    $('.deleteButton3').remove();
+    $('.deleteButton4').remove();
+    $('.itemSmallDiv1').append('<button class="deleteButton1" onclick="deleteItem1()">DELETE</button>');
+}
+function deleteItem1(){
+    let itemSmallDivRemove = document.getElementById("itemSmallDiv1");
+    $.ajax({
+        type: 'DELETE',
+        url: 'api/items/'+playerItems[0],
+        success: function () {
+            itemSmallDivRemove.remove();
+            console.log("success");
+        },
+        error: function () {
+            alert('Couldnt find any items');
+        }
+    });
+}
+function item2(){
+    // if()
+    $('.deleteButton1').remove();
+    $('.deleteButton2').remove();
+    $('.deleteButton3').remove();
+    $('.deleteButton4').remove();
+    $('.itemSmallDiv2').append('<button class="deleteButton2" onclick="deleteItem2()">DELETE</button>');
+
+}
+function deleteItem2(){
+    let itemSmallDivRemove = document.getElementById("itemSmallDiv2");
+    $.ajax({
+        type: 'DELETE',
+        url: 'api/items/'+playerItems[1],
+        success: function () {
+            itemSmallDivRemove.remove();
+            console.log("success");
+        },
+        error: function () {
+            alert('Couldnt find any items');
+        }
+    });
+}
+function item3(){
+    $('.deleteButton1').remove();
+    $('.deleteButton2').remove();
+    $('.deleteButton3').remove();
+    $('.deleteButton4').remove();
+    $('.itemSmallDiv3').append('<button class="deleteButton3" onclick="deleteItem3()">DELETE</button>');
+
+}
+function deleteItem3(){
+    let itemSmallDivRemove = document.getElementById("itemSmallDiv3");
+    $.ajax({
+        type: 'DELETE',
+        url: 'api/items/'+playerItems[2],
+        success: function () {
+            itemSmallDivRemove.remove();
+            console.log("success");
+        },
+        error: function () {
+            alert('Couldnt find any items');
+        }
+    });
+}
+function item4(){
+    $('.deleteButton1').remove();
+    $('.deleteButton2').remove();
+    $('.deleteButton3').remove();
+    $('.deleteButton4').remove();
+    $('.itemSmallDiv4').append('<button class="deleteButton4" onclick="deleteItem4()">DELETE</button>');
+
+}
+function deleteItem4(){
+    let itemSmallDivRemove = document.getElementById("itemSmallDiv4");
+    $.ajax({
+        type: 'DELETE',
+        url: 'api/items/'+playerItems[3],
+        success: function () {
+            itemSmallDivRemove.remove();
+            console.log("success");
+        },
+        error: function () {
+            alert('Couldnt find any items');
+        }
+    });
+}
+
+
+function ajaxGet() {
     $('.item1').remove();
     $('.item2').remove();
     $('.item3').remove();
@@ -25,164 +161,49 @@ function ajaxGet(){
             alert('Couldnt find any items');
         }
     });
-
-
-    function addItem(items) {
-        let item = items.itemName;
-        let itemId = items.id;
-        console.log(itemId);
-        let imageSource = "/images/" + item + ".jpg";
-        $('.itemsDiv').append('<button class="item' + itemId + '" id="itemBtn' + itemId + '" onclick="item' + itemId + '()"><img id="itemImage' + itemId + '" src="' + imageSource + '" 70x70></button>')
-        playerItems.push(itemId);
-    }
-
 }
 
-    function showItems() {
-        if ($(".itemsDiv").is(':visible')) {
-            $(".itemsDiv").hide();
-        } else {
-            $(".itemsDiv").show();
+    function ajaxPut(itemId) {
+        let newItemTest = {
+            id: itemId,
+            attackPoints: '3',
+            itemName: 'Exorcist',
+            specialAbility: 'Exorcising demons'
+        }
+        console.log(newItemTest);
+
+        $.ajax({
+            type: 'PUT',
+            url: 'api/items/' + itemId,
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            data: JSON.stringify(newItemTest),
+            success: function () {
+                ajaxGet();
+                console.log("success");
+            },
+            error: function () {
+                alert('Couldnt change item');
+            }
+        });
+    }
+
+    function sound(src) {
+        this.sound = document.createElement("audio");
+        this.sound.src = src;
+        this.sound.setAttribute("preload", "auto");
+        this.sound.setAttribute("controls", "none");
+        //this.sound.style.display = "none";
+        document.body.appendChild(this.sound);
+        this.play = function () {
+            this.sound.play();
+        }
+        this.stop = function () {
+            this.sound.pause();
         }
     }
-
-    function item1() {
-        ajaxPut("1");
-        $('.deleteButton2').remove();
-        $('.deleteButton3').remove();
-        $('.deleteButton4').remove();
-        $('.itemsDiv').append('<button class="deleteButton1" onclick="deleteItem1()">DELETE</button>');
-    }
-
-    function deleteItem1() {
-        let itemImageAndButton = document.getElementById("itemBtn1");
-        console.log(itemImageAndButton);
-        $.ajax({
-            type: 'DELETE',
-            url: 'api/items/' + playerItems[0],
-            success: function () {
-                itemImageAndButton.remove();
-                console.log("success");
-            },
-            error: function () {
-                alert('Couldnt find any items');
-            }
-        });
-    }
-
-    function item2() {
-        ajaxPut("2");
-        $('.deleteButton1').remove();
-        $('.deleteButton3').remove();
-        $('.deleteButton4').remove();
-        $('.itemsDiv').append('<button class="deleteButton2" onclick="deleteItem2()">DELETE</button>');
-
-    }
-
-    function deleteItem2() {
-        let itemImageAndButton = document.getElementById("itemBtn2");
-        $.ajax({
-            type: 'DELETE',
-            url: 'api/items/' + playerItems[1],
-            success: function () {
-                itemImageAndButton.remove();
-                console.log("success");
-            },
-            error: function () {
-                alert('Couldnt find any items');
-            }
-        });
-    }
-
-    function item3() {
-        ajaxPut("3");
-        $('.deleteButton1').remove();
-        $('.deleteButton2').remove();
-        $('.deleteButton4').remove();
-        $('.itemsDiv').append('<button class="deleteButton3" onclick="deleteItem3()">DELETE</button>');
-
-    }
-
-    function deleteItem3() {
-        let itemImageAndButton = document.getElementById("itemBtn3");
-        $.ajax({
-            type: 'DELETE',
-            url: 'api/items/' + playerItems[2],
-            success: function () {
-                itemImageAndButton.remove();
-                console.log("success");
-            },
-            error: function () {
-                alert('Couldnt find any items');
-            }
-        });
-    }
-
-    function item4() {
-        ajaxPut("4");
-        $('.deleteButton1').remove();
-        $('.deleteButton2').remove();
-        $('.deleteButton3').remove();
-        $('.itemsDiv').append('<button class="deleteButton4" onclick="deleteItem4()">DELETE</button>');
-
-    }
-
-    function deleteItem4() {
-        let itemImageAndButton = document.getElementById("itemBtn4");
-        $.ajax({
-            type: 'DELETE',
-            url: 'api/items/' + playerItems[3],
-            success: function () {
-                itemImageAndButton.remove();
-                console.log("success");
-            },
-            error: function () {
-                alert('Couldnt find any items');
-            }
-        });
-    }
-
-function ajaxPut(itemId) {
-    let newItemTest = {
-        id: itemId,
-        attackPoints: '3',
-        itemName: 'Exorcist',
-        specialAbility: 'Exorcising demons'
-    }
-    console.log(newItemTest);
-
-    $.ajax({
-        type: 'PUT',
-        url: 'api/items/'+itemId,
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        data: JSON.stringify(newItemTest),
-        success: function () {
-            ajaxGet();
-            console.log("success");
-        },
-        error: function () {
-            alert('Couldnt change item');
-        }
-    });
-}
-
-function sound(src){
-    this.sound = document.createElement("audio");
-    this.sound.src = src;
-    this.sound.setAttribute("preload", "auto");
-    this.sound.setAttribute("controls", "none");
-    //this.sound.style.display = "none";
-    document.body.appendChild(this.sound);
-    this.play = function(){
-        this.sound.play();
-    }
-    this.stop = function(){
-        this.sound.pause();
-    }
-}
 
     document.getElementById("doorClickButton").addEventListener("click", changeImage);
 
@@ -309,50 +330,67 @@ function sound(src){
     }
 
 
-        function chuckyGone() {
+    function chuckyGone() {
 
-            $('.chuckymain').empty();
-            $('.chuckymain').append('<img src="/images/actwinchuckygone.jpg">');
-            $('.chuckymain').append('<button class="doorclick doorclickexit" id="doorClickButton" onclick="treasureRoom()">door</button>');
-            $('.chuckymain').append('<button id="back" class="back" onclick="escapeButtonPress()">down</button>');
+        $('.chuckymain').empty();
+        $('.chuckymain').append('<img src="/images/actwinchuckygone.jpg">');
+        $('.chuckymain').append('<button class="doorclick doorclickexit" id="doorClickButton" onclick="treasureRoom()">door</button>');
+        $('.chuckymain').append('<button id="back" class="back" onclick="escapeButtonPress()">down</button>');
 
-        }
-
-
-        function treasureRoom() {
-            $('.chuckymain').empty();
-            $('.chuckymain').append('<img src="/images/treasure.jpg">');
-            $('.chuckymain').append('<button class="treasureButton" id="treasure" onclick="treasureItem()">treasure</button>');
-            $('.chuckymain').append('<button id="back" class="back" onclick="chuckyGone()">down</button>');
-        }
-$.ajax({
-    type: 'GET',
-    url: 'api/player',
-    success: function (players) {
-        $.each(players, function (i, player) {
-            console.log(player.name);
-            playerName = player.name;
-        });
-    },
-    error: function () {
-        alert('Couldnt find any items');
     }
-});
-        function treasureItem() {
 
 
-            $('.chuckymain').empty();
-            $('.chuckymain').append('<img src="/images/treasuretext.jpg">');
-            $('.chuckymain').append('<p class="treasureText">Congratulations '+ playerName +' ! You found an exorcist!</p>');
-            $('.chuckymain').append('<button class="chuckyitemBtn actpageitemBtn takeBtn" id="take" onclick="saveItemInPlayerItemFunction()">Take</button>');
-            $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn replaceBtn" id="replace" onclick="showItems()" >replace</button>');
-            $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn returnBtn" id="return" onclick="chuckyGone()">return</button>');
+    function treasureRoom() {
+        $('.chuckymain').empty();
+        $('.chuckymain').append('<img src="/images/treasure.jpg">');
+        $('.chuckymain').append('<button class="treasureButton" id="treasure" onclick="treasureItem()">treasure</button>');
+        $('.chuckymain').append('<button id="back" class="back" onclick="chuckyGone()">down</button>');
+    }
 
+    $.ajax({
+        type: 'GET',
+        url: 'api/player',
+        success: function (players) {
+            $.each(players, function (i, player) {
+                console.log(player.name);
+                playerName = player.name;
+            });
+        },
+        error: function () {
+            alert('Couldnt find any items');
         }
+    });
+
+    function appendButtons(){
+        $('.removeAndAdd1').remove();
+        $('.removeAndAdd2').remove();
+        $('.removeAndAdd3').remove();
+        $('.removeAndAdd4').remove();
+        $('.itemSmallDiv1').append('<button class="removeAndAdd1"onclick="ajaxPut(1)">REPLACE1</button>')
+        $('.itemSmallDiv2').append('<button class="removeAndAdd2"onclick="ajaxPut(2)">REPLACE2</button>')
+        $('.itemSmallDiv3').append('<button class="removeAndAdd3"onclick="ajaxPut(3)">REPLACE3</button>')
+        $('.itemSmallDiv4').append('<button class="removeAndAdd4"onclick="ajaxPut(4)">REPLACE4</button>')
+    }
+
+
+    function treasureItem() {
+
+
+        $('.chuckymain').empty();
+        ajaxGet();
+        showItems();
+        $('.chuckymain').append('<img src="/images/treasuretext.jpg">');
+        $('.chuckymain').append('<p class="treasureText">Congratulations ' + playerName + ' ! You found an exorcist!</p>');
+        $('.chuckymain').append('<button class="chuckyitemBtn actpageitemBtn takeBtn" id="take" onclick="saveItemInPlayerItemFunction()">Take</button>');
+        $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn replaceBtn" id="replace" onclick="appendButtons()" >replace</button>');
+        $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn returnBtn" id="return" onclick="chuckyGone()">return</button>');
+
+    }
 
 
     function escapeButtonPress() {
         location.href = 'player';
     }
+
 
 
