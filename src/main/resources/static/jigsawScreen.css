@@ -1,16 +1,12 @@
 .mainDiv{
     position: relative;
     width: 100%;
-    /*position: center;*/
     padding: 10px 10px;
 }
 .itemsDiv{
     position: absolute;
-    /*display: flex;*/
-    /*justify-content: space-between;*/
     width: 17%;
     height: 35%;
-    /*background-color: rgba(0,0,0,0.2);*/
     left: 1.5%;
     top: 55%;
 }
@@ -30,16 +26,7 @@
     background-color: rgba(142,142,142,0.5);
     color: white;
 }
-/*.itemsDiv>button{*/
-/*    width: 20%;*/
-/*    height: 20%;*/
-/*    display: block;*/
-/*    !*background-color: transparent;*!*/
-/*    border:0;*/
-/*    padding-bottom: 5%;*/
-/*    margin-left: 22%;*/
-/*    background-size:100%;*/
-/*}*/
+
 .itemSmallDiv1, .itemSmallDiv2, .itemSmallDiv3, .itemSmallDiv4{
     background-color: transparent;
     width: 20%;
@@ -92,7 +79,6 @@
     left: 2%;
  }
 .jigsawBaseBackground{
-    /*position: relative;*/
     object-position: center;
     position: center;
     width: 100%;
@@ -153,20 +139,11 @@
     cursor: pointer;
     top: 55%;
     left: 48%;
-    /*background: rgba(0,0,0,0.0);*/
 }
 .jigsawGameScreenOne{
     width: 100%;
     min-height: 100%;
 }
-/*.nextButton{*/
-/*    margin-bottom: auto;*/
-/*    top: 85%;*/
-/*    left: 70%;*/
-/*    position: absolute;*/
-/*    border: none;*/
-/*    cursor: pointer;*/
-/*}*/
 .nextButton{
     background: url("/images/nextBtn.jpg");
     background-size: 100%;
