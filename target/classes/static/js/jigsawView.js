@@ -13,6 +13,19 @@
             alert('Couldnt find any items');
         }
     });
+ $.ajax({
+     type: 'GET',
+     url: 'api/player',
+     success: function (players) {
+         console.log('success', players);
+         $.each(players, function (i, player) {
+             addPlayer(player);
+         });
+     },
+     error: function () {
+         alert('Couldnt find any items');
+     }
+ });
 
     function addItem(items){
         let item = items.itemName;
@@ -119,11 +132,25 @@
              }
          });
  }
-    startJigsaw();
-    function startJigsaw(){
-        $('.mainDiv').append('<h3 class="jigsawGreeting">Hello there "name", I want to play a game</h3>');
-        $('.mainDiv').prepend('<button id= "screen1Answer1Btn" class="screen1Answer1" onclick="screenOneAnswerOne()"></button>');
-        $('.mainDiv').prepend('<button id= "screen1Answer2Btn" class="screen1Answer2" onclick="screenOneAnswerTwo()"></button>');
+
+ addPlayer();
+ function addPlayer(player) {
+     let playerCheck = player;
+     console.log(playerCheck);
+     if(player === undefined){
+         $('.mainDiv').append('<h3 class="jigsawCreateName">Please create your name in intro-screen to play, localhost:8080</h3>');
+     }
+     else {
+         let playername = player.name;
+         startJigsaw();
+
+         function startJigsaw() {
+             $('.jigsawCreateName').remove();
+             $('.mainDiv').append('<h3 class="jigsawGreeting">Hello there ' + playername + ', I want to play a game</h3>');
+             $('.mainDiv').prepend('<button id= "screen1Answer1Btn" class="screen1Answer1" onclick="screenOneAnswerOne()"></button>');
+             $('.mainDiv').prepend('<button id= "screen1Answer2Btn" class="screen1Answer2" onclick="screenOneAnswerTwo()"></button>');
+         }
+     }
     }
 
     /*
