@@ -4,26 +4,12 @@ document.getElementById("showItemsBtn").addEventListener("click", showItems);
 ajaxGet();
 let playerName;
 
-// $.ajax({
-//     type: 'GET',
-//     url: 'api/items',
-//     success: function (items) {
-//         console.log('success', items);
-//         $.each(items, function (i, item) {
-//             addItem(item);
-//         });
-//     },
-//     error: function () {
-//         alert('Couldnt find any items');
-//     }
-// });
-
 function addItem(items){
     let item = items.itemName;
     let itemId = items.id;
     console.log(itemId);
     let imageSource = "/images/"+item+".jpg";
-    $('.itemsDiv').append('<div class="itemSmallDiv'+itemId+'" id="itemSmallDiv'+itemId+'"><button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button></div>')
+    $('.itemsDiv').append('<div class="itemSmallDiv'+itemId+' chuckyItemSmallDiv" id="itemSmallDiv'+itemId+'"><button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button></div>')
     playerItems.push(itemId);
 }
 function showItems(){
@@ -36,22 +22,8 @@ function showItems(){
     }
 }
 
-// function putItem1(){
-//     ajaxPut("item1");
-// }
-// function putItem2(){
-//     ajaxPut("item2")
-// }
-// function putItem2(){
-//     ajaxPut("item3")
-// }
-// function putItem2(){
-//     ajaxPut("item4")
-// }
 function item1(){
-    // if(replace = true){
-    //     ajaxPut("1");
-    // }
+
     $('.deleteButton1').remove();
     $('.deleteButton2').remove();
     $('.deleteButton3').remove();
@@ -371,10 +343,7 @@ function ajaxGet() {
         $('.itemSmallDiv2').append('<button class="removeAndAdd2"onclick="ajaxPut(2)">REPLACE Item 2</button>')
         $('.itemSmallDiv1').append('<button class="removeAndAdd1"onclick="ajaxPut(1)">REPLACE Item 1</button>')
     }
-       /* $('.itemSmallDiv2').append('<button class="removeAndAdd2"onclick="ajaxPut(2)">REPLACE Item 2</button>')
-        $('.itemSmallDiv3').append('<button class="removeAndAdd3"onclick="ajaxPut(3)">REPLACE Item 3</button>')
-        $('.itemSmallDiv4').append('<button class="removeAndAdd4"onclick="ajaxPut(4)">REPLACE Item 4</button>')
-    }*/
+
 
 
     function treasureItem() {
