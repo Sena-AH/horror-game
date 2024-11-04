@@ -11,7 +11,6 @@ function pausemusic(){
 }
 
 function down(){
-    // backgroundMusic.play();
     console.log("down");
 }
 function left(){
