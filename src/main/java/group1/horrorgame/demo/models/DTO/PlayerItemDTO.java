@@ -1,10 +1,7 @@
 package group1.horrorgame.demo.models.DTO;
 
 
-import group1.horrorgame.demo.models.PlayerItem;
-
 import javax.persistence.*;
-import java.net.Inet4Address;
 
 @Entity
 @Table(name = "player_item")

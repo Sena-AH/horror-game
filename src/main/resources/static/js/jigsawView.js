@@ -1,129 +1,163 @@
  let playerItems = [];
  document.getElementById("showItemsBtn").addEventListener("click", showItems);
-    $.ajax({
-        type: 'GET',
-        url: 'api/items',
-        success: function (items) {
-            console.log('success', items);
-            $.each(items, function (i, item) {
-                addItem(item);
-            });
-        },
-        error: function () {
-            alert('Couldnt find any items');
-        }
-    });
 
-    function addItem(items){
-        let item = items.itemName;
-        let itemId = items.id;
-        console.log(itemId);
-        let imageSource = "/images/"+item+".jpg";
-        $('.itemsDiv').append('<button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button>')
-        playerItems.push(itemId);
-    }
-    function showItems(){
-        if($(".itemsDiv").is(':visible')){
-            $(".itemsDiv").hide();
-        }
-        else{
-            $(".itemsDiv").show();
-        }
-    }
-
-    function item1(){
-        console.log("item 0");
-        $('.deleteButton2').remove();
-        $('.deleteButton3').remove();
-        $('.deleteButton4').remove();
-        $('.itemsDiv').append('<button class="deleteButton1" onclick="deleteItem1()">DELETE</button>');
-    }
-    function deleteItem1(){
-        let itemImageAndButton = document.getElementById("itemBtn1");
-        console.log(itemImageAndButton);
-        $.ajax({
-            type: 'DELETE',
-            url: 'api/items/'+playerItems[0],
-            success: function () {
-                itemImageAndButton.remove();
-                console.log("success");
-            },
-            error: function () {
-                alert('Couldnt find any items');
-            }
-        });
-    }
-    function item2(){
-        console.log("item 1");
-        $('.deleteButton1').remove();
-        $('.deleteButton3').remove();
-        $('.deleteButton4').remove();
-        $('.itemsDiv').append('<button class="deleteButton2" onclick="deleteItem2()">DELETE</button>');
-
-    }
-    function deleteItem2(){
-        let itemImageAndButton = document.getElementById("itemBtn2");
-        $.ajax({
-            type: 'DELETE',
-            url: 'api/items/'+playerItems[1],
-            success: function () {
-                itemImageAndButton.remove();
-                console.log("success");
-            },
-            error: function () {
-                alert('Couldnt find any items');
-            }
-        });
-    }
-    function item3(){
-        console.log("item 2");
-        $('.deleteButton1').remove();
-        $('.deleteButton2').remove();
-        $('.deleteButton4').remove();
-        $('.itemsDiv').append('<button class="deleteButton3" onclick="deleteItem3()">DELETE</button>');
-
-    }
-    function deleteItem3(){
-        let itemImageAndButton = document.getElementById("itemBtn3");
-        $.ajax({
-             type: 'DELETE',
-             url: 'api/items/'+playerItems[2],
-             success: function () {
-                 itemImageAndButton.remove();
-                console.log("success");
-             },
-             error: function () {
-               alert('Couldnt find any items');
-             }
-        });
-    }
-    function item4(){
-        console.log("item 3");
-        $('.deleteButton1').remove();
-        $('.deleteButton2').remove();
-        $('.deleteButton3').remove();
-        $('.itemsDiv').append('<button class="deleteButton4" onclick="deleteItem4()">DELETE</button>');
-
-    }
-    function deleteItem4(){
-        let itemImageAndButton = document.getElementById("itemBtn4");
-        $.ajax({
-           type: 'DELETE',
-           url: 'api/items/'+playerItems[3],
-          success: function () {
-               itemImageAndButton.remove();
-              console.log("success");
-          },
-          error: function () {
-              alert('Couldnt find any items');
-             }
+ $.ajax({
+     type: 'GET',
+     url: 'api/items',
+     success: function (items) {
+         console.log('success', items);
+         $.each(items, function (i, item) {
+             addItem(item);
          });
+     },
+     error: function () {
+         alert('Couldnt find any items');
+     }
+ });
+
+
+ $.ajax({
+     type: 'GET',
+     url: 'api/player',
+     success: function (players) {
+         console.log('success', players);
+         $.each(players, function (i, player) {
+             addPlayer(player);
+         });
+     },
+     error: function () {
+         alert('Couldnt find any items');
+     }
+ });
+
+ function addItem(items){
+     let item = items.itemName;
+     let itemId = items.id;
+     console.log(itemId);
+     let imageSource = "/images/"+item+".jpg";
+     $('.itemsDiv').append('<div class="itemSmallDiv'+itemId+'" id="itemSmallDiv'+itemId+'"><button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button></div>')
+     playerItems.push(itemId);
  }
-    startJigsaw();
-    function startJigsaw(){
-        $('.mainDiv').append('<h3 class="jigsawGreeting">Hello there "name", I want to play a game</h3>');
-        $('.mainDiv').prepend('<button id= "screen1Answer1Btn" class="screen1Answer1" onclick="screenOneAnswerOne()"></button>');
-        $('.mainDiv').prepend('<button id= "screen1Answer2Btn" class="screen1Answer2" onclick="screenOneAnswerTwo()"></button>');
+ function showItems(){
+     console.log($(".itemsDiv").is(':visible'));
+     if($(".itemsDiv").is(':visible')){
+         $(".itemsDiv").hide();
+     }
+     else{
+         $(".itemsDiv").show();
+     }
+ }
+
+ function item1(){
+     console.log("item 0");
+     $('.deleteButton1').remove();
+     $('.deleteButton2').remove();
+     $('.deleteButton3').remove();
+     $('.deleteButton4').remove();
+     $('.itemSmallDiv1').append('<button class="deleteButton1" onclick="deleteItem1()">DELETE</button>');
+ }
+ function deleteItem1(){
+     let itemSmallDivRemove = document.getElementById("itemSmallDiv1");
+     $.ajax({
+         type: 'DELETE',
+         url: 'api/items/'+playerItems[0],
+         success: function () {
+             itemSmallDivRemove.remove();
+             console.log("success");
+         },
+         error: function () {
+             alert('Couldnt find any items');
+         }
+     });
+ }
+ function item2(){
+     console.log("item 1");
+     $('.deleteButton1').remove();
+     $('.deleteButton2').remove();
+     $('.deleteButton3').remove();
+     $('.deleteButton4').remove();
+     $('.itemSmallDiv2').append('<button class="deleteButton2" onclick="deleteItem2()">DELETE</button>');
+
+ }
+ function deleteItem2(){
+     let itemSmallDivRemove = document.getElementById("itemSmallDiv2");
+     $.ajax({
+         type: 'DELETE',
+         url: 'api/items/'+playerItems[1],
+         success: function () {
+             itemSmallDivRemove.remove();
+             console.log("success");
+         },
+         error: function () {
+             alert('Couldnt find any items');
+         }
+     });
+ }
+ function item3(){
+     console.log("item 2");
+     $('.deleteButton1').remove();
+     $('.deleteButton2').remove();
+     $('.deleteButton3').remove();
+     $('.deleteButton4').remove();
+     $('.itemSmallDiv3').append('<button class="deleteButton3" onclick="deleteItem3()">DELETE</button>');
+
+ }
+ function deleteItem3(){
+     let itemSmallDivRemove = document.getElementById("itemSmallDiv3");
+     $.ajax({
+         type: 'DELETE',
+         url: 'api/items/'+playerItems[2],
+         success: function () {
+             itemSmallDivRemove.remove();
+             console.log("success");
+         },
+         error: function () {
+             alert('Couldnt find any items');
+         }
+     });
+ }
+ function item4(){
+     console.log("item 3");
+     $('.deleteButton1').remove();
+     $('.deleteButton2').remove();
+     $('.deleteButton3').remove();
+     $('.deleteButton4').remove();
+     $('.itemSmallDiv4').append('<button class="deleteButton4" onclick="deleteItem4()">DELETE</button>');
+
+ }
+ function deleteItem4(){
+     let itemSmallDivRemove = document.getElementById("itemSmallDiv4");
+     $.ajax({
+         type: 'DELETE',
+         url: 'api/items/'+playerItems[3],
+         success: function () {
+             itemSmallDivRemove.remove();
+             console.log("success");
+         },
+         error: function () {
+             alert('Couldnt find any items');
+         }
+     });
+ }
+
+ addPlayer();
+ function addPlayer(player) {
+     let playerCheck = player;
+     console.log(playerCheck);
+     if(player === undefined){
+         $('.mainDiv').append('<h3 class="jigsawCreateName">Please create your name in intro-screen to play, localhost:8080</h3>');
+     }
+     else {
+         let playername = player.name;
+         startJigsaw();
+
+         function startJigsaw() {
+             $('.jigsawCreateName').remove();
+             $('.mainDiv').append('<h3 class="jigsawGreeting">Hello there ' + playername + ', I want to play a game</h3>');
+             $('.mainDiv').prepend('<button id= "screen1Answer1Btn" class="screen1Answer1" onclick="screenOneAnswerOne()"></button>');
+             $('.mainDiv').prepend('<button id= "screen1Answer2Btn" class="screen1Answer2" onclick="screenOneAnswerTwo()"></button>');
+         }
+     }
     }
 
     /*
@@ -148,10 +182,10 @@
         $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawFight/jigsawGameScreen2.jpg">');
         $('.mainDiv').append('<button class="nextButton" onclick=nextGameScreen()></button>');
     }
-
+    let gameOverTimeout;
     function nextGameScreen(){
         $('.mainDiv').empty();
-        setTimeout(gameOver, 60000);
+        gameOverTimeout = setTimeout(gameOver, 60000);
         $('.mainDiv').append('<img class="jigsawGameScreenOne" src="/images/jigsawFight/jigsawGameScreen3.jpg">')
         $('.mainDiv').append('<button class="jigsawGameClueNumberOne" onclick=clueOne()></button>')
         $('.mainDiv').append('<button class="jigsawGameClueNumberTwo" onclick=clueTwo()></button>')
@@ -172,17 +206,88 @@
         }
     }
 
+    function getItems(){
+        $.ajax({
+            type: 'GET',
+            url: 'api/items',
+            success: function (items) {
+                console.log('success', items);
+                $.each(items, function (i, item) {
+                    addItem(item);
+                });
+            },
+            error: function () {
+                alert('Couldnt find any items');
+            }
+        });
+
+        function addItem(items){
+            let item = items.itemName;
+            let itemId = items.id;
+            console.log(itemId);
+            let imageSource = "/images/"+item+".jpg";
+            $('.itemsDiv').append('<div class="itemSmallDiv'+itemId+'" id="itemSmallDiv'+itemId+'"><button class="item'+itemId+'" id="itemBtn'+itemId+'" onclick="item'+itemId+'()"><img id="itemImage'+itemId+'" src="'+imageSource+'" 70x70></button></div>')
+            playerItems.push(itemId);
+        }
+    }
+
+ function ajaxPut(itemId) {
+     let newItemTest = {
+         id: itemId,
+         attackPoints: '3',
+         itemName: 'pinkElephant',
+         specialAbility: 'Scary pink toy'
+     }
+     console.log(newItemTest);
+
+     $.ajax({
+         type: 'PUT',
+         url: 'api/items/' + itemId,
+         headers: {
+             'Accept': 'application/json',
+             'Content-Type': 'application/json'
+         },
+         data: JSON.stringify(newItemTest),
+         success: function () {
+             location.href = "player";
+             console.log("success");
+         },
+         error: function () {
+             alert('Couldnt change item');
+         }
+     });
+ }
+
+    function appendButtons() {
+        $('.removeAndAdd1').remove();
+        $('.removeAndAdd2').remove();
+        $('.removeAndAdd3').remove();
+        $('.removeAndAdd4').remove();
+        $('.itemSmallDiv4').append('<button class="removeAndAdd4"onclick="ajaxPut(4)">REPLACE ITEM 4</button>')
+        $('.itemSmallDiv3').append('<button class="removeAndAdd3"onclick="ajaxPut(3)">REPLACE ITEM 3</button>')
+        $('.itemSmallDiv2').append('<button class="removeAndAdd2"onclick="ajaxPut(2)">REPLACE ITEM 2</button>')
+        $('.itemSmallDiv1').append('<button class="removeAndAdd1"onclick="ajaxPut(1)">REPLACE ITEM 1</button>')
+    }
+
+
     function checkVal(){
         if(document.getElementById("keycodeInputVal").value === "452395"){
+            clearTimeout(gameOverTimeout);
             $('.mainDiv').empty();
             $('.mainDiv').append('<img class="answer1Screen2" src="/images/jigsawFight/jigsawYouHaveWon.jpg">')
             setTimeout(function(){
                 $('.mainDiv').empty();
                 $('.mainDiv').append('<img class="answer1Screen2" src="/images/winner_frame.jpg">')
-            },10000);
+            },7000);
             setTimeout(function(){
-                location.href="player"
-            }, 15000)
+                $('.mainDiv').empty();
+                $('.mainDiv').append('<button class="replaceElephant" onclick="appendButtons()">REPLACE</button>')
+                $('.mainDiv').append('<button class="leaveJigsawScreen" onclick=location.href="player">LEAVE</button>')
+                $('.mainDiv').append('<div class="itemsDiv" id="itemsDivDiv"></div>');
+                $('.mainDiv').append('<button class="showItems" id="showItemsBtn">ITEMS</button>')
+                $('.mainDiv').append('<img class="answer1Screen2" src="/images/end_frame.jpg">')
+                getItems();
+            }, 10000)
         }
     }
 

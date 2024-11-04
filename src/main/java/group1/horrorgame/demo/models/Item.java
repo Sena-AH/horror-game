@@ -14,9 +14,6 @@ public class Item {
         this.specialAbility = specialAbility;
     }
 
-    public Item() {
-    }
-
     public Integer getId() {
         return id;
     }

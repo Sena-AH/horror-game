@@ -1,7 +1,6 @@
 package group1.horrorgame.demo.DAO;
 
 
-import group1.horrorgame.demo.models.DTO.PlayerDTO;
 import group1.horrorgame.demo.models.DTO.VillainDTO;
 import group1.horrorgame.demo.repository.VillainRepository;
 import org.springframework.stereotype.Repository;
@@ -16,8 +15,8 @@ public class VillainDAO {
         this.repository = repository;
     }
 
-    public VillainDTO addVillain(VillainDTO animalDTO) {
-        return repository.save(animalDTO);
+    public VillainDTO addVillain(VillainDTO villainDTO) {
+        return repository.save(villainDTO);
     }
 
     public Iterable<VillainDTO> getAllVillains() {
