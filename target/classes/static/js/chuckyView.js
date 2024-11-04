@@ -59,7 +59,7 @@ function sound(src){
         this.sound.pause();
     }
 }
-if (chuckyIsGone == false) {
+
     document.getElementById("doorClickButton").addEventListener("click", changeImage);
 
     function changeImage() {
@@ -172,7 +172,7 @@ if (chuckyIsGone == false) {
     }
 
     function youWin() {
-        chuckyIsGone = true;
+
         $('.chuckymain').empty();
         $('.chuckymain').append('<img src="/images/actwin.jpg">');
         $('.chuckymain').append('<button class="chuckyactBtn actpageactBtn" id="chuckyContinueButton" onclick="chuckyGone2()">continue</button>');
@@ -186,12 +186,11 @@ if (chuckyIsGone == false) {
         $('.chuckymain').append('<button id="back" class="back" onclick="escapeButtonPress()">down</button>');
 
     }
-    chuckyIsGone = true;
 
-}
-    chuckyIsGone = true;
 
-    if (chuckyIsGone == true) {
+
+
+
 
 
         function chuckyGone() {
@@ -220,7 +219,7 @@ if (chuckyIsGone == false) {
             $('.chuckymain').append('<button class="chuckyescapeBtn actpageescapeBtn returnBtn" id="return" onclick="chuckyGone()">return</button>');
 
         }
-    }
+
 
     function escapeButtonPress() {
         location.href = 'player';
